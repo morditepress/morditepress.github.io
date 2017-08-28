@@ -1,11 +1,161 @@
 @import url('https://fonts.googleapis.com/css?family=Marcellus|Questrial');
 
+* {
+	box-sizing: border-box;
+}
+
 body {
-	padding: 30px;
-	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
 	font-family: 'Marcellus', serif;
+	background-image: url(../img/lightpaperfibers.png);
+	background-repeat: repeat;
+	background-position: 0 0;
+	display: flex;
+	flex-flow: column nowrap;
+
 }
 
 p {
 	font-family: 'Questrial', sans-serif;
+	line-height: 1.5em;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 2.1em;
+    margin: 0em 0em 0.83em;
+}
+	h1 .tb-saga {
+		color: #B32017;
+		font-size: 0.6em;
+	}
+
+h2 {
+	font-size: 1.3em;
+    margin: 0em 0em 0.83em;
+}
+h2.h1-sub {
+	font-family: 'Questrial', sans-serif;
+}
+
+h3 {
+	font-size: 1.17em;
+	margin: 0em 0em 1em;
+}
+
+.nav-bar {
+	width: 100%;
+	height: 140px;
+	padding: 10px 30px;
+	/* background-image: url(../img/nav-bg-transparent.png);
+	background-repeat: no-repeat;
+	background-size: cover; */
+	background-color: rgb(190, 193, 221);
+	display: flex;
+	flex-flow: row nowrap;
+}
+	.nav-content {
+		padding: 10px 40px;
+	}
+	
+	.nav-site-title {
+		font-size: 3.4em;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.nav-links a {
+		color: #333;
+		display: block;
+		margin-right: 20px;
+		text-decoration: none;
+		font-family: 'Questrial', sans-serif;
+		transition: 0.2s all ease-in-out;
+	}
+
+	.nav-links a:hover {
+		color: #8E0000;
+	}
+
+.home-content {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 800px;
+	max-width: 100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 20px auto;
+}
+
+.title-card {
+	text-align: center;
+	padding: 25px 40px;
+}
+
+.title-img-full {
+	margin: 0px 0px;
+}
+
+.title-desc {
+	padding: 10px 40px 25px;
+}
+
+.title-details {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border-top: 6px solid #333;
+	padding: 60px 0px;
+	margin: 60px 20px;
+}
+
+	.title-splash {
+		flex: 1 1 50%;
+	}
+
+	.title-cta {
+		flex: 1 1 50%;
+		align-self: center;
+		text-align: center;
+	}
+
+	.title-cta-desc {
+		margin-bottom: 20px;
+		color: #333;
+		font-size: 0.85em;
+	}
+
+.btn {
+	padding: 1em 1.3em;
+	border-radius: 5px;
+	background-color: #808080;
+	color: #333;
+	transition: 0.2s all ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+}
+
+.btn:hover {
+	color: #000;
+	background-color: #5A5A5A;
+}
+
+.btn-cta {
+	color: #E6E6E6;
+	background-color: #005713;
+	width: 100%;
+}
+
+.btn-cta:hover {
+	color: #fff;
+	background-color: #00340B;
 }
