@@ -36,6 +36,10 @@ img {
 	max-width: 100%;
 }
 
+h1,h2,h3,h4,h5 {
+	color: #062b0e;
+}
+
 h1 {
 	font-size: 2.1em;
     margin: 0em 0em 0.83em;
@@ -63,6 +67,7 @@ h3 {
 	height: 140px;
 	padding: 10px 30px;
 	background-color: #e7e7e4;
+	border-bottom: 3px solid #062b0e;
 	display: flex;
 	flex-flow: row nowrap;
 }
@@ -72,6 +77,7 @@ h3 {
 	
 	.nav-site-title {
 		font-size: 3.4em;
+		color: #062b0e
 	}
 
 	.nav-links {
