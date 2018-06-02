@@ -129,6 +129,16 @@ h3 {
 	margin: 0px 0px;
 }
 
+.title-img-half {
+	max-width: 50%;
+	margin: 0 auto;
+}
+@media (max-width: 800px) {
+	.title-img-half {
+		max-width: 100%;
+	}
+}
+
 .title-desc {
 	padding: 10px 40px 25px;
 }
