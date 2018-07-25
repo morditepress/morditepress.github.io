@@ -193,6 +193,13 @@ h3 {
 		margin: 20px;
 	}
 
+	.product-list-item-focus {
+		flex: 1 1 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.product-title {
 		font-size: 1.5em;
 	}
@@ -202,7 +209,7 @@ h3 {
 	}
 
 	.product-info {
-		flex: 0 0 200px;
+		flex: 1 0 200px;
 		padding: 10px 15px;
 	}
 
