@@ -72,7 +72,7 @@ h3 {
 	flex-flow: row nowrap;
 }
 	.nav-content {
-		padding: 10px 40px;
+		padding: 10px 40px 10px 20px;
 	}
 	
 	.nav-site-title {
@@ -96,6 +96,10 @@ h3 {
 
 	.nav-links a:hover {
 		color: #8E0000;
+	}
+
+	.nav-logo img{
+		width: 110px;
 	}
 
 .home-content {
