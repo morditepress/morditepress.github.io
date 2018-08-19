@@ -1,0 +1,31 @@
+$_prefix: footer
+  
+.#{$_prefix}
+  +parallaxBanner()
+  text-align: center
+  font-size: 0.8em
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      display: inline-block
+      padding: 0 1em 0
+      margin: 0
+
+      &::before
+        content: ''
+        display: inline-block
+        left: -0.5em
+
+      &:first-child
+        &::before
+          display: none
+  
+  a
+    color: $textOnDark
+
+  &__content
+    padding: 5em 0

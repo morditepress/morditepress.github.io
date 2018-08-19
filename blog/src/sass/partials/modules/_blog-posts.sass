@@ -1,0 +1,169 @@
+$_prefix: post-listing
+$_bg: $bgDark
+$_textColor: $textOnDark
+$_accentColor: $accent
+$_border: 3px solid $_accentColor
+$_imageWidth: 45%
+$_postPadding: 1em
+$_borderRadius: 15px
+
+.#{$_prefix}
+  padding-top: 4em
+  padding-bottom: 4em
+  border-top: $_border
+  +breakpointAbove($breakpointTabletPortrait)
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    font-size: 16px
+    padding-left: 30px
+    padding-right: 30px
+
+  &[data-variant='topic']
+    border: none
+
+  a
+    color: $_textColor
+    
+    &:hover
+      color: $accentSecondary  
+
+  &__heading,
+  &__cta,
+  &__tags
+    font-family: 'Volute'
+
+  &__bg
+    display: block
+    position: absolute
+    bottom: -5%
+    right: -8.5%
+    width: #{$_imageWidth + 10%}
+    height: 100%
+    background-position: bottom right
+    background-size: contain
+    background-repeat: no-repeat
+    background-color: $_bg
+    background-blend-mode: hard-light
+    mix-blend-mode: difference
+    +breakpointAbove($breakpointTabletPortrait)
+      max-height: 89%
+
+  &__content
+    position: relative
+    z-index: 2
+    width: #{100% - $_imageWidth}
+    +breakpointBelow($breakpointTabletPortrait)
+      width: 100%
+  
+  &__tags
+    background-color: $_bg
+    white-space: nowrap
+    position: absolute
+    overflow: hidden
+    max-width: 100%
+    bottom: -$_postPadding
+    padding: #{$_postPadding / 2}
+    border: $_border
+    border-radius: #{$_borderRadius / 2}
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 2
+    font-size: 0.7em
+
+    a
+      display: inline-block
+ 
+      &::before
+        content: ''
+        width: 3px
+        height: 3px
+        border-radius: 50%
+        margin-right: 5px
+        display: inline-block
+        vertical-align: middle
+        background-color: $_accentColor
+    
+      &:first-child
+        &::before
+          display: none
+  
+  &__cta
+    font-size: 0.7em
+    letter-spacing: 1px
+    
+  &__item
+    box-sizing: border-box
+    position: relative    
+    color: $_textColor
+    border: $_border
+    border-radius: $_borderRadius
+    padding: $_postPadding
+    padding-bottom: #{$_postPadding + 2em}
+    overflow: visible
+    position: relative
+    width: 90%
+    margin: 0 auto 2em
+    +breakpointAbove($breakpointTabletPortrait)
+      width: 31%
+      margin: 0 0 4em
+    
+    &::after
+      +breakpointBelow($breakpointTabletPortrait)
+        content: ''
+        display: block
+        clear: both
+    
+    &[data-theme='primary']
+      border-color: $accentSecondary
+      background-color: darken($_bg, 5%)
+   
+      .#{$_prefix}
+        &__bg
+          background-color: transparent
+          mix-blend-mode: hard-light
+          background-position: top left
+          position: static
+          float: left
+          margin: 0 5% 0.5em 0
+          width: 40%
+        
+        &__content
+          width: 100%
+
+          &::after
+            content: ''
+            display: block
+            clear: both
+        
+        &__tags
+          border-color: $accentSecondary
+        
+    &[data-theme='secondary']
+      background-color: $_accentColor
+      border-color: $textOnDark
+ 
+      .#{$_prefix}
+        &__bg
+          background-blend-mode: lighten
+          background-color: transparent
+          border-radius: $_borderRadius
+          mix-blend-mode: initial
+          +breakpointBelow($breakpointTabletPortrait)
+            height: 8em
+        
+        &__tags
+          border-color: $ecru
+          background-color: $_accentColor
+          
+          a
+            &::before
+              background-color: $_textColor
+        
+    &[data-theme='tertiary']
+      .#{$_prefix}
+        &__bg
+          background-blend-mode: normal
+          mix-blend-mode: lighten
+          +breakpointBelow($breakpointTabletPortrait)
+            height: 8em

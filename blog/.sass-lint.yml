@@ -1,0 +1,177 @@
+options:
+  formatter: stylish
+  merge-default-rules: false
+
+files:
+  include: "**/*.sass"
+
+rules:
+  #### Extends
+  # placeholder-in-extend: 1
+  #####################################
+  # Extends should come first in blocks:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+
+  #### Mixins
+  #####################################
+  # Mixins should come before any other property: value pairs
+  mixins-before-declarations:
+    - 2
+    - # Exception: breakpoint mixins
+      exclude: ["breakpointAbove", "breakpointBelow", "breakpointBetween"]
+
+  #### Line Spacing
+  #####################################
+  # One property: value pair per line
+  one-declaration-per-line: 2
+  # One selector per line
+  single-line-per-selector: 2
+  # Space out declaration blocks
+  empty-line-between-blocks:
+    - 2
+    - include: true
+      allow-single-line-rulesets: false
+
+  #### Disallows
+  # no-attribute-selectors: 0
+  # no-color-hex: 0
+  # no-combinators: 0
+  # no-css-comments: 1
+  # cssnano takes care of stripping multi-line comments, can ignore this
+  # no-disallowed-properties: 0
+  # no-extends: 0
+  # no-ids: 1
+  # no-transition-all: 1
+  # no-url-domains: 1
+  # no-debug: 1
+  # no-warn: 1
+  # property-units: 0
+  #####################################
+  # Disallow e.g. 'color: red' declarations
+  no-color-keywords: 2
+  # Color values must be declared as variables
+  no-color-literals:
+    - 2
+    - # Variable names cannot be literals, e.g. '$red: #f00'
+      allow-map-identifiers: false
+      allow-variable-identifiers: false
+  # Error when same property declared twice in block
+  no-duplicate-properties: 2
+  # Disallow empty selector blocks
+  no-empty-rulesets: 2
+  # Disallow use of !important
+  no-important: 1
+  # Disallow invalid hex values, e.g. '#zz1234'
+  no-invalid-hex: 2
+  # Error when same selector used twice
+  no-mergeable-selectors: 2
+  # Error when properties typed incorrectly, or unknown
+  no-misspelled-properties: 2
+  # Error when selectors qualified by IDs, e.g. '.foo#bar'
+  no-qualifying-elements:
+    - 2
+    - allow-element-with-attribute: true
+      allow-element-with-class: true
+  # Disallow trailing spaces on lines
+  no-trailing-whitespace: 2
+  # Disallow trailing zeroes, e.g. 'margin: 5.0px'
+  no-trailing-zero: 2
+  # Warning for '*' selector
+  no-universal-selectors: 1
+  # Warning when url protocols included (should be agnostic)
+  no-url-protocols:
+    - 1
+    - allow-protocol-relative-urls: true
+  # Disallow vendor prefixes (compilation takes care of this)
+  no-vendor-prefixes:
+    - 2
+    - ignore-non-standard: true
+
+  #### Nesting
+  #####################################
+  # Force declarations to precede any nested styles
+  declarations-before-nesting: 2
+  # Force use of '&' and nesting when declaring the following:
+  force-attribute-nesting: 2
+  force-element-nesting: 2
+  force-pseudo-nesting: 2
+
+  #### Naming conventions
+  # class-name-format: 1
+  # id-name-format: 0
+  #####################################
+  # Enforce camelCase for all named items
+  function-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: camelcase
+  mixin-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: camelcase
+  placeholder-name-format:
+    - 2
+    - allow-leading-underscore: true
+      convention: camelcase
+  variable-name-format:
+    - 2
+    - allow-leading-underscore: true
+      convention: camelcase
+
+  #### Formatting
+  # brace-style: 1
+  # no braces, so doesn't matter?
+  # max-line-length: 0
+  # max-file-line-count: 0
+  # property-sort-order: 1
+  # trailing-semicolon: 1
+  # variable-for-property: 1
+  #####################################
+  # Require quotes around attribute values
+  attribute-quotes: 2
+  # No double depth '__' in BEM
+  bem-depth: 2
+  # Force '0' over 'none' for removing borders
+  border-zero: 2
+  # Force no underscores or file exts
+  clean-import-paths: 2
+  # Require '()' for mixin declarations without args
+  empty-args:
+    - 2
+    - include: true
+  # Force newline ending
+  final-newline: 2
+  # Force 3-char hex values when possible
+  hex-length: 2
+  # Force lowercase hex values
+  hex-notation: 2
+  # Force 2-space indentation
+  indentation: 2
+  # Require zero-padded decimal values
+  leading-zero:
+    - 2
+    - include: true
+  # Max 4 levels of nesting
+  nesting-depth:
+    - 1
+    - max-depth: 4
+  # Require use of '::' for elements, ':' for classes
+  pseudo-element: 2
+  # Force use of single quotations
+  quotes: 2
+  # Force shorthand patterns when available - i.e. 'margin: 1px 2px' vs. 'margin: 1px 2px 1px 2px'
+  shorthand-values: 2
+  # Require quotes for 'url()' styles
+  url-quotes: 2
+  # Zero values should not have a unit - i.e. 'margin: 0'
+  zero-unit: 2
+  # Spacing
+  space-after-comma: 2
+  space-before-colon: 2
+  space-after-colon: 2
+  space-before-brace: 2
+  space-before-bang: 2
+  space-after-bang: 2
+  space-between-parens: 2
+  space-around-operator: 2

@@ -1,0 +1,82 @@
+$_minFontSize: 14
+$_maxFontSize: 19
+$_minViewportWidth: 300
+$_maxViewportWidth: 1400
+$_headingScale: 3 // Amount of px headings grow from h6 to h1
+
+@font-face
+  font-family: 'Volute'
+  src: url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/Volute.ttf.woff') format('woff'), url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/Volute.ttf.svg#Volute') format('svg'), url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/Volute.ttf.eot'), url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/Volute.eot?#iefix') format('embedded-opentype')
+  font-weight: normal
+  font-style: normal
+
+// @font-face
+//   font-family: 'Souvenir'
+//   src: url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/souvenir_lt_bt-webfont.woff2') format('woff2'), url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/souvenir_lt_bt-webfont.woff') format('woff')
+//   font-weight: normal
+//   font-style: normal
+
+@font-face
+  font-family: 'Damase'
+  src:url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/MPH-2B-Damase.ttf.woff') format('woff'), url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/MPH-2B-Damase.ttf.svg#MPH-2B-Damase') format('svg'), url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/MPH-2B-Damase.ttf.eot'), url('//cdn2.hubspot.net/hubfs/2068068/assets/fonts/MPH-2B-Damase.ttf.eot?#iefix') format('embedded-opentype')
+  font-weight: normal
+  font-style: normal
+
+body,
+input,
+button,
+select
+  //font-family: 'Crimson Text', serif
+  //font-family: 'Souvenir'
+  font-family: 'Damase', sans-serif
+
+body
+  line-height: 1.33
+  font-size: calc(#{$_minFontSize}px + (#{$_maxFontSize} - #{$_minFontSize}) * ((100vw - #{$_minViewportWidth}px) / (#{$_maxViewportWidth - $_minViewportWidth})))
+
+@for $i from 1 through 6
+  h#{$i}
+    font-size: #{$_minFontSize + $_headingScale * (6 - $i)}px
+    margin-bottom: 0.25em
+
+a
+  color: $accent
+  transition: 0.35s ease color
+  text-decoration: none
+
+  &:hover
+    color: transparentize($accent, 0.2)
+
+em
+  font-style: italic
+
+strong
+  font-weight: 600
+
+p
+  margin-bottom: 1em
+
+ul,
+ol
+  padding-left: 1.5em
+  margin: 1em 0
+
+  li
+    //margin-left: 0.5em
+    margin: 0.5em 0
+    position: relative
+    //margin-bottom: 0.25em
+    //padding-left: 1em
+
+    &::before
+      content: ''
+      width: 0.6em
+      height: 0.6em
+      display: inline-block
+      // vertical-align: middle
+      position: absolute
+      left: -1em
+      top: 0.25em
+      background-repeat: no-repeat
+      background-size: contain
+      background-image: url('//cdn2.hubspot.net/hubfs/2068068/assets/css-assets/torchbearer-bullet.png')

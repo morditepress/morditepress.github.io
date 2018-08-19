@@ -1,0 +1,60 @@
+@import url('//fonts.googleapis.com/css?family=UnifrakturCook:700')
+
+$_prefix: 'header'
+$_textInactive: $mojo
+$_textActive: $merlot
+$_bgInactive: rgba(0, 0, 0, 0.4)
+$_bgActive: $bgDark
+$_border: $accent
+
+.#{$_prefix}
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 3
+  background-color: $_bgInactive
+  border-bottom: 1px solid $_border
+  transition: 0.35s ease background-color
+  padding: 0.5em 0
+  //font-size: 0.9em
+
+  a
+    color: $_textInactive
+
+    &:hover
+      color: $accent
+
+  &--active
+    background-color: $_bgActive
+
+    a
+      color: $_textActive
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__title
+    // font-family: 'Volute'
+    // letter-spacing: 3px
+    // font-size: 0.9em
+
+  &__nav
+    font-size: 0.8em
+
+    ul,
+    li
+      margin: 0
+      padding: 0
+
+    li
+      display: inline-block
+      padding-left: 1em
+
+      &::before
+        display: none
+      
+      &:first-child
+        padding-left: 0

@@ -1,0 +1,54 @@
+$_prefix: 'banner'
+$_activeColor: $accent
+$_textShadow: #eee
+
+.#{$_prefix}
+  +parallaxBanner()
+  color: $white
+  padding-top: 10em
+  padding-bottom: 10em
+  text-align: center
+  +breakpointAbove($breakpointTabletPortrait)
+    height: 95vh  
+    position: relative
+    padding: 0
+
+  &[data-variant='short']
+    height: auto
+
+    .#{$_prefix}
+      &__content
+        +breakpointAbove($breakpointTabletPortrait)
+          padding-top: 6em
+          padding-bottom: 6em
+          top: auto
+          left: auto
+          position: relative
+          margin: 0 auto
+          transform: none
+
+  &__content
+    +breakpointAbove($breakpointTabletPortrait)
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+  &__title
+    color: $_activeColor
+    font-family: 'UnifrakturCook', cursive
+    font-size: 4em
+    text-shadow: 1px 1px $_textShadow
+    margin: 0
+    //animation: burn .65s ease-in-out infinite alternate
+
+  &__subtitle
+    margin: 0
+
+    &::before
+      content: ''
+      background-color: $_textShadow
+      width: 2em
+      height: 3px
+      display: block
+      margin: 0.5em auto

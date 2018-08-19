@@ -1,0 +1,39 @@
+
+// -----------------------
+// B A N N E R S
+// -----------------------
+=parallaxBanner
+  background-size: cover
+  background-position: center center
+  background-attachment: fixed
+  position: relative
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #000
+    opacity: 0.8
+    width: 100%
+    height: 100%
+    z-index: 1
+
+  &__content
+    z-index: 2
+    position: relative
+
+// -----------------------
+// B R E A K P O I N T S
+// -----------------------
+=breakpointBelow($size)
+  @media (max-width: $size)
+    @content
+
+=breakpointAbove($size)
+  @media (min-width: #{$size + 1px})
+    @content
+
+=breakpointBetween($sizeMin, $sizeMax)
+  @media (min-width: #{$sizeMin + 1px}) and (max-width: $sizeMax)
+    @content

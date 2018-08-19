@@ -1,0 +1,42 @@
+$_prefix: 'recent-product'
+$_imageBorder: #354856
+
+.#{$_prefix}
+  padding: 3.5em 0 4.5em
+  background-image: linear-gradient(darken($accent, 18%), $bgDark)
+
+  &__wrapper
+    +breakpointAbove($breakpointTabletPortrait)
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+  &__heading
+    a
+      color: $textOnDark
+
+      &:hover
+        color: transparentize($textOnDark, 0.4)
+
+  &__image
+    text-align: center
+    margin-bottom: 1em
+    +breakpointAbove($breakpointTabletPortrait)
+      text-align: right
+      margin-bottom: 0
+      width: 35%
+
+    img
+      +breakpointAbove($breakpointTabletPortrait)
+        width: 100%
+        box-sizing: border-box
+
+  &__content
+    +breakpointAbove($breakpointTabletPortrait)
+      width: 60%
+    //padding: 0 3%
+
+  &__cta
+    margin-top: 1.5em
+    +breakpointBelow($breakpointTabletPortrait)
+      text-align: center

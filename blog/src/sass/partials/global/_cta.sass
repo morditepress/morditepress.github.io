@@ -1,0 +1,41 @@
+$_prefix: cta
+
+.#{$_prefix}
+  display: inline-block
+  text-decoration: none
+  text-transform: uppercase
+  color: $accent
+  font-size: 0.8em
+  letter-spacing: 1px
+  //font-family: sans-serif
+  padding: 0.8em 1.8em
+  position: relative
+
+  &::before,
+  &::after
+    box-sizing: border-box
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: 3px solid $accent
+    content: ''
+    transition: transform 0.3s, opacity 0.3s
+
+  &::after
+    border-color: $textOnDark
+    opacity: 0
+    transform: translateY(-7px) translateX(6px)
+
+  &:hover,
+  &:focus
+    color: $textOnDark
+
+    &::before
+      opacity: 0
+      transform: translateY(5px) translateX(-5px)
+
+    &::after
+      opacity: 1
+      transform: translateY(0px) translateX(0px)
