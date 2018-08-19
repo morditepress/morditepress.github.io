@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "babel-polyfill": "6.26.0",
+    "blazy": "^1.8.2",
     "skrollr": "^0.6.26"
   }
 }

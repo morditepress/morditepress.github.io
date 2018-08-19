@@ -20,17 +20,18 @@ $_borderRadius: 15px
     padding-right: 30px
 
   &[data-variant='topic']
-    border: none
+    border: 0
 
   a
     color: $_textColor
-    
+
     &:hover
-      color: $accentSecondary  
+      color: $accentSecondary
 
   &__heading,
   &__cta,
-  &__tags
+  &__tags,
+  &__pagination
     font-family: 'Volute'
 
   &__bg
@@ -55,7 +56,7 @@ $_borderRadius: 15px
     width: #{100% - $_imageWidth}
     +breakpointBelow($breakpointTabletPortrait)
       width: 100%
-  
+
   &__tags
     background-color: $_bg
     white-space: nowrap
@@ -73,7 +74,7 @@ $_borderRadius: 15px
 
     a
       display: inline-block
- 
+
       &::before
         content: ''
         width: 3px
@@ -83,18 +84,18 @@ $_borderRadius: 15px
         display: inline-block
         vertical-align: middle
         background-color: $_accentColor
-    
+
       &:first-child
         &::before
           display: none
-  
+
   &__cta
     font-size: 0.7em
     letter-spacing: 1px
-    
+
   &__item
     box-sizing: border-box
-    position: relative    
+    position: relative
     color: $_textColor
     border: $_border
     border-radius: $_borderRadius
@@ -107,17 +108,17 @@ $_borderRadius: 15px
     +breakpointAbove($breakpointTabletPortrait)
       width: 31%
       margin: 0 0 4em
-    
+
     &::after
       +breakpointBelow($breakpointTabletPortrait)
         content: ''
         display: block
         clear: both
-    
+
     &[data-theme='primary']
       border-color: $accentSecondary
       background-color: darken($_bg, 5%)
-   
+
       .#{$_prefix}
         &__bg
           background-color: transparent
@@ -127,7 +128,7 @@ $_borderRadius: 15px
           float: left
           margin: 0 5% 0.5em 0
           width: 40%
-        
+
         &__content
           width: 100%
 
@@ -135,14 +136,14 @@ $_borderRadius: 15px
             content: ''
             display: block
             clear: both
-        
+
         &__tags
           border-color: $accentSecondary
-        
+
     &[data-theme='secondary']
       background-color: $_accentColor
       border-color: $textOnDark
- 
+
       .#{$_prefix}
         &__bg
           background-blend-mode: lighten
@@ -151,15 +152,15 @@ $_borderRadius: 15px
           mix-blend-mode: initial
           +breakpointBelow($breakpointTabletPortrait)
             height: 8em
-        
+
         &__tags
           border-color: $ecru
           background-color: $_accentColor
-          
+
           a
             &::before
               background-color: $_textColor
-        
+
     &[data-theme='tertiary']
       .#{$_prefix}
         &__bg
@@ -167,3 +168,51 @@ $_borderRadius: 15px
           mix-blend-mode: lighten
           +breakpointBelow($breakpointTabletPortrait)
             height: 8em
+
+  &__pagination
+    font-size: 0.6em
+
+    ul
+      padding: 0
+      margin: 3em auto
+      text-align: center
+
+    li
+      display: inline-block
+      margin: 0
+
+      &::before
+        background-image: none
+        border-radius: 50%
+        background-color: $_accentColor
+        width: 3px
+        height: 3px
+        margin-right: 8px
+        display: inline-block
+        position: static
+        vertical-align: middle
+
+      a
+        padding: 0.5em 0.8em
+        display: inline-block
+        color: $textOnDark
+
+        &.#{$_prefix}__pagination
+          &-current
+            border: 2px solid transparentize($_accentColor, 0.8)
+            border-radius: 6px
+            color: $_accentColor
+
+        &:hover
+          color: $accentSecondary
+
+      &:first-child
+        a
+          margin-left: 0
+
+        &::before
+          display: none
+
+    .disabled
+      opacity: 0.25
+      pointer-events: none
