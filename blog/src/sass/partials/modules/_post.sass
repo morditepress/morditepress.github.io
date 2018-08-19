@@ -1,4 +1,7 @@
 $_prefix: 'post'
+$_avatarDiameter: 70px
+$_avatarGutter: 15px
+$_avatarBorder: 2px
 
 .#{$_prefix}
   padding-top: 3em
@@ -14,6 +17,34 @@ $_prefix: 'post'
     img
       opacity: 0
       transition: opacity 500ms
+      +breakpointBelow($breakpointTabletPortrait)
+        max-width: 50%
 
     &.b-loaded
       opacity: 1
+
+    &::after
+      content: ''
+      display: block
+      clear: both
+
+  &__author
+    margin: 1em 0
+    display: flex
+    align-items: center
+
+    &-avatar
+      display: inline-block
+      box-sizing: border-box
+      margin-right: $_avatarGutter
+      border-radius: 50%
+      width: $_avatarDiameter
+      height: $_avatarDiameter
+      border: $_avatarBorder solid $bgDark
+      box-shadow: 0 0 0 $_avatarBorder $accent
+      overflow: hidden
+
+      img
+        min-height: 100%
+        min-width: 100%
+        object-fit: cover
