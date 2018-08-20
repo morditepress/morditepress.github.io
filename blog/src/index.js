@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     articleImage.classList.add("lazy")
   );
   new Blazy({
-    selector: ".lazy",
-    offset: 400
+    selector: ".lazy"
   });
   toggleScrollClass("header");
   skrollr.init();
