@@ -53,6 +53,19 @@ $_avatarBorder: 2px
       display: block
       clear: both
 
+    hr
+      border-color: transparent
+      clear: both
+      margin: 0
+
+    &::before
+      height: 1px
+      content: ''
+      background-color: transparentize($textOnDark, 0.2)
+      clear: both
+      display: block
+      margin: 1em 0
+
   &__author
     margin: 1em 0
     display: flex
