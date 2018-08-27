@@ -16,12 +16,11 @@ $_headingScale: 3 // Amount of px headings grow from h6 to h1
   font-weight: normal
   font-style: normal
 
+
 body,
 input,
 button,
 select
-  //font-family: 'Crimson Text', serif
-  //font-family: 'Souvenir'
   font-family: 'Damase', sans-serif
 
 body
@@ -30,8 +29,11 @@ body
 
 @for $i from 1 through 6
   h#{$i}
-    font-size: #{$_minFontSize + $_headingScale * (6 - $i)}px
     margin-bottom: 0.25em
+    font-size: #{$_minFontSize - $_headingScale * $i}vw
+    +breakpointAbove($breakpointTabletPortrait)
+      font-size: #{$_minFontSize + $_headingScale * (6 - $i)}px
+
 
 a
   color: $accent
@@ -54,6 +56,7 @@ ul,
 ol
   padding-left: 1.5em
   margin: 1em 0
+  list-style: none
 
   li
     //margin-left: 0.5em

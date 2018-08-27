@@ -60,7 +60,7 @@ $_borderRadius: 15px
     background-blend-mode: hard-light
     mix-blend-mode: difference
     +breakpointAbove($breakpointTabletPortrait)
-      max-height: 89%
+      max-height: 80%
 
   &__content
     position: relative
@@ -126,7 +126,7 @@ $_borderRadius: 15px
         display: block
         clear: both
 
-    &[data-theme='primary']
+    &[data-theme^='bounded']
       border-color: $accentSecondary
       background-color: darken($_bg, 5%)
 
@@ -153,7 +153,20 @@ $_borderRadius: 15px
         &__tags
           border-color: $accentSecondary
 
-    &[data-theme='secondary']
+    &[data-theme='bounded-right']
+      border-color: $accentTertiary
+
+      .#{$_prefix}
+        &__tags
+          border-color: $accentTertiary
+
+        &__bg
+          border-radius: 8px
+          float: right
+          margin-right: 0
+          margin-left: 5%
+
+    &[data-theme='unbounded-filled']
       background-color: $_accentColor
       border-color: $textOnDark
 
@@ -174,7 +187,7 @@ $_borderRadius: 15px
             &::before
               background-color: $_textColor
 
-    &[data-theme='tertiary']
+    &[data-theme='unbounded-clear']
       .#{$_prefix}
         &__bg
           background-blend-mode: normal
