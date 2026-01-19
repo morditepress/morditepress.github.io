@@ -319,8 +319,14 @@ export const siteConfig: SiteConfig = {
         { title: 'Torchbearer', url: "https://www.mordite.press"}
       ] },
       { title: "Projects", url: "/projects/", children: [
-        // { title: 'Torchbearer', url: '/projects/looters'}
-        // { title: 'Looters', url: '/projects/looters'}
+        { title: "New", url:"/projects/new"},
+        { title: 'The Grind Turn 3: Hell or Highwater', url: 'https://www.mordite.press/the-grind-3-hell-or-highwater'},
+        { title: 'The Grind Turn 2: Mistvale Nights', url: 'https://www.mordite.press/the-grind-turn-2'},
+        { title: 'The Delver\'s Guide to Surviving the Underworld', url: 'https://www.mordite.press/the-delvers-guide-to-surviving-the-underworld'},
+        { title: 'The Vagrant\'s Guide to Surviving the Wild', url: 'https://www.mordite.press/the-vagrants-guide-to-surviving-the-wild-release'},
+        { title: 'The Grind', url: 'https://www.mordite.press/the-grind'},
+        { title: 'Roost of the Condor Queen', url: 'https://www.mordite.press/roost-of-the-condor-queen'},
+        { title: 'Fearless and Freebooting', url: 'https://www.mordite.press/fearless-and-freebooting'},
       ] },
       { title: "Docs", url: "/docs/" },
       { title: "About", url: "/about/"},
