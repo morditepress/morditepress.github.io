@@ -297,7 +297,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:PROFILE_PICTURE_SIZE]
     size: "md", // "sm" (32px), "md" (48px), or "lg" (64px) - only affects footer placement
     // [CONFIG:PROFILE_PICTURE_URL]
-    url: "", // Optional
+    url: "/about", // Optional
     // [CONFIG:PROFILE_PICTURE_PLACEMENT]
     placement: "footer", // "footer" or "header"
     // [CONFIG:PROFILE_PICTURE_STYLE]
