@@ -319,7 +319,7 @@ export const siteConfig: SiteConfig = {
         { title: 'Torchbearer', url: "https://www.mordite.press"}
       ] },
       { title: "Projects", url: "/projects/", children: [
-        { title: "New", url:"/projects/new"},
+        { title: "New Releases", url:"/projects/new"},
         { title: 'The Grind Turn 3: Hell or Highwater', url: 'https://www.mordite.press/the-grind-3-hell-or-highwater'},
         { title: 'The Grind Turn 2: Mistvale Nights', url: 'https://www.mordite.press/the-grind-turn-2'},
         { title: 'The Delver\'s Guide to Surviving the Underworld', url: 'https://www.mordite.press/the-delvers-guide-to-surviving-the-underworld'},
