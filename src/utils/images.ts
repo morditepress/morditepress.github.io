@@ -352,8 +352,8 @@ export function getDefaultOGImage(): OpenGraphImage {
   return {
     url: "/open-graph.png",
     alt: siteConfig.defaultOgImageAlt,
-    width: 1200,
-    height: 630,
+    width: 2484,
+    height: 1597,
   };
 }
 
@@ -368,8 +368,8 @@ export function getFallbackOGImage(site?: URL): OpenGraphImage {
   return {
     url: `${baseUrl}/open-graph.png`,
     alt: siteConfig.defaultOgImageAlt,
-    width: 1200,
-    height: 630,
+    width: 2484,
+    height: 1597,
   };
 }
 
