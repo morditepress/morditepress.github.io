@@ -196,7 +196,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
   faviconThemeAdaptive: true, // If true, favicon switches between favicon-dark.png and favicon-light.png based on browser's system theme preference. If false, always uses favicon.png
   // [CONFIG:DEFAULT_OG_IMAGE_ALT]
-  defaultOgImageAlt: "Mordite Press logo.", // Alt text for the default Open Graph image, public/open-graph.png
+  defaultOgImageAlt: "Mordite Press publishers", // Alt text for the default Open Graph image, public/open-graph.png
 
   // Global Settings
   // [CONFIG:THEME]
