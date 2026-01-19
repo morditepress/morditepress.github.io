@@ -182,7 +182,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://morditepress.github.io",
+  site: "https://new.mordite.press",
   // Github repo name
   base: '/',
   // [CONFIG:SITE_TITLE]
