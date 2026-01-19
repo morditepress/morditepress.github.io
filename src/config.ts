@@ -14,6 +14,7 @@ export type AspectRatio =
 export interface SiteConfig {
   // Site Information
   site: string;
+  base: string;
   title: string;
   description: string;
   author: string;
@@ -181,23 +182,25 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://astro-modular.netlify.app",
+  site: "https://morditepress.github.io",
+  // Github repo name
+  base: '/',
   // [CONFIG:SITE_TITLE]
-  title: "Astro Modular",
+  title: "Mordite Press",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "A flexible blog theme designed for Obsidian users.",
+  description: "Tabletop role-playing games & misadventures. Seattle - Boston - Argentina - Ireland.",
   // [CONFIG:SITE_AUTHOR]
-  author: "David V. Kimball",
+  author: "Liz Shaw",
   // [CONFIG:SITE_LANGUAGE]
   language: "en",
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
   faviconThemeAdaptive: true, // If true, favicon switches between favicon-dark.png and favicon-light.png based on browser's system theme preference. If false, always uses favicon.png
   // [CONFIG:DEFAULT_OG_IMAGE_ALT]
-  defaultOgImageAlt: "Astro Modular logo.", // Alt text for the default Open Graph image, public/open-graph.png
+  defaultOgImageAlt: "Mordite Press logo.", // Alt text for the default Open Graph image, public/open-graph.png
 
   // Global Settings
   // [CONFIG:THEME]
-  theme: "oxygen", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
+  theme: "ayu", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
   // [CONFIG:CUSTOM_THEME_FILE]
   customThemeFile: "custom", // Only used if theme is set to "custom" above. Filename in src/themes/custom/ (without .ts extension)
   // [CONFIG:AVAILABLE_THEMES]
@@ -230,9 +233,9 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:FOOTER_ENABLED]
     enabled: true,
     // [CONFIG:FOOTER_CONTENT]
-    content: `© 2025 {author}. Built with the <a href="https://github.com/davidvkimball/astro-modular" target="_blank">Astro Modular</a> theme.`,
+    content: `© ${new Date().getFullYear()} Mordite Press`,
     // [CONFIG:FOOTER_SHOW_SOCIAL_ICONS]
-    showSocialIconsInFooter: true,
+    showSocialIconsInFooter: false,
   },
   //[CONFIG:HIDE_SCROLL_BAR]
   hideScrollBar: false,
@@ -252,16 +255,16 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:COMMAND_PALETTE_SHORTCUT]
     shortcut: "ctrl+K",
     // [CONFIG:COMMAND_PALETTE_PLACEHOLDER]
-    placeholder: "Search posts",
+    placeholder: "Search site",
     search: {
       // [CONFIG:COMMAND_PALETTE_SEARCH_POSTS]
       posts: true,
       // [CONFIG:COMMAND_PALETTE_SEARCH_PAGES]
-      pages: false,
+      pages: true,
       // [CONFIG:COMMAND_PALETTE_SEARCH_PROJECTS]
-      projects: false,
+      projects: true,
       // [CONFIG:COMMAND_PALETTE_SEARCH_DOCS]
-      docs: false,
+      docs: true,
     },
     sections: {
       // [CONFIG:COMMAND_PALETTE_SECTIONS_QUICK_ACTIONS]
@@ -286,11 +289,11 @@ export const siteConfig: SiteConfig = {
   // Profile Picture
   profilePicture: {
     // [CONFIG:PROFILE_PICTURE_ENABLED]
-    enabled: false, 
+    enabled: true, 
     // [CONFIG:PROFILE_PICTURE_IMAGE]
-    image: "/profile.jpg", // Path to your profile image (place in public/ directory)
+    image: "/favicon.png", // Path to your profile image (place in public/ directory)
     // [CONFIG:PROFILE_PICTURE_ALT]
-    alt: "Profile picture",
+    alt: "Mordite Press helm logo",
     // [CONFIG:PROFILE_PICTURE_SIZE]
     size: "md", // "sm" (32px), "md" (48px), or "lg" (64px) - only affects footer placement
     // [CONFIG:PROFILE_PICTURE_URL]
@@ -311,26 +314,33 @@ export const siteConfig: SiteConfig = {
     showMobileMenu: true,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
-      { title: "Posts", url: "/posts/" },
-      { title: "Projects", url: "/projects/" },
+      { title: "Posts", url: "/posts/", children: [
+        { title: "View All"},
+        { title: 'Torchbearer', url: "https://www.mordite.press"}
+      ] },
+      { title: "Projects", url: "/projects/", children: [
+        // { title: 'Torchbearer', url: '/projects/looters'}
+        // { title: 'Looters', url: '/projects/looters'}
+      ] },
       { title: "Docs", url: "/docs/" },
-      { title: "About", url: "/about/",
-        children: [
-          { title: "Privacy Policy", url: "/privacy-policy/" }
-        ] },
-      { title: "GitHub", url: "https://github.com/davidvkimball/astro-modular" }
+      { title: "About", url: "/about/"},
+        // children: [
+        //   { title: "Privacy Policy", url: "/privacy-policy/" }
+        // ] },
+      // { title: "GitHub", url: "https://github.com/davidvkimball/astro-modular" }
     ],
     // [CONFIG:NAVIGATION_SOCIAL]
     social: [
       {
-        title: "X",
-        url: "https://x.com/davidvkimball",
-        icon: "x-twitter",
+        title: "DriveThruRPG",
+        url: "https://preview.drivethrurpg.com/en/publisher/11809/mordite-press",
+        icon: 'default'
+        // icon: "book-open",
       },
       {
-        title: "GitHub",
-        url: "https://github.com/davidvkimball",
-        icon: "github",
+        title: "Matt's Instagram",
+        url: "https://www.instagram.com/number_none/",
+        icon: "instagram",
       },
     ],
   },
@@ -351,7 +361,7 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_TYPE]
       type: "latest", // "latest" or "featured"
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_SLUG]
-      slug: "getting-started", // Slug of post after '/posts/' to be featured (e.g. "post-title"). Only used when type is "featured"
+      // slug: "getting-started", // Slug of post after '/posts/' to be featured (e.g. "post-title"). Only used when type is "featured"
     },
     recentPosts: {
       // [CONFIG:HOME_OPTIONS_RECENT_POSTS_ENABLED]
@@ -363,13 +373,13 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:HOME_OPTIONS_PROJECTS_ENABLED]
       enabled: true, // Show featured projects on homepage
       // [CONFIG:HOME_OPTIONS_PROJECTS_COUNT]
-      count: 2, // Number of projects to show
+      count: 3, // Number of projects to show
     },
     docs: {
       // [CONFIG:HOME_OPTIONS_DOCS_ENABLED]
       enabled: true, // Show featured docs on homepage
       // [CONFIG:HOME_OPTIONS_DOCS_COUNT]
-      count: 3, // Number of docs to show
+      count: 2, // Number of docs to show
     },
     blurb: {
       // [CONFIG:HOME_OPTIONS_BLURB_PLACEMENT]
@@ -413,7 +423,7 @@ export const siteConfig: SiteConfig = {
     customPostCardAspectRatio: "2.5/1", // Only used when postCardAspectRatio is "custom" (e.g., "2.5/1")
     comments: {
       // [CONFIG:POST_OPTIONS_COMMENTS_ENABLED]
-      enabled: false,
+      enabled: true,
       // [CONFIG:POST_OPTIONS_COMMENTS_PROVIDER]
       provider: "giscus",
       // [CONFIG:POST_OPTIONS_COMMENTS_REPO]

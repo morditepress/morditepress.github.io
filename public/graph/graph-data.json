@@ -15,13 +15,6 @@
       "connections": 6
     },
     {
-      "id": "liz-made-a-new-post",
-      "type": "post",
-      "title": "Liz Made a New Post",
-      "slug": "liz-made-a-new-post",
-      "connections": 0
-    },
-    {
       "id": "obsidian-embeds-demo",
       "type": "post",
       "title": "Obsidian Embeds Demo",
@@ -40,13 +33,6 @@
       "type": "post",
       "title": "Vault CMS Guide",
       "slug": "vault-cms-guide",
-      "connections": 0
-    },
-    {
-      "id": "what-are-next",
-      "type": "post",
-      "title": "What are next?",
-      "slug": "what-are-next",
       "connections": 0
     }
   ],
@@ -133,9 +119,9 @@
     }
   ],
   "metadata": {
-    "totalPosts": 7,
+    "totalPosts": 5,
     "totalConnections": 16,
     "maxNodesApplied": false,
-    "originalNodeCount": 7
+    "originalNodeCount": 5
   }
 }

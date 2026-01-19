@@ -84,7 +84,6 @@ export default defineConfig({
   '/contact-me': '/contact',
   '/contact-us': '/contact',
   '/privacy': '/privacy-policy',
-  '/posts/liz-test': '/posts/liz-made-a-new-post',
   '/posts/mermaid-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagram-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagrams': '/posts/obsidian-embeds-demo',
