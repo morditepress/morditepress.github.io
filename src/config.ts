@@ -14,7 +14,6 @@ export type AspectRatio =
 export interface SiteConfig {
   // Site Information
   site: string;
-  base: string;
   title: string;
   description: string;
   author: string;
@@ -182,9 +181,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://morditepress.github.io",
-  // Github repo name
-  base: '/',
+  site: "https://new.mordite.press",
   // [CONFIG:SITE_TITLE]
   title: "Mordite Press",
   // [CONFIG:SITE_DESCRIPTION]
