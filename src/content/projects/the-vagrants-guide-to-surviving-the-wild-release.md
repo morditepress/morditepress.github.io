@@ -21,7 +21,7 @@ aliases:
 * Available on DriveThruRPG
 * 144 pages
 * Illustrated
-* Price: $15 PDF / $40 USD Print
+* Price: \$15 PDF &sol; \$40 Print
 
 [![Get Vagrant's PDF](https://no-cache.hubspot.com/cta/default/2068068/262728da-df27-44f5-9f5d-fe0a671be91b.png)](https://cta-redirect.hubspot.com/cta/redirect/2068068/262728da-df27-44f5-9f5d-fe0a671be91b)
 
