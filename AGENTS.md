@@ -4073,7 +4073,7 @@ Comments are controlled by a single setting in `src/config.ts`:
 
 ```typescript
 features: {
-  comments: true,  // Enable/disable comments (ONLY setting that matters)
+  comments: false,  // Enable/disable comments (ONLY setting that matters)
 }
 ```
 
