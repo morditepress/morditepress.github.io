@@ -60,7 +60,7 @@ interface ProjectData {
   categories?: string[];
   repositoryUrl?: string;
   demoUrl?: string;
-  status?: string; // Any string value - "completed", "in-progress", "On Hold", etc.
+  status?: string; // Any string value - "released", "in-progress", "On Hold", etc.
   image?: string;
   imageAlt?: string;
   hideCoverImage?: boolean;
@@ -118,7 +118,7 @@ interface SiteConfig {
   description: string;
   author: string;
   language: string;
-  
+
   // Global Settings
   theme: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom";
   customThemeFile?: string;
@@ -153,7 +153,7 @@ interface SiteConfig {
   deployment: {
     platform: "netlify" | "vercel" | "github-pages";
   };
-  
+
   // Command Palette
   commandPalette: {
     enabled: boolean;
@@ -177,7 +177,7 @@ interface SiteConfig {
       changeTheme: boolean;
     };
   };
-  
+
   // Profile Picture
   profilePicture: {
     enabled: boolean;
@@ -188,7 +188,7 @@ interface SiteConfig {
     placement: "footer" | "header";
     style: "circle" | "square" | "none";
   };
-  
+
   // Navigation
   navigation: {
     showNavigation: boolean;
@@ -197,7 +197,7 @@ interface SiteConfig {
     pages: Array<{ title: string; url: string }>;
     social: Array<{ title: string; url: string; icon: string }>;
   };
-  
+
   // Home Options
   homeOptions: {
     featuredPost: {
@@ -221,7 +221,7 @@ interface SiteConfig {
       placement: "above" | "below" | "none";
     };
   };
-  
+
   // Post Options
   postOptions: {
     postsPerPage: number;
@@ -260,7 +260,7 @@ interface SiteConfig {
       loading: string;
     };
   };
-  
+
   // Optional Content Types
   optionalContentTypes: {
     projects: boolean;
@@ -271,8 +271,8 @@ interface SiteConfig {
 
 ### Aspect Ratio Types
 ```typescript
-type AspectRatio = 
-  | "16:9" 
+type AspectRatio =
+  | "16:9"
   | "4:3"
   | "3:2"
   | "og"

@@ -335,7 +335,7 @@ box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 @apply bg-primary-50 dark:bg-primary-800
 @apply bg-primary-100 dark:bg-primary-700
 
-// Dark backgrounds  
+// Dark backgrounds
 @apply bg-primary-900 dark:bg-primary-50
 @apply bg-primary-800 dark:bg-primary-100
 ```
@@ -550,7 +550,7 @@ The theme includes intelligent category handling that adapts based on your conte
 #### Projects Categories
 - **If NO projects have categories**: Hide the entire category system
   - Remove category display from project cards
-  - Remove category display from individual project pages  
+  - Remove category display from individual project pages
   - Remove the category filtering block from the projects index page
 - **If SOME projects have categories**: Show categories normally
 
@@ -558,7 +558,7 @@ The theme includes intelligent category handling that adapts based on your conte
 - **If NO docs have categories**: Remove category system entirely
   - Remove category headings and TOC-like structure on the docs index page
   - Just list docs by their `order` number
-- **If SOME docs have categories**: 
+- **If SOME docs have categories**:
   - Docs with categories go to their assigned category
   - Docs without categories go to a new "Unsorted" category
   - Keep the category structure
@@ -612,7 +612,7 @@ The theme includes intelligent category handling that adapts based on your conte
   categories?: string[];
   repositoryUrl?: string;
   demoUrl?: string;
-  status?: 'in-progress' | 'completed';
+  status?: 'in-progress' | 'released';
   image?: string;
   imageAlt?: string;
   hideCoverImage?: boolean;
@@ -653,7 +653,7 @@ The theme includes intelligent category handling that adapts based on your conte
 - **Layout controls styling** - H1 styling is handled by the PostLayout component
 - **Example**: Post frontmatter has `title: "My Post"` → Layout renders `<h1>My Post</h1>`
 
-#### Pages (PageLayout)  
+#### Pages (PageLayout)
 - **H1 is HARDCODED** in the layout using `{page.data.title}` from frontmatter
 - **NO H1 in markdown content** - pages should NOT have `# Title` in their markdown
 - **Layout controls styling** - H1 styling is handled by the PageLayout component
@@ -755,7 +755,7 @@ When working with the Obsidian vault, these hotkeys are crucial:
 
 #### Astro Composer
 - **Purpose**: Easily create new notes as Astro blog posts
-- **Functionality**: 
+- **Functionality**:
   - Creates kebab-case filenames from titles automatically
   - Supports `CTRL + R` for easy renaming
   - Generates default properties automatically
@@ -813,12 +813,12 @@ This theme supports two distinct linking behaviors, each with specific use cases
 - **Why posts only**: Maintains simplicity and matches Obsidian's primary use case for blog content
 
 #### **Standard Markdown Links - All Content Types**
-- **Syntax**: `[text](url)` 
+- **Syntax**: `[text](url)`
 - **Purpose**: Standard markdown linking that works everywhere
 - **Scope**: **Works with ALL content types** (posts, pages, projects, docs)
 - **Examples**:
   - `[Post Title](posts/post-slug)` or `[Post Title](post-slug)` → Posts
-  - `[Page Title](pages/page-slug)` or `[Page Title](page-slug)` → Pages  
+  - `[Page Title](pages/page-slug)` or `[Page Title](page-slug)` → Pages
   - `[Project Title](projects/project-slug)` → Projects
   - `[Doc Title](docs/doc-slug)` → Documentation
   - `[Home](special/home)` or `[Home](homepage)` → Special pages
@@ -1127,7 +1127,7 @@ src/content/pages/services/
 ```
 src/content/
 ├── posts/                   # Blog posts
-├── pages/                   # Static pages  
+├── pages/                   # Static pages
 ├── projects/                # Projects
 ├── docs/                    # Documentation
 ├── special/                 # Special pages
@@ -1253,7 +1253,7 @@ function initializeMyComponent() {
     const newElement = existingElement.cloneNode(true);
     existingElement.parentNode?.replaceChild(newElement, existingElement);
   }
-  
+
   // Get fresh references after cloning
   const element = document.querySelector('.my-component');
   if (element) {
@@ -1507,7 +1507,7 @@ The theme automatically generates both RSS and Atom feeds for content syndicatio
 #### Feed Buttons
 Both RSS and Atom feed buttons are available on all post listing pages:
 - **Posts Index** (`/posts`) - Main posts listing
-- **Paginated Posts** (`/posts/[page]`) - Paginated post listings  
+- **Paginated Posts** (`/posts/[page]`) - Paginated post listings
 - **Tag Pages** (`/posts/tag/[...tag]`) - Posts filtered by tag
 - **Paginated Tag Pages** (`/posts/tag/[...tag]/[page]`) - Paginated tag listings
 
@@ -1603,7 +1603,7 @@ The script creates:
 - `public/_headers` - Custom headers (same format as GitHub Pages)
 - `wrangler.toml` - Workers-compatible configuration (uses `assets.directory` instead of `pages_build_output_dir`)
 
-**Important:** 
+**Important:**
 - `wrangler.toml` is automatically generated with Workers-compatible format
 - Uses `assets.directory = "./dist"` (Workers format) instead of `pages_build_output_dir` (Pages format)
 - If you need bindings (KV, D1, vars, etc.), they can be added to `wrangler.toml` manually
@@ -1749,11 +1749,11 @@ The `scripts/get-version.js` utility provides several functions:
    ```bash
    # Step 1: Update VERSION file
    echo "0.2.0" > VERSION
-   
+
    # Step 2: Update package.json manually
    # Change "version": "0.1.0" to "version": "0.2.0"
    ```
-   
+
    **Important**: Both files must be updated manually. The VERSION file is the source of truth, but package.json controls the terminal display.
 
 2. **Create GitHub Release:**
@@ -1983,7 +1983,7 @@ homeOptions: {
 - Includes "View all projects →" link
 
 **Documentation Configuration:**
-- `enabled: true` - Show featured docs on homepage  
+- `enabled: true` - Show featured docs on homepage
 - `count: 3` - Number of docs to display
 - **Priority**: First tries to show docs with `featured: true` in frontmatter (up to count)
 - **Fallback**: If no featured docs exist, shows the most recent docs (up to count)
@@ -2175,7 +2175,7 @@ date: {{date}}
 categories: ["Web Development", "Open Source"]
 repositoryUrl: "https://github.com/username/repo"
 demoUrl: "https://your-demo.com"
-status: "completed"  # Any string value - "completed", "in-progress", "On Hold", etc.
+status: "released"  # Any string value - "released", "in-progress", "On Hold", etc.
 image: "cover.jpg"
 imageAlt: "Project screenshot"
 hideCoverImage: false
@@ -2627,7 +2627,7 @@ Before deploying any changes to config.ts:
   ```typescript
   // Show only a curated selection of themes
   availableThemes: ["oxygen", "minimal", "nord", "catppuccin", "rose-pine"]
-  
+
   // Show all themes (default)
   availableThemes: "all"
   ```
@@ -2791,8 +2791,8 @@ typography: {
 - Images in `src/content/projects/attachments/` or co-located with content
 - Frontmatter includes: title, description, date, categories, repositoryUrl, demoUrl, status, image, imageAlt, hideCoverImage, draft, noIndex, featured
 - Status: Any string value with intelligent handling:
-  - **Recognized values**: "completed", "in-progress" (case-insensitive)
-  - **Case normalization**: "In Progress" → "in-progress", "Completed" → "completed"
+  - **Recognized values**: "released", "in-progress" (case-insensitive)
+  - **Case normalization**: "In Progress" → "in-progress", "Released" → "released"
   - **Custom values**: "On Hold", "Paused", etc. display as-is with neutral theme colors
   - **Styling**: Recognized values get green/yellow colors, custom values use theme colors
 - Featured: `true` to show on homepage (requires `homeProjects: true` in config)
@@ -2800,7 +2800,7 @@ typography: {
 
 #### Documentation
 - Technical documentation and guides
-- Support both folder-based and single-file organization  
+- Support both folder-based and single-file organization
 - Images in `src/content/docs/attachments/` or co-located with content
 - Frontmatter includes: title, description, category, order, lastModified (optional), version, image, imageAlt, hideCoverImage, draft, noIndex, showTOC, featured
 - Featured: `true` to show on homepage (requires `homeDocs: true` in config)
@@ -3056,7 +3056,7 @@ The math processing is integrated into the existing markdown pipeline:
 
 #### Display Math
 - **Syntax**: `$$...$$` (double dollar signs)
-- **Example**: 
+- **Example**:
   ```markdown
   $$
   \int_0^{2\pi} d\theta x+e^{-i\theta}
@@ -3282,7 +3282,7 @@ rehypePlugins: [
 ```json
 {
   "remark-math": "^6.0.0",
-  "rehype-katex": "^7.0.0", 
+  "rehype-katex": "^7.0.0",
   "katex": "^0.16.9"
 }
 ```
@@ -3593,7 +3593,7 @@ The theme includes a comprehensive interactive Force-Graph implementation using 
 
 **Graph Controls**:
 - **Pan and zoom**: Mouse wheel zoom, drag to pan (on empty space)
-- **Keyboard shortcuts**: 
+- **Keyboard shortcuts**:
   - `Escape`: Close modal
   - `R`: Reset zoom and center
   - `C`: Center graph (fit to view)
@@ -4201,7 +4201,7 @@ The comments are styled to match your theme automatically. If you see styling is
       window.initializeMyComponent();
     }
   });
-  
+
   window.swup.hooks.on('visit:end', () => {
     // ... other code ...
     if (window.initializeMyComponent) {
@@ -4232,7 +4232,7 @@ The comments are styled to match your theme automatically. If you see styling is
   ```typescript
   // ❌ WRONG - slug is deprecated
   url: `/posts/${post.slug}`,  // undefined!
-  
+
   // ✅ CORRECT - id is the modern API
   url: `/posts/${post.id}`,    // works correctly
   ```
@@ -4279,15 +4279,15 @@ The comments are styled to match your theme automatically. If you see styling is
   ```javascript
   // ❌ WRONG - This will NEVER match folder-based posts in Astro v6
   const isFolderBasedPost = post.id.includes('/') && post.id.endsWith('/index');
-  
+
   // ✅ CORRECT - Check if post has folder structure by other means
   // Option 1: Check if post has co-located images (not in attachments/)
   const isFolderBasedPost = post.data.image && !post.data.image.includes('attachments/');
-  
+
   // Option 2: Use a known list of folder-based posts
   const folderBasedPostIds = ['sample-folder-based-post', 'another-folder-post'];
   const isFolderBasedPost = folderBasedPostIds.includes(post.id);
-  
+
   // Option 3: Check file system (server-side only)
   const isFolderBasedPost = await checkIfPostHasFolderStructure(post.id);
   ```
@@ -4381,11 +4381,11 @@ The comments are styled to match your theme automatically. If you see styling is
   function setFavicon() {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const faviconUrl = prefersDark ? '/favicon-dark.png' : '/favicon-light.png';
-    
+
     // Remove existing favicon
     const existingFavicon = document.querySelector('link[rel="icon"]');
     if (existingFavicon) existingFavicon.remove();
-    
+
     // Add new favicon
     const faviconLink = document.createElement('link');
     faviconLink.rel = 'icon';
@@ -4400,7 +4400,7 @@ The comments are styled to match your theme automatically. If you see styling is
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setFavicon);
   ```
 - **DO NOT** modify existing theme logic - add favicon code separately
-- **DO NOT** use complex logic - keep it simple  
+- **DO NOT** use complex logic - keep it simple
 - **DO NOT** tie to localStorage - system theme only
 - **Files**: Use `.png` format (matches existing favicon files)
 - **Behavior**: Favicon reflects OS/browser theme preference, ignores website theme toggle

@@ -47,8 +47,8 @@ pnpm build
 ## Configuration
 
 > [!Important] Important
-> If you're using Obsidian, you may be able to skip most of this and just jump in with the Astro Modular Settings Obsidian plugin. It has a wizard that walks you through site setup on startup and lets you tweak and manage practically everything covered here. 
-> 
+> If you're using Obsidian, you may be able to skip most of this and just jump in with the Astro Modular Settings Obsidian plugin. It has a wizard that walks you through site setup on startup and lets you tweak and manage practically everything covered here.
+>
 > If this applies to you, you can jump right to the [Content Structure](docs/configuration.md#Content%20Structure) section.
 
 ### Core Settings
@@ -74,14 +74,14 @@ Select theme and layout options in the config:
 ```typescript
 // Global Settings
 theme: "oxygen",
-customThemeFile: "custom", 
-availableThemes: "all", 
+customThemeFile: "custom",
+availableThemes: "all",
 fonts: {
   source: "local",
   families: {
     body: "Inter",
     heading: "Inter",
-    mono: "JetBrains Mono", 
+    mono: "JetBrains Mono",
   },
   display: "swap",
 },
@@ -116,7 +116,7 @@ You can create your own custom themes by:
 
 1. **Rename the template**: Rename `src/themes/custom/custom.ts` to whatever you want
 2. **Modify colors**: Update the color scales to match your design
-3. **Update config**: 
+3. **Update config**:
    - Set `theme: "custom"` in `src/config.ts`
    - Set `customThemeFile: "your-theme-name"` (filename without .ts extension)
 4. **Test**: Use `pnpm dev` to see your theme changes in real-time
@@ -134,7 +134,7 @@ fonts: {
   source: "local", // "local" for self-hosted fonts, "cdn" for Google Fonts CDN
   families: {
     body: "Inter",      // Body text font family
-    heading: "Inter",   // Heading font family  
+    heading: "Inter",   // Heading font family
     mono: "JetBrains Mono", // Monospace font family
   },
   display: "swap", // Font loading strategy: "swap", "fallback", or "optional"
@@ -465,7 +465,7 @@ src/content/
 Special index pages are handled by the `special` content collection in `src/content/special/`:
 
 - **`home.md`** - Homepage blurb content
-- **`404.md`** - 404 error page  
+- **`404.md`** - 404 error page
 - **`posts.md`** - Posts index page (title, description, H1)
 - **`projects.md`** - Projects index page content
 - **`docs.md`** - Documentation index page content
@@ -529,9 +529,9 @@ Since the post title is hardcoded as H1, your content should start with H2 headi
 
 You can also create folder-based posts, as you can see here: [Sample Folder-Based Post](sample-folder-based-post/index.md). The base filename is `index.md` and the parent folder filename serves as the slug of the post.
 
-## Creating Pages 
+## Creating Pages
 
-The About page represents a standard page you can duplicate easily. Its frontmatter looks like this: 
+The About page represents a standard page you can duplicate easily. Its frontmatter looks like this:
 
 ```markdown
 ---
@@ -553,7 +553,7 @@ H1s are hardcoded from the title frontmatter like posts, but pages get a unique 
 
 The Contact page has an optional form embedded into it, which leads to the Thank You page when filled out. It's preconfigured to work with Netlify out of the box, you just have to [enable form detection](https://docs.netlify.com/manage/forms/setup/) on your project.
 
-An optional Privacy Policy page can be edited or removed by deleting it if you don't want it. 
+An optional Privacy Policy page can be edited or removed by deleting it if you don't want it.
 
 `special/home.md` controls what goes on the homepage blurb. Adding content to `special/404.md` will display on any "not found" page.
 
@@ -569,7 +569,7 @@ date: {{date}}
 categories: ["Web Development", "Open Source"]
 repositoryUrl: "https://github.com/username/repo"
 projectUrl: "https://your-project.com"
-status: "completed"  # "in-progress" or "completed"
+status: "released"  # "in-progress" or "released"
 image: "cover.jpg"
 imageAlt: "Project screenshot"
 hideCoverImage: false

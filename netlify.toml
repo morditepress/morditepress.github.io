@@ -224,6 +224,12 @@
   force = true
 
 [[redirects]]
+  from = "/projects/the-vagrants-guide-to-surviving-the-wild"
+  to = "/projects/the-vagrants-guide-to-surviving-the-wild-release"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/projects/obsidian-astro-suite"
   to = "/projects/vault-cms"
   status = 301
