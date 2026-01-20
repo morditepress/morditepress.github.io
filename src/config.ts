@@ -233,7 +233,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:FOOTER_ENABLED]
     enabled: true,
     // [CONFIG:FOOTER_CONTENT]
-    content: `© ${new Date().getFullYear()} Mordite Press`,
+    content: `© ${new Date().getFullYear()} <a href="/about" title="About Mordite Press">Mordite Press</a>`,
     // [CONFIG:FOOTER_SHOW_SOCIAL_ICONS]
     showSocialIconsInFooter: false,
   },
@@ -314,10 +314,7 @@ export const siteConfig: SiteConfig = {
     showMobileMenu: true,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
-      { title: "Posts", url: "/posts/", children: [
-        { title: "View All"},
-        { title: 'Torchbearer', url: "https://www.mordite.press"}
-      ] },
+      { title: "Posts", url: "/posts/"},
       { title: "Projects", url: "/projects", children: [
         { title: 'The Vagrant\'s Guide to Surviving the Wild', url: '/projects/the-vagrants-guide-to-surviving-the-wild-release'},
         { title: 'The Grind Turn 3: Hell or Highwater', url: 'https://www.mordite.press/the-grind-3-hell-or-highwater'},
@@ -328,7 +325,8 @@ export const siteConfig: SiteConfig = {
         { title: 'Fearless and Freebooting', url: 'https://www.mordite.press/fearless-and-freebooting'},
       ] },
       { title: "Docs", url: "/docs/" },
-      { title: "About", url: "/about/"},
+      { title: "Archives", url: "https://www.mordite.press"},
+      // { title: "About", url: "/about/"},
         // children: [
         //   { title: "Privacy Policy", url: "/privacy-policy/" }
         // ] },
