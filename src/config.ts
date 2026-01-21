@@ -186,7 +186,7 @@ export const siteConfig: SiteConfig = {
   // Github repo name
   base: '/',
   // [CONFIG:SITE_TITLE]
-  title: "mordite press",
+  title: "Mordite Press",
   // [CONFIG:SITE_DESCRIPTION]
   description: "Tabletop role-playing games and misadventures. Seattle - Boston - Argentina - Ireland.",
   // [CONFIG:SITE_AUTHOR]
