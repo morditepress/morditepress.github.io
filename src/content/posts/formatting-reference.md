@@ -379,18 +379,18 @@ Use <kbd>Cmd</kbd> + <kbd>K</kbd> to open the command palette.
 These buttons use your existing color palette and adapt perfectly to light/dark themes. Wrap them in internal or external links if you prefer:
 
 <div class="btn-group my-8">
-  <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-primary">Primary Action</button></a>
-  <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-secondary">Secondary</button></a>
-    <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-outline">Outlined</button></a>
-      <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-ghost">Subtle</button></a>
+  <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-primary">Primary Action</span></a>
+  <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-secondary">Secondary</span></a>
+    <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-outline">Outlined</span></a>
+      <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-ghost">Subtle</span></a>
 </div>
 
 ```html
 <div class="btn-group-center my-8">
-  <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-primary">Primary Action</button></a>
-  <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-secondary">Secondary</button></a>
-    <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-outline">Outlined</button></a>
-      <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-ghost">Subtle</button></a>
+  <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-primary">Primary Action</span></a>
+  <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-secondary">Secondary</span></a>
+    <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-outline">Outlined</span></a>
+      <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-ghost">Subtle</span></a>
 </div>
 ```
 

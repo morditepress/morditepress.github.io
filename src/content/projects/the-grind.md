@@ -19,9 +19,9 @@ Available Now in PDF
 
 ![The Grind Front Cover](https://archive.mordite.press/hs-fs/hubfs/The%20Grind%20Front%20Cover.jpg?width=300&name=The%20Grind%20Front%20Cover.jpg)
 
- [![Get The Grind](https://no-cache.hubspot.com/cta/default/2068068/a3f9e9e5-1130-4657-bbd1-c52faa4522b4.png)](https://cta-redirect.hubspot.com/cta/redirect/2068068/a3f9e9e5-1130-4657-bbd1-c52faa4522b4) hbspt.cta.\_relativeUrls=true;hbspt.cta.load(2068068, 'a3f9e9e5-1130-4657-bbd1-c52faa4522b4', {"useNewLoader":"true","region":"na1"});
+<a href="https://cta-redirect.hubspot.com/cta/redirect/2068068/a3f9e9e5-1130-4657-bbd1-c52faa4522b4" class="no-styling no-underline" target="_blank"><span class="btn btn-primary">Get _The Grind_</span></a>
 
-\$10, 70 pages, _PDF_
+\$10, 70 pages, PDF
 
 From the minds that bring you Mordite Monday… comes a new zine, jam-packed with stories, one-page adventures, adventure ideas, monsters, items, town locations, NPCs, and oodles of content to expand your Torchbearer RPG campaign.
 
@@ -34,7 +34,8 @@ From the minds that bring you Mordite Monday… comes a new zine, jam-packed wit
 *   A Wild West hack called Dastards & Desperadoes. New weapons: Gatling gun, Sharps elephant rifle, the Winchester 1873, the Colt. New conflict type: Heist-hold up express trains or stick up banks. Setting agnostic-you can chose to mashup fantasy monsters and do battle with Black Dragons or keep it entirely historically accurate.
 *   And so much more...
 
- [![Get The Grind](https://no-cache.hubspot.com/cta/default/2068068/a3f9e9e5-1130-4657-bbd1-c52faa4522b4.png)](https://cta-redirect.hubspot.com/cta/redirect/2068068/a3f9e9e5-1130-4657-bbd1-c52faa4522b4) hbspt.cta.\_relativeUrls=true;hbspt.cta.load(2068068, 'a3f9e9e5-1130-4657-bbd1-c52faa4522b4', {"useNewLoader":"true","region":"na1"});
+<a href="https://cta-redirect.hubspot.com/cta/redirect/2068068/a3f9e9e5-1130-4657-bbd1-c52faa4522b4" class="no-styling no-underline" target="_blank"><span class="btn btn-primary">Get _The Grind_</span></a>
+
 
 ### **More on The Grind**
 
