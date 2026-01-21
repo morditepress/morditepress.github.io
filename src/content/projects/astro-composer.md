@@ -15,6 +15,7 @@ hideCoverImage: false
 hideTOC: false
 draft: false
 featured: false
+noIndex: true
 aliases:
   - obsidian-astro-composer
 ---

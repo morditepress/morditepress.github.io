@@ -16,6 +16,7 @@ hideCoverImage: false
 hideTOC: false
 draft: true
 featured: false
+noIndex: true
 aliases:
   - obsidian-astro-suite
 ---

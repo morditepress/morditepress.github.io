@@ -15,6 +15,7 @@ hideCoverImage: false
 hideTOC: false
 targetKeyword: astro blog quick start
 draft: false
+noIndex: true
 ---
 Welcome to Astro Modular! This quick start guide will get your blog running in minutes. Choose your preferred workflow [below](posts/getting-started.md#Choose%20Your%20Workflow).
 
