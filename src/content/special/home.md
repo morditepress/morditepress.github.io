@@ -1,9 +1,9 @@
 ---
-title: Mordite Press
+title: mordite press
 description: Tabletop role-playing games &amp; misadventures. Seattle - Boston - Argentina - Ireland.
 ---
 %%The title and description frontmatter properties won't be used - the site-wide meta title and descriptions are used instead.%%
 
-Welcome to Mordite Press's new site. We're still getting moved in.
+Welcome to mordite press's new site.
 
-In the meanwhile, check out our [blog post archive](https://archive.mordite.press).
+Looking for the old one? Check out our [blog post archive](https://archive.mordite.press).

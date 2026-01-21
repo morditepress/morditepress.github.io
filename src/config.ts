@@ -186,7 +186,7 @@ export const siteConfig: SiteConfig = {
   // Github repo name
   base: '/',
   // [CONFIG:SITE_TITLE]
-  title: "Mordite Press",
+  title: "mordite press",
   // [CONFIG:SITE_DESCRIPTION]
   description: "Tabletop role-playing games and misadventures. Seattle - Boston - Argentina - Ireland.",
   // [CONFIG:SITE_AUTHOR]
@@ -233,7 +233,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:FOOTER_ENABLED]
     enabled: true,
     // [CONFIG:FOOTER_CONTENT]
-    content: `© ${new Date().getFullYear()} <a href="/about" title="About Mordite Press">Mordite Press</a>`,
+    content: `© ${new Date().getFullYear()} <a href="/about" title="About Mordite Press">mordite press</a>`,
     // [CONFIG:FOOTER_SHOW_SOCIAL_ICONS]
     showSocialIconsInFooter: false,
   },
