@@ -15,7 +15,7 @@ imageOG: false
 hideCoverImage: false
 hideTOC: false
 targetKeyword:
-draft: true
+draft: false
 ---
 This post demonstrates all the markdown, extended markdown, and other embed features available in Astro Modular. Use this as both a reference guide and a showcase of what's possible.
 
@@ -107,7 +107,7 @@ You can make callouts collapsible by adding `+` (expanded by default) or `-` (co
 > [!quote]
 > Quote callouts can be used to highlight important quotes or references.
 
-### Callouts with Formatting 
+### Callouts with Formatting
 
 > [!example]
 > You can use markdown syntax in callout content like *italics*, **bolded text**, or [links](posts/formatting-reference.md#Media%20Content).
@@ -199,7 +199,7 @@ Here's an [external link](https://obsidian.md).
 
 ### Internal Links
 
-You can create internal links using double brackets (wikilinks) or with standard markdown. 
+You can create internal links using double brackets (wikilinks) or with standard markdown.
 
 For example: [[getting-started|Getting Started]] or [Astro Suite Obsidian Vault Guide (Astro Modular)](vault-cms-guide.md).
 
@@ -320,11 +320,11 @@ echo "Development server started on http://localhost:3000"
 ### Nested Quotes
 
 > This is a top-level quote.
-> 
+>
 > > This is a nested quote within the first quote.
-> > 
+> >
 > > > And this is a quote nested even deeper.
-> 
+>
 > Back to the top level.
 
 ## Horizontal Rules
@@ -396,7 +396,7 @@ These buttons use your existing color palette and adapt perfectly to light/dark 
 
 ## Works with Obsidian
 
-All of these formatting options should also appear in Obsidian, with some differences depending on the theme you use. 
+All of these formatting options should also appear in Obsidian, with some differences depending on the theme you use.
 
 ### Quick Reference
 

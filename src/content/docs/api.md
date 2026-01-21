@@ -9,7 +9,7 @@ image:
 imageAlt:
 hideCoverImage: false
 hideTOC: false
-draft: true
+draft: false
 featured: true
 aliases:
   - api-reference
