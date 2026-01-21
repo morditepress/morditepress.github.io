@@ -20,25 +20,29 @@ const getProfilePictureClasses = (size: string, style: string) => {
     case 'lg': sizeClasses = 'h-16'; break;
     default: sizeClasses = 'h-12'; // md
   }
-  
+
   let styleClasses = '';
   switch (style) {
     case 'circle': styleClasses = 'rounded-full object-cover border-2 border-primary-200 dark:border-primary-700'; break;
     case 'square': styleClasses = 'rounded-lg object-cover border-2 border-primary-200 dark:border-primary-700'; break;
     default: styleClasses = 'object-contain'; // none
   }
-  
+
   return `${sizeClasses} ${styleClasses}`;
 };
 ---
 
 <footer class="bg-white dark:bg-primary-950 mt-auto">
   <div class="mx-auto px-4 sm:px-6 lg:px-8 py-8" style={`max-width: ${siteConfig.layout.contentWidth}`}>
+
+
+  <div class="grid grid-cols-6 gap-1 mb-4">
+
     <!-- Profile picture above footer content when footer is enabled -->
     {showProfilePicture && footerEnabled && (
-      <div class="mb-4 flex justify-start">
+      <div class="col-span-1 flex justify-start">
         {profilePicture.url ? (
-          <a 
+          <a
             href={profilePicture.url}
             class="inline-block hover:opacity-80 transition-opacity"
             target={profilePicture.url.startsWith('http') ? '_blank' : undefined}
@@ -59,6 +63,8 @@ const getProfilePictureClasses = (size: string, style: string) => {
         )}
       </div>
     )}
+    <aside role="supplemental" id="newsletter-form" class="col-span-5"></aside>
+  </div>
 
     <!-- Mobile: Social icons above footer content, centered -->
     {showSocialIcons && (
@@ -78,13 +84,13 @@ const getProfilePictureClasses = (size: string, style: string) => {
         </div>
       </div>
     )}
-    
+
     <!-- Footer content and social icons on same line -->
     {footerEnabled && (
       <div class={`text-center ${showSocialIcons ? 'md:flex md:justify-between md:items-center' : ''}`}>
         <p class="text-xs text-primary-500 dark:text-primary-400" set:html={footerContent}>
         </p>
-        
+
         <!-- Desktop: Social icons on same line as footer content -->
         {showSocialIcons && (
           <div class="hidden md:flex items-center space-x-4">
@@ -110,7 +116,7 @@ const getProfilePictureClasses = (size: string, style: string) => {
         {showProfilePicture ? (
           <div class="flex justify-start">
             {profilePicture.url ? (
-              <a 
+              <a
                 href={profilePicture.url}
                 class="inline-block hover:opacity-80 transition-opacity"
                 target={profilePicture.url.startsWith('http') ? '_blank' : undefined}
@@ -131,7 +137,7 @@ const getProfilePictureClasses = (size: string, style: string) => {
             )}
           </div>
         ) : null}
-        
+
         <!-- Social icons: centered when no profile picture, or aligned when profile picture exists -->
         {showSocialIcons && (
           <div class={`flex items-center space-x-4 ${showProfilePicture ? 'hidden md:flex' : 'justify-center'}`}>
@@ -152,3 +158,15 @@ const getProfilePictureClasses = (size: string, style: string) => {
     )}
   </div>
 </footer>
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    cssClass: 'form-sleek',
+    target: '#newsletter-form',
+    portalId: "2068068",
+    formId: "dd3623b4-30a2-4090-ad86-7354cebd2515",
+    region: "na1",
+    submitButtonClass: "btn btn-primary"
+  });
+</script>
