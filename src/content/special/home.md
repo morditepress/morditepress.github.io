@@ -6,4 +6,4 @@ description: Tabletop role-playing games &amp; misadventures. Seattle - Boston -
 
 Welcome to Mordite Press's new site. We're still getting moved in.
 
-In the meanwhile, check out our [blog post archive](https://www.mordite.press).
+In the meanwhile, check out our [blog post archive](https://archive.mordite.press).
