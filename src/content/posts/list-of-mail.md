@@ -2,7 +2,7 @@
 title: "List of Mail"
 description: "A helpful homunculus will appear to alert you of Mordite developments."
 date: 2020-02-17
-categories:
+tags:
   - "Mordite Mondays"
 status: released
 image: "[[https://cdn2.hubspot.net/hubfs/2068068/Mordite%20Mail.png]]"
