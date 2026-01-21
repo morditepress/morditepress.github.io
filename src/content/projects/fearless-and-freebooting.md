@@ -8,7 +8,7 @@ categories:
   - "Torchbearer Sagas"
 status: released
 image: "[[https://cdn2.hubspot.net/hubfs/2068068/Fear-and-Free-cover_300.jpg]]"
-imageAlt: "Fear-and-Free-cover_300"
+imageAlt: "Fearless and Freebooting cover"
 hideCoverImage: false
 hideTOC: true
 draft: false

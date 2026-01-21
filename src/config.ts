@@ -325,7 +325,7 @@ export const siteConfig: SiteConfig = {
         { title: 'Fearless and Freebooting', url: '/projects/fearless-and-freebooting'},
       ] },
       { title: "Docs", url: "/docs/" },
-      { title: "Archives", url: "https://www.mordite.press"},
+      { title: "Archives", url: "https://archive.mordite.press"},
       // { title: "About", url: "/about/"},
         // children: [
         //   { title: "Privacy Policy", url: "/privacy-policy/" }

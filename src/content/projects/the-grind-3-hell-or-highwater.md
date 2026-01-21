@@ -27,21 +27,21 @@ Behold! _**The Grind Turn 3: Hell or Highwater**_ brings adventurers to the beat
 
 Highwater is the capital of the Kingdom of Feudor and the seat of King Benevolent IV. A bustling metropolis, its treasures and mysteries are spoken of far and wide. Throngs of people push through the streets and intrigue abounds. From palace-lined thoroughfares to maze-like slums and festering sewers, adventure lurks around every corner and whispers of conspiracy flit through every shadowed alley. Lose yourself and revel among the clinking coins and well-cobbled streets, rub shoulders with the high-and-mighty or slink across darkened rooftops with the secretive Thieves' Guild, but above all try to survive…
 
-The city of Highwater, and the adventures contained within this zine, can be dropped into your home setting whenever your players are drawn to the machinations of a bustling metropolis.[](https://www.kickstarter.com/projects/1022527423/the-grind-turn-3-hell-or-highwater-0)
+The city of Highwater, and the adventures contained within this zine, can be dropped into your home setting whenever your players are drawn to the machinations of a bustling metropolis.
 
 **The Grind Turn 3**
 
 *   56 pages
 *   Black & white art throughout
 *   Adventures designed for Torchbearer RPG
-    
+
 *   Additional Town locations
-    
+
 *   Factions and schemes to drop into your homebrew campaign
-    
+
 *   New Treasures and Magic Items
-    
+
 *   Plus new GM tools and charts
-    
+
 
 The Grind Turn 3 was a part of Zine Quest from Feb 1 - 15, 2021. [View the Kickstarter campaign page.](https://www.kickstarter.com/projects/1022527423/the-grind-turn-3-hell-or-highwater-0)

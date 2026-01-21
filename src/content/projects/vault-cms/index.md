@@ -15,7 +15,7 @@ imageAlt: Blue glaciers and mountains.
 hideCoverImage: false
 hideTOC: false
 draft: true
-featured: true
+featured: false
 aliases:
   - obsidian-astro-suite
 ---
@@ -105,6 +105,6 @@ The suite is built on Obsidian's plugin ecosystem and designed to work with Astr
 
 This project is actively maintained and provides a complete solution for Obsidian-based content management with Astro publishing workflows. The suite is designed to work seamlessly with the above examples and [Astro Modular](https://github.com/davidvkimball/astro-modular) but can be integrated into any Astro project.
 
-<a href="https://github.com/davidvkimball/vault-cms" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">  
-    View Project  
+<a href="https://github.com/davidvkimball/vault-cms" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">
+    View Project
   </button></a>

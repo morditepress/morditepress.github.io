@@ -15,7 +15,7 @@ hideTOC: true
 draft: false
 featured: false
 ---
-T_he Delver's Guide to Surviving the Underworld_ is a FREE expansion to _The Vagrant's Guide,_ brought to you by Jared Sorensen of [Memento Mori Theatricks.](http://www.memento-mori.com/) If you backed the Kickstarter or bought a PDF of Vagrants, it should already be available in your DriveThruRPG downloads alongside the parent tome.
+_The Delver's Guide to Surviving the Underworld_ is a FREE expansion to _The Vagrant's Guide,_ brought to you by Jared Sorensen of [Memento Mori Theatricks.](http://www.memento-mori.com/) If you backed the Kickstarter or bought a PDF of Vagrants, it should already be available in your DriveThruRPG downloads alongside the parent tome.
 
 ![Delvers Cover](https://archive.mordite.press/hs-fs/hubfs/Delvers%20Cover.png?width=1253&name=Delvers%20Cover.png)
 

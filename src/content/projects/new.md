@@ -9,8 +9,8 @@ image: "[[attachments/rock.png]]"
 imageAlt: Gray, rocky wall
 hideCoverImage: false
 hideTOC: true
-draft: false
-featured: true
+draft: true
+featured: false
 aliases:
   - new-releases
 ---

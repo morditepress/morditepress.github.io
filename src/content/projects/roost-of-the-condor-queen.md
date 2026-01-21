@@ -8,7 +8,7 @@ categories:
   - "Torchbearer Sagas"
 status: released
 image: "[[https://cdn2.hubspot.net/hubfs/2068068/roost-of-the-condor-queen-torchbearer.jpg]]"
-imageAlt: "roost-of-the-condor-queen-torchbearer"
+imageAlt: "Roost of the Condor Queen Torchbearer"
 hideCoverImage: false
 hideTOC: true
 draft: false

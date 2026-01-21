@@ -14,7 +14,7 @@ imageAlt: Gray, rocky wall
 hideCoverImage: false
 hideTOC: false
 draft: true
-featured: true
+featured: false
 aliases:
   - obsidian-astro-composer
 ---
@@ -81,6 +81,6 @@ Astro Composer is not yet available in the Community plugins section. Install us
 
 This project is actively maintained and in-progress. The latest version includes robust automation features, comprehensive configuration options for various Astro workflows, and support for multiple content types beyond just posts.
 
-<a href="https://github.com/davidvkimball/obsidian-astro-composer" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">  
-    View Project  
+<a href="https://github.com/davidvkimball/obsidian-astro-composer" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">
+    View Project
   </button></a>
