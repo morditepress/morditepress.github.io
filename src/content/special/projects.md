@@ -1,5 +1,6 @@
 ---
 title: Projects
-description: View all related projects.
+description: All Mordite Press releases.
 ---
-Related projects.
+
+All Mordite Press releases.

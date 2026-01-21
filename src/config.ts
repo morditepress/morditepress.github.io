@@ -314,8 +314,9 @@ export const siteConfig: SiteConfig = {
     showMobileMenu: true,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
-      { title: "Posts", url: "/posts/"},
+      { title: "Posts", url: "/posts"},
       { title: "Projects", url: "/projects", children: [
+        { title: 'View All', url: '/projects' },
         { title: 'The Grind Turn 3: Hell or Highwater', url: '/projects/the-grind-3-hell-or-highwater'},
         { title: 'The Grind Turn 2: Mistvale Nights', url: '/projects/the-grind-turn-2'},
         { title: 'The Delver\'s Guide to Surviving the Underworld', url: '/projects/the-delvers-guide-to-surviving-the-underworld'},
@@ -324,7 +325,7 @@ export const siteConfig: SiteConfig = {
         { title: 'Roost of the Condor Queen', url: '/projects/roost-of-the-condor-queen'},
         { title: 'Fearless and Freebooting', url: '/projects/fearless-and-freebooting'},
       ] },
-      { title: "Docs", url: "/docs/" },
+      { title: "Docs", url: "/docs" },
       { title: "Archives", url: "https://archive.mordite.press"},
       // { title: "About", url: "/about/"},
         // children: [
