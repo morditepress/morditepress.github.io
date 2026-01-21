@@ -3,12 +3,7 @@ title: Formatting Reference
 date: 2025-09-07
 description: Explore all the markdown, extended markdown, and other embed features available in this blog theme.
 tags:
-  - markdown
-  - formatting
-  - tutorial
-  - reference
-  - meta
-  - blog
+  - Astro
 image: "[[attachments/mountains.png]]"
 imageAlt: Mountains and water.
 imageOG: false

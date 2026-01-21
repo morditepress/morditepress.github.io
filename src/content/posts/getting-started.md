@@ -3,11 +3,7 @@ title: Getting Started
 date: 2025-09-06
 description: Quick start guide for Astro Modular - get your blog running in minutes.
 tags:
-  - tutorial
-  - setup
-  - quick-start
-  - astro
-  - blog
+  - Astro
 image: "[[attachments/sunset.png]]"
 imageAlt: Sunset skyline.
 imageOG: true

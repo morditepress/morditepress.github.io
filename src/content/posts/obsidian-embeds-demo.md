@@ -3,9 +3,7 @@ title: Obsidian Embeds Demo
 date: 2025-09-09
 description: Demonstration of Obsidian-style embeds.
 tags:
-  - obsidian
-  - tutorial
-  - formatting
+  - Astro
 image: "[[attachments/galaxy.png]]"
 imageAlt: Galaxy
 imageOG: false
