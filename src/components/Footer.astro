@@ -40,7 +40,7 @@ const getProfilePictureClasses = (size: string, style: string) => {
 
     <!-- Profile picture above footer content when footer is enabled -->
     {showProfilePicture && footerEnabled && (
-      <div class="col-span-1 flex justify-start">
+      <div class="col-span-6 md:col-span-1 flex justify-start">
         {profilePicture.url ? (
           <a
             href={profilePicture.url}
@@ -63,7 +63,7 @@ const getProfilePictureClasses = (size: string, style: string) => {
         )}
       </div>
     )}
-    <aside role="supplemental" id="newsletter-form" class="col-span-5"></aside>
+    <aside role="supplemental" id="newsletter-form" class="col-span-6 md:col-span-5"></aside>
   </div>
 
     <!-- Mobile: Social icons above footer content, centered -->
