@@ -233,7 +233,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:FOOTER_ENABLED]
     enabled: true,
     // [CONFIG:FOOTER_CONTENT]
-    content: `© ${new Date().getFullYear()} <a href="/about" title="About Mordite Press">mordite press</a>`,
+    content: `© ${new Date().getFullYear()} <a href="/about" title="About Mordite Press">Mordite Press</a>`,
     // [CONFIG:FOOTER_SHOW_SOCIAL_ICONS]
     showSocialIconsInFooter: false,
   },

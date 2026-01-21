@@ -1,6 +1,6 @@
 ---
 title: Projects
-description: All Mordite Press releases.
+description: View all Mordite Press releases.
 ---
 
-All Mordite Press releases.
+All our tabletop role-playing games and misadventures.
