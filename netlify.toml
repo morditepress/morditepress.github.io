@@ -146,18 +146,6 @@
 # Generated redirects from content aliases
 
 [[redirects]]
-  from = "/contact-me"
-  to = "/contact"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/contact-us"
-  to = "/contact"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/privacy"
   to = "/privacy-policy"
   status = 301

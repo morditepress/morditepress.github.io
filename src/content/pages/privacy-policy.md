@@ -3,7 +3,7 @@ title: Privacy Policy
 description: This privacy policy explains how your information is collected, used, and protected when you visit this website.
 noIndex: true
 hideTOC: false
-draft: true
+draft: false
 aliases:
   - privacy
 ---
@@ -75,7 +75,7 @@ We use both Session and Persistent Cookies for the purposes set out below:
     - Type: Persistent Cookies
     - Administered by: Us
     - Purpose: These Cookies identify if users have accepted the use of cookies on the Website.
-    
+
 - **Functionality Cookies**
     - Type: Persistent Cookies
     - Administered by: Us

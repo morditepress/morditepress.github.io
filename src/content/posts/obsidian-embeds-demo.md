@@ -12,7 +12,7 @@ imageOG: false
 hideCoverImage: false
 hideTOC: false
 targetKeyword: obsidian embeds
-draft: true
+draft: false
 aliases:
   - mermaid-test
   - mermaid-diagram-test
@@ -64,11 +64,11 @@ filters:
     - file.ext == "md"
 formulas:
   Slug: |-
-    if(file.folder == "posts", "/posts/" + file.name.replace(".md", ""), 
-      if(file.folder == "pages", "/" + file.name.replace(".md", ""), 
-        if(file.folder == "special", if(file.name.replace(".md", "") == "home", "/", "/" + file.name.replace(".md", "")), 
-          if(file.folder == "projects", "/projects/" + file.name.replace(".md", ""), 
-            if(file.folder == "docs", "/docs/" + file.name.replace(".md", ""), 
+    if(file.folder == "posts", "/posts/" + file.name.replace(".md", ""),
+      if(file.folder == "pages", "/" + file.name.replace(".md", ""),
+        if(file.folder == "special", if(file.name.replace(".md", "") == "home", "/", "/" + file.name.replace(".md", "")),
+          if(file.folder == "projects", "/projects/" + file.name.replace(".md", ""),
+            if(file.folder == "docs", "/docs/" + file.name.replace(".md", ""),
               "/" + file.folder)))))
   Content Folder: |-
     if(file.name == "index",
@@ -174,7 +174,7 @@ views:
 
 ```
 
-By adding a `limit` under `views` you can limit the number of items that appear. 
+By adding a `limit` under `views` you can limit the number of items that appear.
 
 ```base
 views:
@@ -277,13 +277,13 @@ Math works perfectly within callouts:
 > [!note] Mathematical Proof
 > The Pythagorean theorem states that for a right triangle:
 > $$a^2 + b^2 = c^2$$
-> 
+>
 > Where $c$ is the hypotenuse and $a$ and $b$ are the other two sides.
 
 > [!tip] Integration by Parts
 > The formula for integration by parts is:
 > $$\int u \, dv = uv - \int v \, du$$
-> 
+>
 > This is particularly useful for integrals involving products of functions.
 
 ### Advanced Mathematical Typesetting
@@ -322,14 +322,14 @@ You can mix math with regular text seamlessly. For example, the quadratic formul
 All math notation works identically in Obsidian and your published blog:
 
 - **Inline math**: `$...$` syntax
-- **Display math**: `$$...$$` syntax  
+- **Display math**: `$$...$$` syntax
 - **LaTeX commands**: Full support for standard LaTeX math commands
 - **Greek letters**: Use `\alpha`, `\beta`, etc.
-- **Symbols**: Use `\sum`, `\int`, `\infty`, etc. 
+- **Symbols**: Use `\sum`, `\int`, `\infty`, etc.
 
 ## Diagrams
 
-This section reproduces some Mermaid diagram examples for convenience. 
+This section reproduces some Mermaid diagram examples for convenience.
 
 ### Flowchart
 

@@ -13,7 +13,7 @@ image: "[[attachments/rock.png]]"
 imageAlt: Gray, rocky wall
 hideCoverImage: false
 hideTOC: false
-draft: true
+draft: false
 featured: false
 aliases:
   - obsidian-astro-composer

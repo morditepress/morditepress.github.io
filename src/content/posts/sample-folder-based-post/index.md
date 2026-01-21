@@ -11,7 +11,7 @@ imageOG: false
 hideCoverImage: false
 hideTOC: true
 targetKeyword: ""
-draft: true
+draft: false
 ---
 This is a test post to demonstrate how the folder-based approach works. The folder name `sample-folder-post` should become the slug for this post.
 
@@ -21,13 +21,13 @@ Here's an image that should be stored in the same folder:
 
 ![Forest.](forest.png)
 
-Standard markdown image embed: 
+Standard markdown image embed:
 
 ```
 ![Forest.](forest.png)
 ```
 
-Wikilink image embed: 
+Wikilink image embed:
 
 ```
 ![[forest.png]]
