@@ -3,10 +3,8 @@ title: "The Grind"
 description: "A Wicked Dope Torchbearer RPG Zine"
 date: 2019-01-25
 categories:
-  - "Products"
   - "Torchbearer"
   - "Grind"
-  - "Torchbearer Sagas"
 status: released
 image: "[[https://cdn2.hubspot.net/hubfs/2068068/The%20Grind%20Front%20Cover.jpg]]"
 imageAlt: "The Grind Front Cover"

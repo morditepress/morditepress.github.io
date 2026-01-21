@@ -3,10 +3,8 @@ title: "The Grind Turn 2: Mistvale Nights"
 description: "The Grind Zine returns! In this issue we explore the gothic realm of Darkovia and its cursed town of Mistvale. The new 'Towns & Treasures' format collects many smaller adventure sites around a single town—the ideal setup for a Torchbearer mini-campaign!"
 date: 2020-12-14
 categories:
-  - "Products"
   - "Torchbearer"
   - "Grind"
-  - "Torchbearer Sagas"
 status: released
 image: "[[https://cdn2.hubspot.net/hubfs/2068068/grind-2-mistvale-nights.jpg]]"
 imageAlt: "Image for The Grind Turn 2: Mistvale Nights"

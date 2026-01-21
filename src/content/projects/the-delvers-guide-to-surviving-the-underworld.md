@@ -3,10 +3,8 @@ title: "The Delver's Guide to Surviving the Underworld"
 description: "The Delver's Guide to Surviving the Underworld is a FREE expansion to The Vagrant's Guide. "
 date: 2020-09-21
 categories:
-  - "Products"
   - "Vagrant's Guide"
   - "Torchbearer"
-  - "Torchbearer Sagas"
 status: released
 image: "[[https://f.hubspotusercontent10.net/hubfs/2068068/Delvers%20Cover.png]]"
 imageAlt: "Image for The Delver's Guide to Surviving the Underworld"

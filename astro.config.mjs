@@ -91,7 +91,6 @@ export default defineConfig({
   '/posts/astro-suite-obsidian-vault-guide-astro-modular': '/posts/vault-cms-guide',
   '/posts/obsidian-vault-guide': '/posts/vault-cms-guide',
   '/projects/obsidian-astro-composer': '/projects/astro-composer',
-  '/projects/new-releases': '/projects/new',
   '/projects/the-vagrants-guide-to-surviving-the-wild': '/projects/the-vagrants-guide-to-surviving-the-wild-release',
   '/projects/obsidian-astro-suite': '/projects/vault-cms',
   '/docs/api-reference': '/docs/api',

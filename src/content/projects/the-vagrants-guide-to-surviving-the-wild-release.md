@@ -3,7 +3,8 @@ title: "The Vagrant’s Guide to Surviving the Wild"
 description: A New Torchbearer Sagas Rulebook for Travelers in the Wilderness
 date: 2020-03-01
 categories:
-  - Projects
+  - "Vagrant's Guide"
+  - "Torchbearer"
 status: released
 image: "[[attachments/vagrants-attack-card.png]]"
 imageAlt: "Attack card in The Vagrant’s Guide to Surviving the Wild"
