@@ -36,15 +36,15 @@ import { siteConfig } from '../config';
     imageParagraphs.forEach((paraInfo) => {
       const { paragraph, imageCount } = paraInfo;
 
-      // Process paragraphs with 1 or more images
-      if (imageCount >= 1) {
+      // Process paragraphs with 2 or more images
+      if (imageCount >= 2) {
 
         // Create gallery container
         const galleryContainer = document.createElement('div');
 
-        if (imageCount === 1) {
-          galleryContainer.className = 'image-grid image-grid-1 my-2';
-        } else if (imageCount === 2) {
+        // if (imageCount === 1) {
+        //   galleryContainer.className = 'image-grid image-grid-1 my-2';
+        if (imageCount === 2) {
           galleryContainer.className = 'image-grid image-grid-2 my-8';
         } else if (imageCount === 3) {
           galleryContainer.className = 'image-grid image-grid-3 my-8';
