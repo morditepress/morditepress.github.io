@@ -11,6 +11,7 @@ hideCoverImage: false
 hideTOC: false
 draft: false
 featured: true
+noIndex: true
 aliases:
   - api-reference
 ---
