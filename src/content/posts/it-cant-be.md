@@ -5,7 +5,7 @@ date: 2026-02-01
 tags:
   - Mordite Mondays
 status: released
-image: "[[Camp_240628_inverted.jpg]]"
+image: "[[attachments/Camp_240628_inverted.jpg]]"
 imageAlt: Looters recovering in camp after a battle
 hideCoverImage: false
 hideTOC: true
