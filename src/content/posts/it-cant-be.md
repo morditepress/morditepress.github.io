@@ -24,7 +24,7 @@ The world has gone sour. When I started this blog, it was still possible to see 
 
 Now, my treasured sobriquet "Lord Mordeth" is an emblem of what I detest: Lordship. Conquest. Bloody-minded grasping. This costume chafes.
 
-My valediction, "Chaos Reigns" has become manifest, and I am filled with regret. Perhaps I'll find another, in time.
+My valediction, "Chaos Reigns" has become perversely manifest, and I am filled with regret. Perhaps I'll find another, in time.
 
 My tools have betrayed me. The internet was once a spectacular drive down a coastal highway. Now I sit in gridlocked traffic, struggling to accomplish that which was effortless before. 
 
