@@ -10,7 +10,7 @@ imageOG: false
 hideCoverImage: false
 hideTOC: false
 targetKeyword: obsidian embeds
-draft: false
+draft: true
 noIndex: true
 aliases:
   - mermaid-test
