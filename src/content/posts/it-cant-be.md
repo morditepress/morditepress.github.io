@@ -14,7 +14,7 @@ featured: false
 ---
 Who is this piteous creature with its sunken eyes, its long coat spattered with mud from clambering over ditches and fording streams— searching, ever searching?
 
-Why, it's the MORDITE PRESS BLOG!
+Why, it's the **MORDITE PRESS BLOG**!
 
 --- 
 
@@ -40,7 +40,7 @@ So I renounced it and returned to the table. I picked up the dice, and I rolled 
 
 *We're still telling our stories, and they must be ours to tell.*
 
-Until today, this was a blog focused on a single game which I liked very much. It may be disappointing to some that I'm no longer writing for Torchbearer. All that work is still there; I will keep it for you. 
+Until today, this was a blog focused on a single game which I liked very much. It may be disappointing to some that I'm no longer writing for Torchbearer. All that work is still there; [I will keep it for you.](archive.mordite.press) 
 
 I imagine that if you like the Mordite Mondays blog, you'll find value in the things to come. I'm still playing games, reading and writing games. And it's become crystal clear that we need more places, honest places, to connect with games.
 
