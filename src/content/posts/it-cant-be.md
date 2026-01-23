@@ -5,13 +5,14 @@ date: 2026-02-01
 tags:
   - Mordite Mondays
 status: released
-image: "[[https://cdn2.hubspot.net/hubfs/2068068/Mordite%20Mail.png]]"
-imageAlt: Image for List of Mail
+image: "[[Camp_240628_inverted.jpg]]"
+imageAlt: Looters recovering in camp after a battle
 hideCoverImage: false
 hideTOC: true
 draft: false
 featured: false
 ---
+![[Camp_240628_inverted.jpg]]
 Who is this piteous creature with its sunken eyes, its long coat spattered with mud from clambering over ditches and fording streams— searching, ever searching?
 
 Why, it's the **MORDITE PRESS BLOG**!
