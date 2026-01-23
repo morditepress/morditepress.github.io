@@ -26,7 +26,7 @@ Now, my treasured sobriquet "Lord Mordeth" is an emblem of what I detest: Lordsh
 
 My valediction, "Chaos Reigns" has become manifest, and I am filled with regret. Perhaps I'll find another, in time.
 
-My tools have betrayed me. The internet was once a spectacular drive down a coastal highway. Now I sit in gridlocked traffic, struggling to accomplish that which seemed effortless. 
+My tools have betrayed me. The internet was once a spectacular drive down a coastal highway. Now I sit in gridlocked traffic, struggling to accomplish that which was effortless before. 
 
 The places where we met and joyously discussed our arts have been dismantled and sold off, brick by brick. I can see now how they *cursed* me; they made me something I'm not, and never wanted to be. 
 
@@ -40,6 +40,8 @@ So I renounced it and returned to the table. I picked up the dice, and I rolled 
 
 *We're still telling our stories, and they must be ours to tell.*
 
-Until today, this was a blog focused on a single game which I liked very much. It may be disappointing to some that I'm no longer writing for Torchbearer. I imagine that if you like the Mordite Mondays blog, you'll find value in the things to come. I'm still playing games, reading and writing games. And it's become crystal clear that we need more places, honest places, to connect with games.
+Until today, this was a blog focused on a single game which I liked very much. It may be disappointing to some that I'm no longer writing for Torchbearer. All that work is still there; I will keep it for you. 
+
+I imagine that if you like the Mordite Mondays blog, you'll find value in the things to come. I'm still playing games, reading and writing games. And it's become crystal clear that we need more places, honest places, to connect with games.
 
 I'm Owen. It's nice to meet you.
