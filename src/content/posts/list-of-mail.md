@@ -19,7 +19,3 @@ Loyal followers, we have more projects in the works than ever! If you want to st
 We have no interest in spamming you or letting anyone else use your email. This I pledge: we will announce new blog posts, products, and campaigns, and trouble you no more.
 
 Enter your email into the profane contract in the footer below. You will be called upon when the time is right.
-
-_chaos reigns_
-
-lord mordeth
