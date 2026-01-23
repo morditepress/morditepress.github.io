@@ -1,7 +1,7 @@
 ---
 title: It Can't Be!
 description: On old friend returns from a long journey.
-date: 2020-02-17
+date: 2026-02-01
 tags:
   - Mordite Mondays
 status: released
@@ -44,4 +44,4 @@ Until today, this was a blog focused on a single game which I liked very much. I
 
 I imagine that if you like the Mordite Mondays blog, you'll find value in the things to come. I'm still playing games, reading and writing games. And it's become crystal clear that we need more places, honest places, to connect with games.
 
-I'm Owen. It's nice to meet you.
+I'm Owen. It's nice to see you again.
