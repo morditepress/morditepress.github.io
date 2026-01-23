@@ -188,23 +188,23 @@ body.hider-tabs .home-base-sticky-icon {
    Settings Tab Styles
    ======================================== */
 
-/* File suggester styling - scoped to home base settings only */
-.home-base-settings-compat .suggestion-title {
+/* File suggester styling */
+.suggestion-title {
 	font-weight: 500;
 }
 
-.home-base-settings-compat .suggestion-path {
+.suggestion-path {
 	color: var(--text-muted);
 	margin-left: 4px;
 }
 
-.home-base-settings-compat .suggestion-note {
+.suggestion-note {
 	color: var(--text-faint);
 	font-family: var(--font-monospace);
 	font-size: var(--font-smaller);
 }
 
-.home-base-settings-compat .suggestion-flair {
+.suggestion-flair {
 	display: inline-block;
 	padding: 1px 4px;
 	margin-left: 8px;
