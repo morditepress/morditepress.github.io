@@ -5,7 +5,7 @@
   "leftTabHeaders": "show",
   "rightTabHeaders": "show",
   "ribbonRevealOnHover": false,
-  "vaultSwitcher": "show",
+  "vaultSwitcher": "reveal",
   "helpButton": "show",
   "settingsButton": "show",
   "tabBar": false,
@@ -28,9 +28,9 @@
   "tooltips": false,
   "searchSuggestions": false,
   "searchTermCounts": false,
-  "propertiesInReadingView": false,
-  "propertiesInHeading": false,
-  "addPropertyButton": false,
+  "propertiesInReadingView": true,
+  "propertiesInHeading": true,
+  "addPropertyButton": true,
   "deemphasizeProperties": false,
   "instructions": false,
   "mobileChevronsIcon": false,
@@ -52,12 +52,12 @@
   "vaultSwitcherBackgroundTransparency": 1,
   "helpButtonReplacement": {
     "enabled": false,
-    "commandId": "",
+    "commandId": "ui-tweaker:open-settings",
     "iconId": "wrench"
   },
   "syncButtonReplacement": {
-    "enabled": false,
-    "commandId": "",
+    "enabled": true,
+    "commandId": "ui-tweaker:open-settings",
     "iconId": "wrench"
   },
   "tabBarCommands": [
@@ -77,14 +77,27 @@
       "name": "plugin-editor-status",
       "type": "existing",
       "hidden": false,
-      "mdOnly": false,
-      "sticky": "left"
+      "mdOnly": false
+    },
+    {
+      "id": "plugin-backlink;1",
+      "name": "0 backlinks",
+      "type": "existing",
+      "hidden": false,
+      "mdOnly": false
     },
     {
       "id": "plugin-word-count;1",
       "name": "0 words0 characters",
       "type": "existing",
       "hidden": false,
+      "mdOnly": false
+    },
+    {
+      "id": "plugin-editing-toolbar-editingToolbar-statusbar-button-statusbar-organizer-element-hidden;1",
+      "name": "plugin-editing-toolbar-editingToolbar-statusbar-bu",
+      "type": "existing",
+      "hidden": true,
       "mdOnly": false
     },
     {
@@ -103,8 +116,16 @@
       "sticky": "right"
     },
     {
+      "id": "plugin-obsidian-git-status;1",
+      "name": "Last Commit: 2 days ago",
+      "type": "existing",
+      "hidden": false,
+      "mdOnly": false,
+      "sticky": "right"
+    },
+    {
       "id": "plugin-obsidian-git;1",
-      "name": "Git is ready",
+      "name": "plugin-obsidian-git",
       "type": "existing",
       "hidden": false,
       "mdOnly": false,
@@ -155,7 +176,7 @@
     },
     {
       "id": "native-collapseAll",
-      "name": "Collapse all",
+      "name": "Expand all",
       "ariaLabel": "Expand all",
       "type": "native",
       "hidden": false
