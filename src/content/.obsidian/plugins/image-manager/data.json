@@ -7,19 +7,20 @@
   "defaultProvider": "unsplash",
   "unsplashProxyServer": "",
   "pexelsApiKey": "",
-  "pexelsApiKeySecretId": "pexels-api-key",
+  "pexelsApiKeySecretId": "",
   "pixabayApiKey": "",
-  "pixabayApiKeySecretId": "pixabay-api-key",
+  "pixabayApiKeySecretId": "",
   "defaultOrientation": "any",
   "defaultImageSize": "large",
   "enablePropertyPaste": true,
-  "propertyLinkFormat": "custom",
-  "customPropertyLinkFormat": "[[attachments/{image-url}]]",
-  "defaultPropertyName": "image",
+  "propertyLinkFormat": "obsidian",
+  "customPropertyLinkFormat": "{image-url}",
+  "defaultPropertyName": "banner",
   "defaultIconPropertyName": "icon",
   "autoConvertRemoteImages": false,
   "convertOnNoteOpen": false,
   "convertOnNoteSave": false,
+  "showRenameDialog": true,
   "autoRename": false,
   "dupNumberDelimiter": "-",
   "dupNumberAtStart": false,
@@ -31,7 +32,7 @@
   "appendReferral": false,
   "banner": {
     "properties": {
-      "imageProperty": "image",
+      "imageProperty": "banner",
       "iconProperty": "icon"
     },
     "desktop": {
@@ -45,7 +46,7 @@
         8,
         8
       ],
-      "padding": 0,
+      "padding": 8,
       "fade": true,
       "iconEnabled": false,
       "iconSize": 96,
@@ -56,8 +57,7 @@
       "iconAlignmentH": "flex-start",
       "iconAlignmentV": "flex-end",
       "iconOffsetX": 0,
-      "iconOffsetY": -24,
-      "animation": false
+      "iconOffsetY": -24
     },
     "tablet": {
       "enabled": true,
@@ -109,7 +109,8 @@
     }
   },
   "supportedExtensions": [
-    "md"
+    "md",
+    "mdx"
   ],
   "debugMode": false
 }
