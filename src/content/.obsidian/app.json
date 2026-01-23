@@ -2,7 +2,7 @@
   "showInlineTitle": false,
   "promptDelete": true,
   "showIndentGuide": false,
-  "attachmentFolderPath": "./attachments",
+  "attachmentFolderPath": "attachments",
   "userIgnoreFilters": [
     "bases/"
   ],
@@ -31,14 +31,16 @@
     "editor:toggle-checklist-status",
     "editor:indent-list",
     "editor:unindent-list",
+    "astro-composer:standardize-properties",
+    "astro-composer:convert-wikilinks-astro",
+    "seo:seo-run-current",
     "editor:configure-toolbar"
   ],
   "newFileLocation": "folder",
-  "newFileFolderPath": "posts",
+  "newFileFolderPath": "post",
   "newLinkFormat": "relative",
   "mobileQuickRibbonItem": "",
   "vimMode": false,
   "readableLineLength": true,
-  "defaultViewMode": "source",
-  "openBehavior": ""
+  "defaultViewMode": "source"
 }

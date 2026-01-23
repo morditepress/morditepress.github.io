@@ -1,14 +1,11 @@
 {
   "pluginList": [
-    "davidvkimball/obsidian-image-manager",
-    "davidvkimball/obsidian-home-base",
     "davidvkimball/obsidian-explorer-focus",
-    "pjeby/hot-reload",
-    "mProjectsCode/obsidian-theme-hot-reload-plugin",
     "davidvkimball/obsidian-ui-tweaker",
+    "davidvkimball/obsidian-home-base",
+    "davidvkimball/obsidian-image-manager",
     "davidvkimball/obsidian-vault-cms",
     "davidvkimball/obsidian-bases-cms",
-    "davidvkimball/obsidian-astro-modular-settings",
     "davidvkimball/obsidian-oxygen-settings",
     "davidvkimball/obsidian-alias-file-name-history",
     "davidvkimball/obsidian-seo",
@@ -18,7 +15,11 @@
   ],
   "pluginSubListFrozenVersion": [
     {
-      "repo": "davidvkimball/obsidian-image-manager",
+      "repo": "davidvkimball/obsidian-explorer-focus",
+      "version": "latest"
+    },
+    {
+      "repo": "davidvkimball/obsidian-ui-tweaker",
       "version": "latest"
     },
     {
@@ -26,19 +27,7 @@
       "version": "latest"
     },
     {
-      "repo": "davidvkimball/obsidian-explorer-focus",
-      "version": "latest"
-    },
-    {
-      "repo": "pjeby/hot-reload",
-      "version": "0.3.0"
-    },
-    {
-      "repo": "mProjectsCode/obsidian-theme-hot-reload-plugin",
-      "version": "0.0.4"
-    },
-    {
-      "repo": "davidvkimball/obsidian-ui-tweaker",
+      "repo": "davidvkimball/obsidian-image-manager",
       "version": "latest"
     },
     {
@@ -47,10 +36,6 @@
     },
     {
       "repo": "davidvkimball/obsidian-bases-cms",
-      "version": "latest"
-    },
-    {
-      "repo": "davidvkimball/obsidian-astro-modular-settings",
       "version": "latest"
     },
     {
@@ -75,7 +60,7 @@
     },
     {
       "repo": "davidvkimball/obsidian-astro-composer",
-      "version": "latest"
+      "version": ""
     }
   ],
   "themesList": [],
@@ -87,7 +72,6 @@
   "loggingVerboseEnabled": false,
   "debuggingMode": false,
   "notificationsEnabled": true,
-  "personalAccessToken": "",
   "selectLatestPluginVersionByDefault": false,
-  "allowIncompatiblePlugins": false
+  "allowIncompatiblePlugins": true
 }

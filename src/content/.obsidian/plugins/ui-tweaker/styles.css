@@ -1106,6 +1106,17 @@ body.ui-tweaker-hide-sync-button.is-mobile .status-bar > .plugin-sync:not(.ui-tw
 	justify-content: center !important;
 }
 
+/* Ensure the sync replacement is on the far right if we're not cloning */
+body.ui-tweaker-sync-replacement-enabled .workspace-drawer.mod-right .workspace-drawer-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body.ui-tweaker-sync-replacement-enabled .workspace-drawer.mod-right .workspace-drawer-header .ui-tweaker-sync-replacement {
+	order: 99;
+}
+
 .ui-tweaker-help-replacement svg,
 .ui-tweaker-sync-replacement svg {
 	margin: 0 !important;

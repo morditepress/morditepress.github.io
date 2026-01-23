@@ -193,6 +193,7 @@ image: {
       middlewareMode: false,
       hmr: true,
       watch: {
+      ignored: ['**/.obsidian/**', '**/_bases/**', '**/bases/**'],
         usePolling: process.platform === 'win32', // Use polling on Windows for better file watching
         interval: 1000
       },
