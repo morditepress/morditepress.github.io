@@ -454,6 +454,12 @@ settings:
 	background-color: var(--bases-cms-view-background, transparent);
 }
 
+/* Match native Bases cards view padding (single source: .bases-view) */
+.bases-view[data-view-type="cms"] {
+	--bases-view-padding: var(--size-4-3);
+	--bases-embed-padding: var(--size-4-1) 1px;
+}
+
 .bases-cms-grid {
 	display: grid;
 	gap: var(--bases-cms-card-spacing, 8px);
@@ -461,8 +467,19 @@ settings:
 	width: 100%;
 	max-width: 100%;
 	box-sizing: border-box;
-	padding: var(--bases-cms-card-padding-container, var(--size-4-3));
+	padding: 0;
 	grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width, 300px), 1fr));
+}
+
+/* Ensure no extra padding in embedded view containers */
+.markdown-rendered .bases-view,
+.markdown-rendered .bases-cms-container {
+	padding-right: 0 !important;
+}
+
+/* Remove reserved scrollbar gutter in embed so cards fill width (Bases may set scrollbar-gutter: stable on .bases-view) */
+.markdown-rendered .bases-view {
+	scrollbar-gutter: auto;
 }
 
 /* Minimum grid columns - when set to 2, ensure at least 2 columns by constraining card width */
@@ -511,8 +528,8 @@ body[style*="--bases-cms-min-grid-columns: '2'"] .bases-cms-grid {
 	overflow: visible;
 }
 
-.bases-cms-grid .card .card-content ~ .card-properties,
-.bases-cms-grid .card .card-title ~ .card-properties {
+.bases-cms-grid .card .card-content~.card-properties,
+.bases-cms-grid .card .card-title~.card-properties {
 	margin-top: auto;
 	padding-top: var(--bases-cms-element-spacing, 8px);
 }
@@ -540,13 +557,13 @@ body.bases-cms-card-background-custom .bases-cms .card {
 
 
 /* Global spacing between card elements */
-.bases-cms .card > * + * {
+.bases-cms .card>*+* {
 	margin-top: var(--bases-cms-element-spacing, 8px);
 }
 
 /* Exclude absolutely positioned elements from spacing */
-.bases-cms .card > .card-status-badge,
-.bases-cms .card > .bases-cms-select-checkbox {
+.bases-cms .card>.card-status-badge,
+.bases-cms .card>.bases-cms-select-checkbox {
 	margin-top: 0;
 }
 
@@ -570,9 +587,18 @@ body.bases-cms-card-background-custom .bases-cms .card {
 /* Selection checkbox */
 .bases-cms-select-checkbox {
 	position: absolute;
-	top: 8px;
-	right: 8px;
-	z-index: 10;
+	top: 20px;
+	right: 18px;
+	z-index: 11;
+	--checkbox-click-radius: var(--bases-cms-checkbox-click-radius, 32px);
+	width: var(--checkbox-click-radius);
+	height: var(--checkbox-click-radius);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translate(50%, -50%);
+	margin: 0;
+	padding: 0;
 }
 
 /* Hide checkboxes when Style Settings option is enabled */
@@ -582,16 +608,9 @@ body.bases-cms-hide-checkboxes .bases-cms .bases-cms-select-checkbox {
 
 .bases-cms-select-checkbox input[type="checkbox"] {
 	cursor: default;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	flex-shrink: 0;
-}
-
-/* Click radius - expand clickable area */
-.bases-cms-select-checkbox {
-	--checkbox-click-radius: var(--bases-cms-checkbox-click-radius, 14px);
-	padding: calc((var(--checkbox-click-radius) - 14px) / 2);
-	margin: calc((var(--checkbox-click-radius) - 14px) / -2);
 }
 
 /* For cover images, add subtle drop shadow for visibility on light images */
@@ -614,18 +633,21 @@ body.bases-cms-hide-checkboxes .bases-cms .bases-cms-select-checkbox {
 	margin: 0;
 	display: -webkit-box;
 	-webkit-line-clamp: var(--bases-cms-title-lines, 2);
+	line-clamp: var(--bases-cms-title-lines, 2);
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	line-height: var(--line-height-tight);
 	position: relative;
-	padding-right: 42px; /* 18px (icon position) + ~20px (icon width) + 4px (spacing) */
+	padding-right: 42px;
+	/* 18px (icon position) + ~20px (icon width) + 4px (spacing) */
 }
 
 
 /* For non-cover views, add more padding to make room for checkbox + icon */
 .bases-cms .card.image-format-none .card-title,
 .bases-cms .card.image-format-thumbnail .card-title {
-	padding-right: 60px; /* 18px (icon position) + ~20px (icon width) + 8px (spacing) + 14px (checkbox area) */
+	padding-right: 60px;
+	/* 18px (icon position) + ~20px (icon width) + 8px (spacing) + 14px (checkbox area) */
 }
 
 /* Quick edit icon styling */
@@ -705,6 +727,7 @@ body.bases-cms-hide-checkboxes .bases-cms .bases-cms-select-checkbox {
 	min-width: 0;
 	display: -webkit-box;
 	-webkit-line-clamp: var(--bases-cms-text-preview-lines, 5);
+	line-clamp: var(--bases-cms-text-preview-lines, 5);
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	line-height: 1.4;
@@ -762,19 +785,20 @@ body.bases-cms-hide-checkboxes .bases-cms .bases-cms-select-checkbox {
 
 /* Ensure cover view title has enough padding for the quick edit icon */
 .bases-cms .card.image-format-cover .card-title {
-	padding-right: 42px; /* Override the 12px above to make room for icon */
+	padding-right: 42px;
+	/* Override the 12px above to make room for icon */
 }
 
-.bases-cms .card.image-format-cover > .card-title:first-child,
-.bases-cms .card.image-format-cover > .card-content:first-child,
-.bases-cms .card.image-format-cover > .card-properties:first-child,
-.bases-cms .card.image-format-cover > .card-date:first-child {
+.bases-cms .card.image-format-cover>.card-title:first-child,
+.bases-cms .card.image-format-cover>.card-content:first-child,
+.bases-cms .card.image-format-cover>.card-properties:first-child,
+.bases-cms .card.image-format-cover>.card-date:first-child {
 	padding-top: 12px;
 }
 
-.bases-cms .card.image-format-cover > .card-title:last-child,
-.bases-cms .card.image-format-cover > .card-content:last-child,
-.bases-cms .card.image-format-cover > .card-properties:last-child {
+.bases-cms .card.image-format-cover>.card-title:last-child,
+.bases-cms .card.image-format-cover>.card-content:last-child,
+.bases-cms .card.image-format-cover>.card-properties:last-child {
 	padding-bottom: 12px;
 }
 
@@ -924,46 +948,24 @@ body.bases-cms-date-color-custom .bases-cms .card-date {
 	filter: brightness(1.15);
 }
 
-/* For cover images, position absolutely on the cover itself */
-.bases-cms .card.image-format-cover .card-cover .card-status-badge {
+/* Position badge absolutely at top-left, vertically aligned with checkbox */
+.bases-cms .card .card-status-badge {
 	position: absolute;
-	top: 8px;
-	left: 8px;
+	top: 20px;
+	left: 12px;
+	transform: translateY(-50%);
 	z-index: 11;
-	margin-bottom: 0;
-	/* Ensure badge is always visible */
-	display: inline-flex !important;
-	visibility: visible !important;
-	opacity: 1 !important;
-}
-
-/* For cover placeholders, position badge on the placeholder */
-.bases-cms .card.image-format-cover .card-cover-placeholder .card-status-badge {
-	position: absolute;
-	top: 8px;
-	left: 8px;
-	z-index: 11;
-	margin-bottom: 0;
-	/* Ensure badge is always visible */
-	display: inline-flex !important;
-	visibility: visible !important;
-	opacity: 1 !important;
-}
-
-/* For non-cover formats (thumbnail/none), position badge above title */
-.bases-cms .card:not(.image-format-cover) .card-status-badge {
-	position: absolute;
-	top: 8px;
-	left: 8px;
-	z-index: 10;
 	margin: 0;
-	margin-bottom: 6px;
+	/* Ensure badge is always visible */
+	display: inline-flex !important;
+	visibility: visible !important;
+	opacity: 1 !important;
 	width: auto;
 }
 
 /* Add top margin to title when badge is present so it appears below the badge */
 .bases-cms .card:not(.image-format-cover):has(.card-status-badge) .card-title {
-	margin-top: 26px;
+	margin-top: 32px;
 }
 
 /* Badge style presets */
@@ -1263,20 +1265,33 @@ body.bases-cms-property-color-custom .bases-cms .property-content {
 }
 
 .bases-cms-bulk-toolbar {
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	gap: 1rem;
 	width: 100%;
-	opacity: 0;
-	transform: translateY(-10px);
-	transition: opacity 0.2s ease, transform 0.2s ease;
+	height: 44px;
+	min-height: 44px;
+	background-color: var(--background-primary);
+	z-index: 15;
 	padding-left: var(--bases-header-padding-start, var(--size-4-2));
 	padding-right: var(--bases-header-padding-end, var(--size-4-2));
-	margin-top: var(--size-4-1);
-	margin-bottom: var(--size-4-1);
+	margin: 0;
 	box-sizing: border-box;
-	min-width: 0; /* Allow flex items to shrink */
-	overflow: hidden; /* Prevent overflow */
+	overflow: hidden;
+	opacity: 0;
+	transform: translateY(-5px);
+	transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Embedded: tighter right padding so toolbar aligns with content */
+.markdown-rendered .bases-cms-bulk-toolbar {
+	padding-right: 4px;
+}
+
+/* Ensure no gap between header and bulk toolbar */
+.bases-header+.bases-cms-bulk-toolbar {
+	margin-top: 0;
 }
 
 .bases-cms-bulk-toolbar-left {
@@ -1284,8 +1299,8 @@ body.bases-cms-property-color-custom .bases-cms .property-content {
 	align-items: center;
 	gap: 0;
 	flex: 0 0 auto;
-	min-width: 0; /* Allow shrinking */
-	flex-wrap: nowrap; /* Keep buttons in a row */
+	min-width: 0;
+	flex-wrap: nowrap;
 }
 
 .bases-cms-bulk-toolbar-right {
@@ -1294,28 +1309,29 @@ body.bases-cms-property-color-custom .bases-cms .property-content {
 	gap: 0;
 	flex: 0 0 auto;
 	margin-left: auto;
-	min-width: 0; /* Allow shrinking */
-	flex-wrap: nowrap; /* Keep buttons in a row */
+	min-width: 0;
+	flex-wrap: nowrap;
 }
 
 /* Mobile-specific toolbar improvements */
 @media (hover: none) and (pointer: coarse),
-       (max-width: 768px) {
+(max-width: 768px) {
+
 	.bases-cms-bulk-toolbar-left,
 	.bases-cms-bulk-toolbar-right {
 		gap: var(--size-4-1);
 	}
-	
+
 	.bases-cms-bulk-toolbar .text-icon-button {
 		padding: var(--size-4-2) var(--size-4-2);
 		min-height: 40px;
 	}
-	
+
 	.bases-cms-bulk-toolbar .text-icon-button .text-button-icon {
 		width: 20px;
 		height: 20px;
 	}
-	
+
 	.bases-cms-bulk-toolbar .text-icon-button .text-button-icon svg {
 		width: 20px;
 		height: 20px;
@@ -1521,4 +1537,3 @@ body.bases-cms-property-color-custom .bases-cms .property-content {
 	font-weight: 600;
 	border-bottom: none !important;
 }
-

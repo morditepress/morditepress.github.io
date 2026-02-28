@@ -15,6 +15,13 @@
       "connections": 6
     },
     {
+      "id": "it-cant-be",
+      "type": "post",
+      "title": "It Can't Be!",
+      "slug": "it-cant-be",
+      "connections": 0
+    },
+    {
       "id": "list-of-mail",
       "type": "post",
       "title": "List of Mail",
@@ -126,9 +133,9 @@
     }
   ],
   "metadata": {
-    "totalPosts": 6,
+    "totalPosts": 7,
     "totalConnections": 16,
     "maxNodesApplied": false,
-    "originalNodeCount": 6
+    "originalNodeCount": 7
   }
 }
