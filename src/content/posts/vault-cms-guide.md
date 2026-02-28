@@ -21,7 +21,7 @@ aliases:
 
 ## Overview
 
-Hello
+Hello wow
 
 All plugins, key bindings, and the theme can be customized to your liking, but this is what's on by default.
 
