@@ -1,6 +1,6 @@
 ---
 title: It Can't Be!
-description: On old friend reappears
+description: On old friend suddenly reappears
 date: 2026-02-01
 tags:
   - Mordite Mondays
