@@ -9,6 +9,6 @@ draft: false
 
 ![637](attachments/Mordite%20Helm%20Outlined.png)
 
-We've got made open-license books that were made for Torchbearer, collaborations with MRDR HOBO, and original games and adventures of our own.
+We've made some open-license books for Torchbearer, collaborations with MRDR HOBO, and original games and adventures of our own.
 
-We're not using AI. Social media is terrible. Everything we have to say is in our books.
+We're not using AI. Social media is painful. Everything we have to say is in our books.
