@@ -12,7 +12,7 @@ hideTOC: true
 draft: false
 featured: false
 ---
-![[Camp_240628_inverted.jpg]]
+![woe_is_you](../attachments/woe_is_you.jpg)
 Who is this piteous creature with its sunken eyes, its long coat spattered with mud from clambering over ditches and fording streams— searching, ever searching?
 
 Why, it's the **MORDITE PRESS BLOG**!

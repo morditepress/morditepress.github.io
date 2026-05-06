@@ -1,5 +1,5 @@
 {
-  "projectRoot": "/Users/owen/Documents/morditepress.github.io",
+  "projectRoot": "../..",
   "configFilePath": "../../slate.config.ts",
   "contentTypes": [
     {
@@ -296,6 +296,8 @@
     "branchName": "main",
     "autoConfigureObsidianGit": true
   },
+  "deploymentPlatform": "",
+  "resolvePublicImages": false,
   "runWizardOnStartup": false,
   "wizardCompleted": true,
   "enableWYSIWYG": false,

@@ -1,13 +1,5 @@
-/* Group settings compatibility styling for older Obsidian builds (< 1.11.0) */
 /* Scoped to only this plugin's settings container to avoid affecting other plugins */
-.vault-cms-settings-compat .setting-group-heading h3 {
-	margin: 0 0 0.75rem;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
-	font-size: 1rem;
-	font-weight: 600;
-	border-bottom: none !important;
-}
+
 
 /* Wizard progress bar styling */
 .vault-cms-wizard .wizard-progress {
@@ -68,6 +60,11 @@
 	margin-bottom: 1rem;
 }
 
+/* Reduce scroll jumping when toggles insert/remove rows in the Content types step */
+.vault-cms-wizard .content-type-step-content {
+	overflow-anchor: none;
+}
+
 .vault-cms-wizard .wizard-skip-button {
 	opacity: 0.6;
 }
@@ -86,6 +83,12 @@
 }
 
 /* Editable name input styling - match native Obsidian input */
+.vault-cms-editable-name {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--text-normal);
+}
+
 .vault-cms-editable-name input.mod-text-input {
 	border: none;
 	background: transparent;
@@ -105,6 +108,30 @@
 	outline: none;
 	background: transparent;
 }
+
+/* Spacing between content types */
+.vault-cms-wizard .vault-cms-ct-block {
+	margin-top: 2.5rem;
+}
+
+.vault-cms-wizard .vault-cms-section-header + .vault-cms-ct-block {
+	margin-top: 0.5rem;
+}
+
+.vault-cms-wizard .vault-cms-section-desc {
+	margin-bottom: 24px;
+}
+
+/* Fix missing top border/spacing when settings are wrapped in slots */
+.vault-cms-wizard .vault-cms-attachment-extra-slot {
+	margin-bottom: 18px;
+}
+
+.vault-cms-wizard .vault-cms-attachment-extra-slot:not(:empty) > .setting-item {
+	border-top: 1px solid var(--background-modifier-border) !important;
+	padding-top: 18px !important;
+}
+
 
 /*
 
