@@ -5,7 +5,7 @@ date: 2026-02-01
 tags:
   - Mordite Mondays
 status: released
-image: "[[../attachments/woe_is_you.jpg]]"
+image: attachments/woe_is_you.jpg
 imageAlt: Quint staggers down a corridor, pursued by a megaplasm
 hideCoverImage: false
 hideTOC: true
