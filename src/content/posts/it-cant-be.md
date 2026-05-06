@@ -34,13 +34,13 @@ Fools have conjured a ravening demon who lurks in our works, scraping and digest
 
 So I renounce it all and return to the table. I pick up the dice, and I roll them. This is what they say:
 
-*We still need these games.*
+*We still play these games.*
 
 *We still need a place.* 
 
 *We're still telling our stories, and they must be ours to tell.*
 
-Until today, this was a blog focused on a single game which I liked very much. It may be disappointing to some that it's no longer that. All those works are still there; [I will keep them for you.](https://archive.mordite.press) 
+Until today, this was a blog focused on a single game which I liked very much. It may be disappointing to some that it's no longer just that. All those works are still there; [I will keep them for you.](https://archive.mordite.press) 
 
 If you liked the Mordite Mondays blog, you'll enjoy what's to come. I'm still playing games, reading and writing games. And it's become crystal clear that we need more places, honest places, to connect with games.
 
