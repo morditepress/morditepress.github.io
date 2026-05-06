@@ -30,7 +30,7 @@ My tools have betrayed me. The computer network was once a spectacular drive dow
 
 The places where we met and joyously discussed our arts have been dismantled and sold off, brick by brick. I can see now how they *cursed* me; they mutated me into something I'm not, and never wanted to be. 
 
-Some fools have conjured a ravening demon who lurks in our works, scraping them clean and digesting them into a gleaming chrome facsimile, "an insult to life itself." They're not even finished, despite the evident ruin all around us.
+Some fools have conjured a ravening demon who lurks in our works, scraping and digesting them into an antiseptic chrome facsimile, "an insult to life itself." They're not even finished, despite the evident ruin all around us.
 
 So I renounce it all and return to the table. I pick up the dice, and I roll them. This is what they say:
 
