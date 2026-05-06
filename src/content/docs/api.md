@@ -9,7 +9,7 @@ image:
 imageAlt:
 hideCoverImage: false
 hideTOC: false
-draft: false
+draft: true
 featured: true
 noIndex: true
 aliases:

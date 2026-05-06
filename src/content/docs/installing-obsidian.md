@@ -9,7 +9,7 @@ image: "[[attachments/obsidian-cover.png]]"
 imageAlt: Obsidian logo with a black background.
 hideCoverImage: false
 hideTOC: false
-draft: false
+draft: true
 noIndex: true
 featured: true
 ---
