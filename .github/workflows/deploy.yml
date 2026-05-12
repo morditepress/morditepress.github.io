@@ -28,6 +28,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
       - name: Approve pnpm builds
         run: pnpm approve-builds
       - name: Install, build, and upload your site
