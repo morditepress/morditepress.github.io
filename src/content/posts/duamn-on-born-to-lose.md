@@ -9,7 +9,7 @@ imageOG: true
 hideCoverImage: false
 hideTOC: false
 draft: false
-noIndex: true
+noIndex: false
 ---
 The *Born to Lose* podcast sat down to interview game designer and avowed mordite Duamn Figueroa Rassol!
 
