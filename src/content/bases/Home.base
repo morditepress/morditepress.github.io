@@ -40,6 +40,9 @@ views:
     filters:
       and:
         - file.folder.startsWith("posts")
+    groupBy:
+      property: status
+      direction: ASC
     order:
       - file.name
       - draft
