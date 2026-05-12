@@ -15,6 +15,13 @@
       "connections": 0
     },
     {
+      "id": "doppelgangers",
+      "type": "post",
+      "title": "Doppelgängers",
+      "slug": "doppelgangers",
+      "connections": 0
+    },
+    {
       "id": "duamn-on-born-to-lose",
       "type": "post",
       "title": "Duamn on Born To Lose",
@@ -138,13 +145,6 @@
       "type": "post",
       "title": "Stupid Fantasy",
       "slug": "stupid-fantasy",
-      "connections": 0
-    },
-    {
-      "id": "tbd",
-      "type": "post",
-      "title": "Doppelgängers",
-      "slug": "tbd",
       "connections": 0
     },
     {

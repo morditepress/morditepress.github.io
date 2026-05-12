@@ -152,6 +152,12 @@
   force = true
 
 [[redirects]]
+  from = "/posts/tbd"
+  to = "/posts/doppelgangers"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/posts/mermaid-test"
   to = "/posts/obsidian-embeds-demo"
   status = 301

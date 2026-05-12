@@ -80,6 +80,7 @@ export default defineConfig({
   },
   redirects: (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'build') ? {
   '/privacy': '/privacy-policy',
+  '/posts/tbd': '/posts/doppelgangers',
   '/posts/mermaid-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagram-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagrams': '/posts/obsidian-embeds-demo',

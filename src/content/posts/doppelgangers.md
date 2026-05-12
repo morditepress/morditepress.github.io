@@ -11,5 +11,4 @@ hideTOC: false
 draft: true
 noIndex: true
 aliases:
-  - tbd
 ---
