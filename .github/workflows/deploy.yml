@@ -19,12 +19,12 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v5
-      - name: Setup pnpm
+      - name: Install pnpm
         uses: pnpm/action-setup@v3 # docs https://pnpm.io/continuous-integration#github-actions
         with:
             version: 8  # Optional: specify a pnpm version
       - name: Approve pnpm builds
-        uses: pnpm/action-approve-builds@v3
+        run: pnpm approve-builds
       - name: Install, build, and upload your site
         uses: withastro/action@v5
         with:
