@@ -1,6 +1,6 @@
 ---
 title: It Can't Be!
-description: Who is this piteous creature with its sunken eyes, its long coat spattered with mud, clambering over ditches and fording streams— searching, ever searching? Why, it’s the MORDITE PRESS BLOG!
+description: Who is this piteous creature with its sunken eyes, its long coat spattered with mud from clambering over ditches and fording streams— searching, ever searching? Why, it’s the MORDITE PRESS BLOG!
 date: 2026-02-01
 tags:
   - Mordite Mondays
@@ -12,7 +12,7 @@ hideTOC: true
 draft: false
 featured: false
 ---
-Who is this piteous creature with its sunken eyes, its long coat spattered with mud, clambering over ditches and fording streams— searching, ever searching?
+Who is this piteous creature with its sunken eyes, its long coat spattered with mud from clambering over ditches and fording streams— searching, ever searching?
 
 Why, it's the **MORDITE PRESS BLOG**!
 

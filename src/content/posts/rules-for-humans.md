@@ -17,5 +17,4 @@ He's right about all of this, of course. But what really stuck out to me is the 
 
 What if we take things further? Rather than just cleverly designing ownership into our game mechanics, what if we play with the notion of unreliable execution *as a design space.*
 
-I'll explain what I mean, but in a nutshell I'm suggesting Rules that trigger when the player forgets to apply the rules. Or chooses not to.
-
+I'll explain what I mean, but in a nutshell I'm suggesting Rules that trigger when the player forgets to apply the rules.
