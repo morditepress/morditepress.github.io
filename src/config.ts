@@ -14,8 +14,11 @@ export type AspectRatio =
 export interface SiteConfig {
   // Site Information
   site: string;
+  /** TODO: Do we need this still? */
   base: string;
   title: string;
+  /** Homepage-specific meta title. Falls back to title if empty. */
+  homepageTitle: string;
   description: string;
   author: string;
   language: string;
@@ -54,7 +57,6 @@ export interface SiteConfig {
   deployment: {
     platform: "netlify" | "vercel" | "github-pages" | "cloudflare-workers";
   };
-
   // Command Palette
   commandPalette: {
     enabled: boolean;
@@ -185,6 +187,7 @@ export const siteConfig: SiteConfig = {
   site: "https://new.mordite.press",
   // Github repo name
   base: '/',
+  homepageTitle: "Mordite Press - Tabletop RPGs and Misadventures",
   // [CONFIG:SITE_TITLE]
   title: "Mordite Press",
   // [CONFIG:SITE_DESCRIPTION]
@@ -477,7 +480,6 @@ export function getTheme(): "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin"
 
 export function getPostCardAspectRatio(): string {
   const { postCardAspectRatio, customPostCardAspectRatio } = siteConfig.postOptions;
-
   switch (postCardAspectRatio) {
     case "16:9":
       return "16 / 9";
@@ -537,7 +539,6 @@ export function getFontFamily(fontName: string): string {
     'IBM Plex Mono': "'IBM Plex Mono', 'Monaco', 'Consolas', 'Courier New', monospace",
     'Cascadia Code': "'Cascadia Code', 'Monaco', 'Consolas', 'Courier New', monospace",
   };
-
   return fontMap[fontName] || `'${fontName}', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif`;
 }
 

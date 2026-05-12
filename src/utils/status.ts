@@ -2,7 +2,7 @@
  * Utility functions for handling project status values
  */
 
-export type ProjectStatus = 'in-progress' | 'released' | string;
+export type ProjectStatus = 'in-progress' | 'completed' | string;
 
 /**
  * Normalizes status values to handle case variations and common formats
@@ -21,9 +21,9 @@ export function normalizeStatus(status: string | null | undefined): string | nul
     return 'in-progress';
   }
 
-  // Handle common variations for released
-  if (normalized === 'released' || normalized === 'release' || normalized === 'done' || normalized === 'finished') {
-    return 'released';
+  // Handle common variations for completed
+  if (normalized === 'completed' || normalized === 'complete' || normalized === 'done' || normalized === 'finished') {
+    return 'completed';
   }
 
   // Return the original value for any other status (like "On Hold", "Paused", etc.)
@@ -41,8 +41,8 @@ export function getStatusDisplayText(status: string | null): string {
   switch (status) {
     case 'in-progress':
       return 'In Progress';
-    case 'released':
-      return 'Released';
+    case 'completed':
+      return 'Completed';
     default:
       // Return the original status as-is for custom values
       return status;
@@ -56,7 +56,7 @@ export function getStatusDisplayText(status: string | null): string {
  */
 export function hasStatusStyling(status: string | null): boolean {
   if (!status) return false;
-  return status === 'in-progress' || status === 'released';
+  return status === 'in-progress' || status === 'completed';
 }
 
 /**
@@ -67,7 +67,7 @@ export function hasStatusStyling(status: string | null): boolean {
 export function getStatusClasses(status: string | null): string {
   if (!status) return '';
 
-  if (status === 'released') {
+  if (status === 'completed') {
     return 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
   }
 

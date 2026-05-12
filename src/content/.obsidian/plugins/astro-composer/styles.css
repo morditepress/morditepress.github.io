@@ -129,7 +129,7 @@
 		width: 90vw !important;
 		max-width: 500px !important;
 	}
-	
+
 	/* Only target our specific modal content, not all modals */
 	.modal .astro-composer-title-input {
 		font-size: 16px; /* Prevents zoom on iOS */
@@ -137,13 +137,13 @@
 		border: 1px solid var(--background-modifier-border);
 		border-radius: 4px;
 	}
-	
+
 	/* Ensure our modal content is properly sized on mobile */
 	.modal .astro-composer-button-container {
 		flex-direction: column;
 		gap: 12px;
 	}
-	
+
 	.modal .astro-composer-cancel-button,
 	.modal .astro-composer-create-button {
 		width: 100%;
@@ -151,7 +151,7 @@
 		font-size: 16px;
 		cursor: default !important;
 	}
-	
+
 	.modal .astro-composer-cancel-button:hover,
 	.modal .astro-composer-create-button:hover {
 		cursor: default !important;
@@ -353,9 +353,13 @@
 }
 
 .astro-composer-hide-config-icon .menu-item:has(svg[data-lucide="wrench"]),
+.astro-composer-hide-config-icon .menu-item:has(svg[data-lucide="rocket"]),
 .astro-composer-hide-config-icon .menu-item:has(.lucide-wrench),
+.astro-composer-hide-config-icon .menu-item:has(.lucide-rocket),
 .astro-composer-hide-config-icon .menu-item .menu-item-icon:has(svg[data-lucide="wrench"]),
-.astro-composer-hide-config-icon .menu-item .menu-item-icon:has(.lucide-wrench) {
+.astro-composer-hide-config-icon .menu-item .menu-item-icon:has(svg[data-lucide="rocket"]),
+.astro-composer-hide-config-icon .menu-item .menu-item-icon:has(.lucide-wrench),
+.astro-composer-hide-config-icon .menu-item .menu-item-icon:has(.lucide-rocket) {
 	display: none !important;
 }
 
@@ -364,13 +368,5 @@
 	display: none !important;
 }
 
-/* Group settings compatibility styling for older Obsidian builds (< 1.11.0) */
+
 /* Scoped to only this plugin's settings container to avoid affecting other plugins */
-.astro-composer-settings-compat .setting-group-heading h3 {
-	margin: 0 0 0.75rem;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
-	font-size: 1rem;
-	font-weight: 600;
-	border-bottom: none !important;
-}

@@ -10,41 +10,29 @@ const viteCacheDir = path.join(projectRoot, 'node_modules', '.vite');
 
 console.log('⚙️ Setting up development environment...');
 
-// Ensure .astro directory exists
-if (!existsSync(astroCacheDir)) {
-  console.log(`Creating .astro directory: ${astroCacheDir}`);
-  mkdirSync(astroCacheDir, { recursive: true });
-} else {
-  console.log(`.astro directory already exists: ${astroCacheDir}`);
-}
-
-// Ensure node_modules/.vite directory exists
-if (!existsSync(viteCacheDir)) {
-  console.log(`Creating node_modules/.vite directory: ${viteCacheDir}`);
-  mkdirSync(viteCacheDir, { recursive: true });
-} else {
-  console.log(`node_modules/.vite directory already exists: ${viteCacheDir}`);
-}
-
-// Clean up potentially problematic cache files
-const filesToClean = [
-  path.join(astroCacheDir, 'data-store.json'),
-  path.join(astroCacheDir, 'data-store.json.tmp'),
-  path.join(astroCacheDir, 'content-assets.mjs'),
-  path.join(astroCacheDir, 'content-assets.mjs.tmp'),
-  path.join(viteCacheDir, 'deps'),
-  path.join(viteCacheDir, 'deps_temp_*'), // Wildcard for temporary deps folders
-];
-
-filesToClean.forEach(fileOrDir => {
-  try {
-    if (existsSync(fileOrDir)) {
-      console.log(`Cleaning up: ${fileOrDir}`);
-      rmSync(fileOrDir, { recursive: true, force: true });
-    }
-  } catch (error) {
-    console.error(`Failed to clean up ${fileOrDir}: ${error.message}`);
+// Wipe .astro completely so content layer and route cache are fresh every dev run
+try {
+  if (existsSync(astroCacheDir)) {
+    console.log(`Cleaning .astro cache: ${astroCacheDir}`);
+    rmSync(astroCacheDir, { recursive: true, force: true });
   }
-});
+  mkdirSync(astroCacheDir, { recursive: true });
+} catch (error) {
+  console.error(`Failed to clean .astro: ${error.message}`);
+}
+
+// Wipe Vite deps cache so modules are re-resolved
+try {
+  const viteDeps = path.join(viteCacheDir, 'deps');
+  if (existsSync(viteDeps)) {
+    console.log(`Cleaning Vite deps cache: ${viteDeps}`);
+    rmSync(viteDeps, { recursive: true, force: true });
+  }
+  if (!existsSync(viteCacheDir)) {
+    mkdirSync(viteCacheDir, { recursive: true });
+  }
+} catch (error) {
+  console.error(`Failed to clean Vite cache: ${error.message}`);
+}
 
 console.log('✅ Development environment setup complete.');

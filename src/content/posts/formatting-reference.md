@@ -1,9 +1,14 @@
 ---
 title: Formatting Reference
 date: 2025-09-07
-description: Explore all the markdown, extended markdown, and other embed features available in this blog theme.
+description: Explore all the markdown, extended markdown, and other features available in this blog theme. For Obsidian-specific embeds, check the Obsidian embeds post.
 tags:
-  - Astro
+  - markdown
+  - formatting
+  - tutorial
+  - reference
+  - meta
+  - blog
 image: "[[attachments/mountains.png]]"
 imageAlt: Mountains and water.
 imageOG: false
@@ -11,7 +16,6 @@ hideCoverImage: false
 hideTOC: false
 targetKeyword:
 draft: true
-noIndex: true
 ---
 This post demonstrates all the markdown, extended markdown, and other embed features available in Astro Modular. Use this as both a reference guide and a showcase of what's possible.
 
@@ -374,18 +378,18 @@ Use <kbd>Cmd</kbd> + <kbd>K</kbd> to open the command palette.
 These buttons use your existing color palette and adapt perfectly to light/dark themes. Wrap them in internal or external links if you prefer:
 
 <div class="btn-group my-8">
-  <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-primary">Primary Action</span></a>
-  <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-secondary">Secondary</span></a>
-    <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-outline">Outlined</span></a>
-      <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-ghost">Subtle</span></a>
+  <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-primary">Primary Action</button></a>
+  <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-secondary">Secondary</button></a>
+    <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-outline">Outlined</button></a>
+      <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-ghost">Subtle</button></a>
 </div>
 
 ```html
 <div class="btn-group-center my-8">
-  <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-primary">Primary Action</span></a>
-  <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-secondary">Secondary</span></a>
-    <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-outline">Outlined</span></a>
-      <a href="https://google.com" class="no-styling no-underline" target="_blank"><span class="btn btn-ghost">Subtle</span></a>
+  <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-primary">Primary Action</button></a>
+  <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-secondary">Secondary</button></a>
+    <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-outline">Outlined</button></a>
+      <a href="https://google.com" class="no-styling no-underline" target="_blank"><button class="btn btn-ghost">Subtle</button></a>
 </div>
 ```
 

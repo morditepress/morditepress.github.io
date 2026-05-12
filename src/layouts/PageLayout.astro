@@ -82,17 +82,17 @@ const structuredData = {
           if (Array.isArray(rawImage)) {
             rawImage = rawImage[0];
           }
-          
+
           // Clean Obsidian brackets
           let cleanImagePath = typeof rawImage === 'string' ? rawImage : '';
           if (cleanImagePath.startsWith('[[') && cleanImagePath.endsWith(']]')) {
             cleanImagePath = cleanImagePath.slice(2, -2);
           }
-          
+
           // Determine src and basePath for ImageWrapper
           let imageSrc = cleanImagePath;
           let imageBasePath = '';
-          
+
           if (typeof cleanImagePath === 'string' && cleanImagePath.startsWith('http')) {
             // External URL - pass as-is
             imageSrc = cleanImagePath;
@@ -101,7 +101,7 @@ const structuredData = {
             // Detect folder-based vs file-based: if image path starts with 'attachments/',
             // it's a single-file page (shared attachments folder)
             const isFileBased = typeof cleanImagePath === 'string' && cleanImagePath.startsWith('attachments/');
-            
+
             if (isFileBased) {
               // Single-file page - remove attachments/ prefix
               imageSrc = cleanImagePath.replace('attachments/', '');
@@ -123,10 +123,10 @@ const structuredData = {
               }
             }
           }
-          
+
           // Convert to WebP if applicable (sync-images.js creates WebP versions)
           imageSrc = getOptimizedFormat(imageSrc);
-          
+
           return (
             <div class="h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden rounded-t-lg bg-primary-100 dark:bg-primary-800">
               <ImageWrapper
@@ -163,8 +163,8 @@ const structuredData = {
 
       <!-- Desktop TOC - floats to the right of the content container -->
       {shouldShowTOC && (
-        <div class="hidden xl:block absolute top-0 left-full ml-1 w-[280px]">
-          <div class="sticky top-24" id="toc">
+        <div class="hidden xl:block absolute top-0 left-full ml-1 w-[280px] h-full">
+          <div class="sticky top-24 pb-6" id="toc">
             <TableOfContents headings={toc} />
           </div>
         </div>
@@ -258,7 +258,6 @@ const structuredData = {
             // Skip if already has target attribute (e.g., manually set)
             if (!link.hasAttribute('target')) {
               link.setAttribute('target', '_blank');
-              link.setAttribute('rel', 'noopener noreferrer');
             }
           }
         });

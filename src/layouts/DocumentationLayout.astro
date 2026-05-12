@@ -12,7 +12,7 @@ import Lightbox from '@/components/Lightbox.astro';
 import ImageWrapper from '@/components/ImageWrapper.astro';
 import DocsSidebar from '@/components/DocsSidebar.astro';
 import Icon from '@/components/Icon.astro';
-import { shouldShowContent, getAdjacentDocs } from '@/utils/markdown';
+import { shouldShowContent, getAdjacentDocs, formatDate } from '@/utils/markdown';
 
 export interface Props {
   documentation: Docs;
@@ -29,8 +29,8 @@ const isDev = import.meta.env.DEV;
 const visibleDocs = allDocs.filter(doc => shouldShowContent(doc, isDev));
 
 // Get current category (normalize "General" to null)
-const currentCategory = documentation.data.category && 
-  documentation.data.category.trim() !== '' && 
+const currentCategory = documentation.data.category &&
+  documentation.data.category.trim() !== '' &&
   documentation.data.category !== 'General'
   ? documentation.data.category
   : null;
@@ -100,7 +100,7 @@ const structuredData = {
   <div class="py-8">
     <div class="mx-auto px-4 sm:px-6 lg:px-8 relative" style={`max-width: ${siteConfig.layout.contentWidth}`}>
       <!-- Desktop Sidebar (inside content container, positioned relative to it) -->
-      <DocsSidebar 
+      <DocsSidebar
         currentDocId={documentation.id}
         currentCategory={currentCategory}
         allDocs={visibleDocs}
@@ -113,17 +113,17 @@ const structuredData = {
           if (Array.isArray(rawImage)) {
             rawImage = rawImage[0];
           }
-          
+
           // Clean Obsidian brackets
           let cleanImagePath = typeof rawImage === 'string' ? rawImage : '';
           if (cleanImagePath.startsWith('[[') && cleanImagePath.endsWith(']]')) {
             cleanImagePath = cleanImagePath.slice(2, -2);
           }
-          
+
           // Determine src and basePath for ImageWrapper
           let imageSrc = cleanImagePath;
           let imageBasePath = '';
-          
+
           if (typeof cleanImagePath === 'string' && cleanImagePath.startsWith('http')) {
             // External URL - pass as-is
             imageSrc = cleanImagePath;
@@ -132,7 +132,7 @@ const structuredData = {
             // Detect folder-based vs file-based: if image path starts with 'attachments/',
             // it's a single-file doc (shared attachments folder)
             const isFileBased = typeof cleanImagePath === 'string' && cleanImagePath.startsWith('attachments/');
-            
+
             if (isFileBased) {
               // Single-file doc - remove attachments/ prefix
               imageSrc = cleanImagePath.replace('attachments/', '');
@@ -154,10 +154,10 @@ const structuredData = {
               }
             }
           }
-          
+
           // Convert to WebP if applicable (sync-images.js creates WebP versions)
           imageSrc = getOptimizedFormat(imageSrc);
-          
+
           return (
             <div class="h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden rounded-t-lg bg-primary-100 dark:bg-primary-800">
               <ImageWrapper
@@ -217,18 +217,10 @@ const structuredData = {
                   )}
                   <time datetime={documentation.data.lastModified.toISOString()} class="text-xs">
                     <span class="hidden sm:inline">
-                      Updated {documentation.data.lastModified.toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                      })}
+                      Updated {formatDate(documentation.data.lastModified)}
                     </span>
                     <span class="sm:hidden">
-                      Updated {documentation.data.lastModified.toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'short',
-                        day: 'numeric'
-                      })}
+                      Updated {formatDate(documentation.data.lastModified)}
                     </span>
                   </time>
                 </>
@@ -284,8 +276,8 @@ const structuredData = {
 
       <!-- Desktop TOC - floats to the right of the content container -->
       {shouldShowTOC && (
-        <div class="hidden xl:block absolute top-0 left-full ml-1 w-64">
-          <div class="sticky top-24" id="toc">
+        <div class="hidden xl:block absolute top-0 left-full ml-1 w-64 h-full">
+          <div class="sticky top-24 pb-6" id="toc">
             <TableOfContents headings={toc} />
           </div>
         </div>
@@ -369,8 +361,13 @@ const structuredData = {
           });
         }
 
-        // Initialize image grids
-        initializeImageGrids();
+      // Initialize image grids
+      initializeImageGrids();
+
+      // Initialize docs sidebar
+      if (window.initializeDocsSidebar) {
+        window.initializeDocsSidebar();
+      }
 
         // Process all external links in content to open in new tabs (including reference links)
         const allLinks = document.querySelectorAll('.prose a[href]');
@@ -380,7 +377,6 @@ const structuredData = {
             // Skip if already has target attribute (e.g., manually set)
             if (!link.hasAttribute('target')) {
               link.setAttribute('target', '_blank');
-              link.setAttribute('rel', 'noopener noreferrer');
             }
           }
         });

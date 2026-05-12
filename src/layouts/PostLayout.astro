@@ -64,7 +64,7 @@ const visiblePosts = allPosts.filter(p => shouldShowPost(p, isDev));
 
 // Process the post content and get processed data including word count
 const { Content, headings, wordCount, remarkPluginFrontmatter } = await processPost(post);
-const readingTime = calculateReadingTime(post.body);
+const readingTime = calculateReadingTime(post.body || '');
 
 // Generate table of contents if enabled
 const hideTOC = post.data.hideTOC === true;
@@ -87,7 +87,7 @@ if (siteConfig.postOptions.graphView.enabled && siteConfig.postOptions.graphView
     const matchingConnections = graphData.connections.filter((conn: any) =>
       conn.source === post.id || conn.target === post.id
     );
-    
+
     hasLocalGraphConnections = matchingConnections.length > 0;
   } catch (error) {
     // If we can't read the graph data at build time, don't show the graph
@@ -138,17 +138,17 @@ if (siteConfig.postOptions.graphView.enabled && siteConfig.postOptions.graphView
           if (Array.isArray(rawImage)) {
             rawImage = rawImage[0];
           }
-          
+
           // Clean Obsidian brackets
           let cleanImagePath = typeof rawImage === 'string' ? rawImage : '';
           if (cleanImagePath.startsWith('[[') && cleanImagePath.endsWith(']]')) {
             cleanImagePath = cleanImagePath.slice(2, -2);
           }
-          
+
           // Determine src and basePath for ImageWrapper
           let imageSrc = cleanImagePath;
           let imageBasePath = '';
-          
+
           if (typeof cleanImagePath === 'string' && cleanImagePath.startsWith('http')) {
             // External URL - pass as-is
             imageSrc = cleanImagePath;
@@ -157,7 +157,7 @@ if (siteConfig.postOptions.graphView.enabled && siteConfig.postOptions.graphView
             // Detect folder-based vs file-based: if image path starts with 'attachments/',
             // it's a single-file post (shared attachments folder)
             const isFileBased = typeof cleanImagePath === 'string' && cleanImagePath.startsWith('attachments/');
-            
+
             if (isFileBased) {
               // Single-file post - remove attachments/ prefix
               imageSrc = cleanImagePath.replace('attachments/', '');
@@ -179,10 +179,10 @@ if (siteConfig.postOptions.graphView.enabled && siteConfig.postOptions.graphView
               }
             }
           }
-          
+
           // Convert to WebP if applicable (sync-images.js creates WebP versions)
           imageSrc = getOptimizedFormat(imageSrc);
-          
+
           return (
             <div class="h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden rounded-t-lg bg-primary-100 dark:bg-primary-800">
               <ImageWrapper
@@ -317,23 +317,23 @@ if (siteConfig.postOptions.graphView.enabled && siteConfig.postOptions.graphView
         </div>
       </article>
 
-      <!-- Desktop Sidebar - floats to the right of the content container -->
-      <div class="hidden xl:block absolute top-0 left-full ml-1 w-[280px]">
-        <div class={`top-24 ${hasLocalGraphConnections || shouldShowTOC ? 'space-y-4' : ''}`} id="sidebar">
-          {hasLocalGraphConnections && (
-            <div id="local-graph-sidebar">
-              <LocalGraph currentSlug={post.id} />
-            </div>
-          )}
-
-
-          {shouldShowTOC && (
-            <div id="toc">
-              <TableOfContents headings={toc} />
-            </div>
-          )}
+      <!-- Desktop Left Sidebar - Graph (top left) -->
+      {hasLocalGraphConnections && (
+        <div class="hidden xl:block absolute top-0 right-full mr-1 w-[280px] h-full">
+          <div class="sticky top-24 pb-6" id="graph-sidebar">
+            <LocalGraph currentSlug={post.id} />
+          </div>
         </div>
-      </div>
+      )}
+
+      <!-- Desktop Right Sidebar - TOC -->
+      {shouldShowTOC && (
+        <div class="hidden xl:block absolute top-0 left-full ml-1 w-[280px] h-full">
+          <div class="sticky top-24 pb-6" id="toc-sidebar">
+            <TableOfContents headings={toc} />
+          </div>
+        </div>
+      )}
     </div>
   </div>
 
@@ -346,12 +346,12 @@ if (siteConfig.postOptions.graphView.enabled && siteConfig.postOptions.graphView
 
         wikilinks.forEach(link => {
           const linkText = link.dataset.wikilink;
-          
+
           // Skip same-page anchors (empty data-wikilink) - they're already properly formatted
           if (!linkText || linkText === '') {
             return;
           }
-          
+
           const displayOverride = link.dataset.displayOverride;
           const currentDisplayText = link.textContent;
 
@@ -373,7 +373,7 @@ if (siteConfig.postOptions.graphView.enabled && siteConfig.postOptions.graphView
 
           // First try exact id match (Astro v6 uses id, not slug)
           let post = posts.find(p => p.id === slug);
-          
+
           // If not found, try title match (for wikilinks that use post titles)
           if (!post) {
             post = posts.find(p => createSlugFromTitle(p.data.title) === slug);
@@ -384,7 +384,7 @@ if (siteConfig.postOptions.graphView.enabled && siteConfig.postOptions.graphView
             const currentHref = link.href || link.getAttribute('href') || '';
             const anchorMatch = currentHref.match(/#(.+)$/);
             const anchor = anchorMatch ? anchorMatch[1] : null;
-            
+
             if (anchor) {
               link.href = `/posts/${post.id}#${anchor}`;
             } else {

@@ -138,6 +138,7 @@ const onlyBlurbContent = contentTypesCount === 0 && siteConfig.homeOptions.blurb
 
 // Generate SEO data for homepage
 const seoData = generateHomeSEO(Astro.url.href);
+if (siteConfig.homepageTitle) seoData.title = siteConfig.homepageTitle;
 
 // Structured data for the website
 const structuredData = {
@@ -259,7 +260,7 @@ const structuredData = {
               {!useSpecialTreatment && (
                 <div class="flex items-center justify-between mb-6">
                   <h2 class="text-lg font-semibold text-primary-900 dark:text-primary-50">
-                    Featured Projects
+                    Projects
                   </h2>
                   <a
                     href="/projects"
@@ -295,7 +296,7 @@ const structuredData = {
               {!useSpecialTreatment && (
                 <div class="flex items-center justify-between mb-6">
                   <h2 class="text-lg font-semibold text-primary-900 dark:text-primary-50">
-                    Featured Documentation
+                    Documentation
                   </h2>
                   <a
                     href="/docs"
@@ -356,7 +357,7 @@ const structuredData = {
       )}
 
     </div>
-  </main>
+  </div>
 </BaseLayout>
 
 <script>

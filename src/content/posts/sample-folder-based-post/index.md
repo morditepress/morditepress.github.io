@@ -1,9 +1,10 @@
 ---
 title: Sample Folder-Based Post
-description: This is a test post to demonstrate the folder-based approach
+description: This is a test post to demonstrate the folder-based approach, which differs from file-based by using an index.md file and a folder name as the slug.
 date: 2025-09-08
 tags:
-  - Astro
+  - astro
+  - folder-based
 image: "[[cover.png]]"
 imageAlt: A beautiful multi-tiered waterfall cascading into a turquoise lake surrounded by lush green forest.
 imageOG: false
@@ -11,7 +12,6 @@ hideCoverImage: false
 hideTOC: true
 targetKeyword: ""
 draft: true
-noIndex: true
 ---
 This is a test post to demonstrate how the folder-based approach works. The folder name `sample-folder-post` should become the slug for this post.
 
@@ -32,6 +32,10 @@ Wikilink image embed:
 ```
 ![[forest.png]]
 ```
+
+Don't worry, the `/post-title/attachment` folder works also.
+
+![Lush forest](attachments/lush-forest.jpg)
 ## Benefits of Folder-Based Approach
 
 - **Organization**: Keep all post assets in one place

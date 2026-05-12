@@ -1,10 +1,19 @@
 # Dependencies
 node_modules/
 .pnpm-store/
+cli/node_modules/
 
 # Build
 dist/
 .astro/
+
+# Synced/generated public files (regenerated at build time)
+public/posts/
+public/pages/
+public/docs/
+public/projects/
+public/special/
+public/graph/
 
 # Environment variables
 .env
@@ -27,7 +36,6 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
-.bos
 
 # Temporary files
 *.tmp
@@ -41,9 +49,9 @@ ehthumbs.db
 .DS_Store
 
 # Obsidian workspace files
-src/content/.obsidian/plugins/obsidian42-brat/data.json
 src/content/.obsidian/workspace.json
 src/content/.obsidian/workspace-mobile.json
+obsidian_askpass.sh
 
 # Generated deployment platform files (GitHub Pages + Cloudflare Workers only)
 public/_redirects
