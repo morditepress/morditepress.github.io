@@ -10,7 +10,7 @@ imageAlt: Astro Modular preview, showing different theme and layout options.
 hideCoverImage: false
 hideTOC: false
 draft: true
-featured: true
+featured: false
 aliases:
   - astro-modular-configuration
 ---

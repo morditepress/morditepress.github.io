@@ -10,7 +10,7 @@ imageAlt:
 hideCoverImage: false
 hideTOC: false
 draft: true
-featured: true
+featured: false
 aliases:
   - api-reference
 ---

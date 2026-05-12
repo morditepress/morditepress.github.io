@@ -14,7 +14,7 @@ imageAlt: Gray, rocky wall
 hideCoverImage: false
 hideTOC: false
 draft: true
-featured: true
+featured: false
 aliases:
   - obsidian-astro-composer
 ---

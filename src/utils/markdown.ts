@@ -246,6 +246,11 @@ export function shouldShowPost(post: Post, isDev: boolean | undefined = undefine
   // Determine if we're in dev mode (use provided value or check environment)
   const inDevMode = isDev !== undefined ? isDev : isDevelopmentMode();
 
+  if (inDevMode && draft) {
+    // Hide drafts in dev mode
+   return false;
+  }
+
   // In development mode only, show all posts (even drafts)
   // In preview and production builds, hide drafts
   if (inDevMode) {
@@ -314,17 +319,17 @@ export function getAdjacentDocs<T extends { id: string; data: { category?: strin
 ) {
   // Filter docs by the same category
   const categoryDocs = docs.filter((doc) => {
-    const docCategory = doc.data.category && 
-      doc.data.category.trim() !== '' && 
+    const docCategory = doc.data.category &&
+      doc.data.category.trim() !== '' &&
       doc.data.category !== 'General'
       ? doc.data.category
       : null;
-    
+
     // If current doc has no category, match docs with no category
     if (!currentCategory) {
       return !docCategory;
     }
-    
+
     // Match exact category
     return docCategory === currentCategory;
   });

@@ -15,7 +15,7 @@ imageAlt: Blue glaciers and mountains.
 hideCoverImage: false
 hideTOC: false
 draft: true
-featured: true
+featured: false
 aliases:
   - obsidian-astro-suite
 ---

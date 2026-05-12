@@ -41,8 +41,9 @@ export function getStatusDisplayText(status: string | null): string {
   switch (status) {
     case 'in-progress':
       return 'In Progress';
+    case 'released':
     case 'completed':
-      return 'Completed';
+      return 'Released';
     default:
       // Return the original status as-is for custom values
       return status;
@@ -67,7 +68,7 @@ export function hasStatusStyling(status: string | null): boolean {
 export function getStatusClasses(status: string | null): string {
   if (!status) return '';
 
-  if (status === 'completed') {
+  if (status === 'released' || status === 'completed') {
     return 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200';
   }
 
