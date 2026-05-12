@@ -1,6 +1,6 @@
 ---
 title: Duamn on Born To Lose
-date: 2026-05-06
+date: 2026-05-11
 description: ""
 tags: []
 image: "[[attachments/borntolose.png]]"
