@@ -1,6 +1,6 @@
 # Astro Modular
 
-A flexible [Astro](https://astro.build) blog theme designed for [Obsidian](https://obsidian.md) users. 
+A flexible [Astro](https://astro.build) blog theme designed for [Obsidian](https://obsidian.md) users.
 
 [![Alt](https://github.com/user-attachments/assets/612b2171-d141-412b-a891-5b1caa1447b8 "Astro Modular theme shown off in 3 screenshots, with the left screenshot showing the homepage, the top right showing the bottom of a post, and the bottom right showing a minimal homepage")](https://astro.build/themes/details/astro-modular/)
 
@@ -19,16 +19,16 @@ Use Obsidian as a CMS with [Vault CMS](https://github.com/davidvkimball/vault-cm
 
 ### Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3f849f7a-71e6-463b-84af-01c523012348/deploy-status)](https://app.netlify.com/sites/astro-modular/deploys)
-[![GitHub last commit](https://img.shields.io/github/last-commit/davidvkimball/astro-modular)](https://github.com/davidvkimball/astro-modular)
+[![GitHub last commit](https://img.shields.io/github/last-commit/davidvkimball/astro-modular/master)](https://github.com/davidvkimball/astro-modular)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/davidvkimball/astro-modular)](https://github.com/davidvkimball/astro-modular)
 
 ### Tech Stack
-[![Astro](https://img.shields.io/badge/Astro-5.15.1-FF5D01?logo=astro&logoColor=white)](https://astro.build/)
+[![Astro](https://img.shields.io/badge/Astro-6.0.0--beta.1-FF5D01?logo=astro&logoColor=white)](https://astro.build/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Node.js](https://img.shields.io/badge/Node.js-20.3.0-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![pnpm](https://img.shields.io/badge/pnpm-7.1.0-F69220?logo=pnpm&logoColor=white)](https://pnpm.io/)
-[![Obsidian](https://img.shields.io/badge/Obsidian-1.11.4-7C3AED?logo=obsidian&logoColor=white)](https://obsidian.md/)
+[![Node.js](https://img.shields.io/badge/Node.js-24.13.0-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![pnpm](https://img.shields.io/badge/pnpm-10.29.3-F69220?logo=pnpm&logoColor=white)](https://pnpm.io/)
+[![Obsidian](https://img.shields.io/badge/Obsidian-1.12.2-7C3AED?logo=obsidian&logoColor=white)](https://obsidian.md/)
 
 ## Why Astro Modular?
 
@@ -39,27 +39,27 @@ Use Obsidian as a CMS with [Vault CMS](https://github.com/davidvkimball/vault-cm
 
 ## Features
 
-- [x] **Custom Themes** 
-- [x] **Feature Toggle Control** 
-- [x] **Dark/Light Mode** 
-- [x] **Search & Command Palette** 
-- [x] **Wikilinks & Linked Mentions** 
+- [x] **Custom Themes**
+- [x] **Feature Toggle Control**
+- [x] **Dark/Light Mode**
+- [x] **Search & Command Palette**
+- [x] **Wikilinks & Linked Mentions**
 - [x] **Obsidian-Style Callouts**
 - [x] **Obsidian Embeds Files**
-- [x] **Folder-Based Posts** 
+- [x] **Folder-Based Posts**
 - [x] **Multiple Content Types**
-- [x] **Image Optimization** 
+- [x] **Image Optimization**
 - [x] **Automatic Feed Generation**
-- [x] **Table of Contents** 
-- [x] **Smooth Scroll & Page Transitions** 
-- [x] **Image Gallery & Lightbox** 
-- [x] **Reading Time & Word Count** 
+- [x] **Table of Contents**
+- [x] **Smooth Scroll & Page Transitions**
+- [x] **Image Gallery & Lightbox**
+- [x] **Reading Time & Word Count**
 - [x] **Tagging**
 - [x] **Graph View**
 - [x] **Mermaid Diagrams**
-- [x] **LaTeX & Math Rendering** 
+- [x] **LaTeX & Math Rendering**
 - [x] **Custom Typography**
-- [x] **Profile Picture** 
+- [x] **Profile Picture**
 - [x] **Comments**
 
 ## Quick Start
@@ -72,7 +72,18 @@ Use Obsidian as a CMS with [Vault CMS](https://github.com/davidvkimball/vault-cm
 
 Choose one of the following methods to get started:
 
-#### Option 1: Use GitHub Template (Recommended)
+#### Option 1: CLI (Recommended)
+
+```bash
+pnpm create astro-modular my-blog
+cd my-blog
+```
+
+[![npm version](https://img.shields.io/npm/v/create-astro-modular)](https://www.npmjs.com/package/create-astro-modular)
+
+This downloads the latest template, removes dev-only files, and installs dependencies automatically. Also works with `npm create astro-modular my-blog`.
+
+#### Option 2: Use GitHub Template
 
 1. Click the **"Use this template"** button on the [repository page](https://github.com/davidvkimball/astro-modular)
 2. Select **"Create a new repository"**
@@ -84,22 +95,14 @@ Choose one of the following methods to get started:
    cd your-repo-name
    ```
 
-#### Option 2: Fork the Repository
 
-1. Click the **"Fork"** button on the [repository page](https://github.com/davidvkimball/astro-modular)
-2. Choose where to fork the repository (your personal account or organization)
-3. Clone your forked repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
 
 ### Prerequisites
-- Node.js 18.20.8
-- pnpm 7.1.0 or npm 9.6.5
+- Node.js 24.13.0+
+- pnpm 10.29.3+ or npm 9.6.5+
 
 > [!NOTE]
-> While this theme works great with any markdown editor, it's specifically optimized for Obsidian use. See the [Astro Suite Vault Guide](src/content/posts/obsidian-vault-guide.md) for Obsidian-specific features.
+> While this theme works great with any markdown editor, it's specifically optimized for Obsidian use. See the [Astro Suite Vault Guide](src/content/posts/vault-cms-guide.md) for Obsidian-specific features.
 
 ### Setup
 
@@ -124,6 +127,16 @@ Choose one of the following methods to get started:
    pnpm build
    ```
 
+### Updating the theme
+
+To pull the latest theme release (framework files, Astro, config) while keeping your content and assets:
+
+```bash
+pnpm run update
+```
+
+This downloads the latest release from GitHub, replaces framework files, restores your `src/content` and profile/favicon assets, then runs `pnpm install`. After updating, open Obsidian and use **Astro Modular Settings → Apply all settings** so your saved settings are written to the new `config.ts` if needed.
+
 ### Configuration
 
 Edit `src/config.ts` to customize your site - change the theme, enable/disable features, and configure all settings.
@@ -136,8 +149,8 @@ Set your deployment platform once in `src/config.ts` under `deployment.platform`
 
 For detailed guides, see the included blog posts:
 - **[Getting Started](src/content/posts/getting-started.md)** - complete setup and workflow guide
-- **[Formatting Reference](src/content/posts/formatting-reference.md)** - comprehensive formatting reference  
-- **[Astro Suite Vault Guide](src/content/posts/astro-suite-vault-modular-guide.md)** - Obsidian vault walkthrough
+- **[Formatting Reference](src/content/posts/formatting-reference.md)** - comprehensive formatting reference
+- **[Vault CMS Guide](src/content/posts/vault-cms-guide.md)** - Obsidian vault walkthrough
 - **[Obsidian Embeds Demo](src/content/posts/obsidian-embeds-demo.md)** - Obsidian embed examples
 
 **For AI Agents & Developers:** See [AGENTS.md](AGENTS.md) for comprehensive technical documentation.
@@ -146,7 +159,7 @@ For detailed guides, see the included blog posts:
 
 [![Star History Chart](https://api.star-history.com/svg?repos=davidvkimball/astro-modular&type=date&legend=top-left)](https://www.star-history.com/#davidvkimball/astro-modular&type=date&legend=top-left)
 
-## Acknowledgments 
+## Acknowledgments
 
 [Spaceship Astro theme](https://github.com/aitorllj93/astro-theme-spaceship) for the graph view functionality upon which this theme's is based.
 
@@ -155,6 +168,8 @@ For detailed guides, see the included blog posts:
 ## Contributing
 
 This is an open-source project. Feel free to submit feature requests, report bugs, or contribute improvements.
+
+If you are contributing code back to the theme itself, please fork the repository and submit a Pull Request. **Do not fork the repository if you are just building your own site from this template.**
 
 ## License
 

@@ -10,6 +10,7 @@ import { remarkObsidianEmbeds } from './src/utils/remark-obsidian-embeds.ts';
 import remarkBases from './src/utils/remark-bases.ts';
 import remarkInlineTags from './src/utils/remark-inline-tags.ts';
 import { remarkObsidianComments } from './src/utils/remark-obsidian-comments.ts';
+import remarkObsidianImageSize from './src/utils/remark-obsidian-image-size.ts';
 import remarkMath from 'remark-math';
 import remarkReadingTime from 'remark-reading-time';
 import remarkToc from 'remark-toc';
@@ -22,7 +23,8 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { siteConfig } from './src/config.ts';
 import swup from '@swup/astro';
-import { fileURLToPath } from 'url';
+import refreshContentOnChange from './src/integrations/refresh-content-on-change.ts';
+import { fileURLToPath } from 'node:url';
 
 // Deployment platform configuration
 const DEPLOYMENT_PLATFORM = process.env.DEPLOYMENT_PLATFORM || 'netlify';
@@ -79,6 +81,8 @@ export default defineConfig({
     enabled: true
   },
   redirects: (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'build') ? {
+  '/contact-me': '/contact',
+  '/contact-us': '/contact',
   '/privacy': '/privacy-policy',
   '/posts/mermaid-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagram-test': '/posts/obsidian-embeds-demo',
@@ -105,6 +109,7 @@ image: {
     }]
   },
   integrations: [
+    refreshContentOnChange(),
     tailwind(),
     sitemap(),
     mdx(),
@@ -113,8 +118,8 @@ image: {
       animationClass: 'transition-swup-',
       containers: ['#swup-container'],
       smoothScrolling: false,
-      cache: true,
-      preload: true, 
+      cache: process.env.NODE_ENV === 'production', // off in dev so post edits show immediately
+      preload: true,
       accessibility: false,
       updateHead: true,
       updateBodyClass: false,
@@ -131,6 +136,7 @@ image: {
   ],
   markdown: {
       remarkPlugins: [
+      remarkObsidianImageSize, // Parse Obsidian image size syntax first
       remarkInternalLinks,
       remarkInlineTags,
       remarkObsidianComments, // Remove Obsidian comments (%%...%%) early in processing
@@ -145,7 +151,7 @@ image: {
       remarkImageGrids,
       remarkMermaid,
       [remarkReadingTime, {}],
-      [remarkToc, { 
+      [remarkToc, {
         tight: true,
         ordered: false,
         maxDepth: 3,
@@ -175,6 +181,7 @@ image: {
     }
   },
   vite: {
+    assetsInclude: ['**/*.base', '**/*.home', '**/*.base'],
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -198,7 +205,7 @@ image: {
         interval: 1000
       },
       headers: {
-        'Cache-Control': 'no-cache, no-store, must-revalidate'
+        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'
         // CSP headers are handled by src/middleware.ts for all routes
       }
     },

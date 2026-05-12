@@ -21,9 +21,9 @@ if (!currentCategory || currentCategory.trim() === '' || currentCategory === 'Ge
 } else {
   // Filter by category - handle "Unsorted" specially
   if (currentCategory === 'Unsorted') {
-    filteredDocs = allDocs.filter(doc => 
-      !doc.data.category || 
-      doc.data.category.trim() === '' || 
+    filteredDocs = allDocs.filter(doc =>
+      !doc.data.category ||
+      doc.data.category.trim() === '' ||
       doc.data.category === 'General'
     );
   } else {
@@ -49,12 +49,12 @@ const sidebarHeader = currentCategory && currentCategory !== 'General' ? current
 ---
 
 <!-- Desktop Sidebar (visible at xl breakpoint and above, hidden on mobile - same behavior as TOC) -->
-<aside 
-  id="docs-sidebar-desktop" 
-  class="hidden xl:block absolute top-0 right-full w-64 mr-4 pointer-events-auto"
+<aside
+  id="docs-sidebar-desktop"
+  class="hidden xl:block absolute top-0 right-full w-64 mr-4 h-full pointer-events-auto"
   aria-label="Documentation navigation"
 >
-  <div class="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto">
+  <div class="sticky top-24 pb-6">
     <div class="bg-primary-50 dark:bg-primary-900 rounded-lg border border-primary-200 dark:border-primary-700 shadow-sm p-4">
       <div class="flex items-center gap-2 mb-4">
         <Icon name="book-open" class="w-5 h-5 text-primary-600 dark:text-primary-400" />
@@ -62,7 +62,8 @@ const sidebarHeader = currentCategory && currentCategory !== 'General' ? current
           {sidebarHeader}
         </h2>
       </div>
-      <nav class="space-y-1">
+      <div class="docs-sidebar-content overflow-x-hidden overflow-y-auto">
+        <nav class="space-y-1">
         {filteredDocs.map((doc) => {
           const isActive = doc.id === currentDocId;
           return (
@@ -79,7 +80,104 @@ const sidebarHeader = currentCategory && currentCategory !== 'General' ? current
             </a>
           );
         })}
-      </nav>
+        </nav>
+      </div>
     </div>
   </div>
 </aside>
+
+<script>
+  // Constants for docs sidebar height calculation
+  const BOTTOM_SPACING = 96; // 6rem = 96px - fixed spacing from bottom of viewport
+  const MIN_SIDEBAR_HEIGHT = 200; // Minimum height for sidebar to be useful
+
+  // Simplified height management - just ensure scrolling works
+  function updateDocsSidebarHeight() {
+    const sidebarContent = document.querySelector('.docs-sidebar-content') as HTMLElement;
+
+    if (!sidebarContent) return;
+
+    // Set a reasonable max height using viewport units - no dynamic calculation
+    sidebarContent.style.maxHeight = '60vh'; // 60% of viewport height
+    sidebarContent.style.overflowY = 'auto';
+  }
+
+  // Debounce function for performance
+  function debounce(func: Function, wait: number) {
+    let timeout: ReturnType<typeof setTimeout>;
+    return function executedFunction(...args: any[]) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
+  // Global function to initialize docs sidebar
+  function initializeDocsSidebar() {
+    const sidebarContainer = document.querySelector('#docs-sidebar-desktop') as HTMLElement;
+
+    if (!sidebarContainer) return;
+
+    // Calculate initial sidebar height immediately
+    updateDocsSidebarHeight();
+
+    // No complex observers needed with simplified height management
+  }
+
+  // Make functions globally available
+  (window as any).initializeDocsSidebar = initializeDocsSidebar;
+  (window as any).updateDocsSidebarHeight = updateDocsSidebarHeight;
+
+  // Initialize on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', initializeDocsSidebar);
+</script>
+
+<style>
+  /* Docs sidebar content area - scrollable */
+  .docs-sidebar-content {
+    /* Simple viewport-based max height */
+    max-height: 60vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    /* Custom scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--color-primary-300)) transparent;
+  }
+
+  /* Webkit scrollbar styling for Chrome/Safari/Edge */
+  .docs-sidebar-content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .docs-sidebar-content::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+  }
+
+  .docs-sidebar-content::-webkit-scrollbar-thumb {
+    background: rgb(var(--color-primary-300));
+    border-radius: 3px;
+    transition: background 0.2s ease;
+  }
+
+  .docs-sidebar-content::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--color-primary-400));
+  }
+
+  /* Dark mode scrollbar for docs sidebar */
+  .dark .docs-sidebar-content {
+    scrollbar-color: rgb(var(--color-primary-600)) transparent;
+  }
+
+  .dark .docs-sidebar-content::-webkit-scrollbar-thumb {
+    background: rgb(var(--color-primary-600));
+  }
+
+  .dark .docs-sidebar-content::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--color-primary-500));
+  }
+</style>

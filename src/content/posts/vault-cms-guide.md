@@ -1,9 +1,13 @@
 ---
 title: Vault CMS Guide
-date: 2025-09-10
+date: 2026-04-29
 description: How to use this Obsidian vault as a content management system.
 tags:
-  - Astro
+  - tutorial
+  - setup
+  - configuration
+  - astro
+  - obsidian
 image: "[[attachments/vault-cms-cover.png]]"
 imageAlt: Astro and Obsidian logos stacked vertically with a "+" (plus) sign between them.
 imageOG: true
@@ -11,7 +15,6 @@ hideCoverImage: true
 hideTOC: false
 targetKeyword: vault cms
 draft: true
-noIndex: true
 aliases:
   - astro-suite-vault-modular-guide
   - astro-suite-obsidian-vault-guide-astro-modular
@@ -20,8 +23,6 @@ aliases:
 ![Vault CMS logo](attachments/vault-cms-cover.png)
 
 ## Overview
-
-Hello wow very cool
 
 All plugins, key bindings, and the theme can be customized to your liking, but this is what's on by default.
 
@@ -68,6 +69,7 @@ Here's a guide for some important hotkeys set especially for this theme:
 - Open SEO audit: `CTRL + SHIFT + A`
 - Open Terminal: `CTRL + SHIFT + D`
 - Open Astro Modular Settings: `CTRL + SHIFT + ,`
+- Omnisearch: `CTRL + SHIFT + O`
 - Commit and sync git: `CTRL + SHIFT + S`
 
 If you're on Mac, `CTRL` = `CMD`.
@@ -83,16 +85,18 @@ Disabled default core plugins:
 - Sync
 
 Community plugins enabled:
-- Alias Filename History
+- File Name History
 - Astro Composer
 - Astro Modular Settings
 - Bases CMS
 - Editing Toolbar
 - Explorer Focus
+- File Name History
 - Git
 - Home Base
 - Iconic
 - Image Manager
+- Omnisearch
 - Oxygen Theme Settings
 - Property Over Filename
 - SEO
@@ -117,7 +121,7 @@ Bases CMS lets us treat a grid of content like a content management system. You 
 
 To edit a view, select the current view on the top left, revealing the list, and then select the right chevron arrow to open up the "configure view" options. Configure your desired properties here. At the very bottom, you can set where new notes are created when the "new" button is clicked on the top right. By default they'll be the same location as the base folder for the content type you're viewing.
 
-### Astro Composer and Alias Filename History
+### Astro Composer and File Name History
 
 Handy for easily creating new notes as Astro blog posts, pages, projects, or docs. Just create a new note with `CTRL + N`, type in a title in Title case or with special characters, and the note or folder name generated is a kebab-case version of the title without special characters. This is ideal for automating content page slugs.
 
@@ -127,7 +131,7 @@ Unlike other themes, you can use wikilinks or standard markdown links, ***withou
 
 You can also easily grab links to headings by right clicking one and selecting "Copy Heading Link".
 
-`CTRL + R` allows you to easily rename blog posts, and note filenames (or parent folders) get updated in kebab-case automatically. When this happens, the old filename will be stored as an alias by default via the Alias Filename History plugin. This means redirects of the old post or page URL will go to the current post's slug, which is configured in Astro.
+`CTRL + R` allows you to easily rename blog posts, and note filenames (or parent folders) get updated in kebab-case automatically. When this happens, the old filename will be stored as an alias by default via the File Name History plugin. This means redirects of the old post or page URL will go to the current post's slug, which is configured in Astro.
 
 You can adjust lots of settings including regex for ignoring names (like `Untitled` or a `_` prefix), timeout in seconds to store the name, or looking for changes in the parent folder name as well if you use the folder-based post option.
 
@@ -182,6 +186,10 @@ You can adjust this behavior in Property Over File Name settings.
 ### Settings Search
 
 Simply provides a global search option for all settings in Obsidian.
+
+### Omnisearch
+
+A powerful search for your entire vault or an individual note. You can search and find notes based on a note's content rather than merely just a note's title. Activate it with `CTRL + SHIFT + O` when the quick switcher (`CTRL + O`) isn't enough.
 
 ### SEO
 

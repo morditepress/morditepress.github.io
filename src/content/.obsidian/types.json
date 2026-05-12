@@ -3,6 +3,10 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
+    "imageOG": "checkbox",
+    "draft": "checkbox",
+    "noIndex": "checkbox",
+    "featured": "checkbox",
     "date": "date"
   }
 }

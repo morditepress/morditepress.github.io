@@ -3,7 +3,9 @@ title: Obsidian Embeds Demo
 date: 2025-09-09
 description: Demonstration of Obsidian-style embeds.
 tags:
-  - Astro
+  - obsidian
+  - tutorial
+  - formatting
 image: "[[attachments/galaxy.png]]"
 imageAlt: Galaxy
 imageOG: false
@@ -11,7 +13,6 @@ hideCoverImage: false
 hideTOC: false
 targetKeyword: obsidian embeds
 draft: true
-noIndex: true
 aliases:
   - mermaid-test
   - mermaid-diagram-test
@@ -43,7 +44,7 @@ Use `![[attachments/document.pdf#page=3]]` to select a specific PDF page to disp
 
 ### YouTube Videos
 
-![Astro Suite for Obsidian](https://www.youtube.com/watch?v=ZhizarvwLnU)
+![Astro Suite for Obsidian](https://www.youtube.com/watch?v=3zeqJ5tqmaQ)
 
 YouTube videos are automatically embedded with responsive design and optimized settings.
 
@@ -289,11 +290,11 @@ Math works perfectly within callouts:
 
 #### Aligned Equations
 $$
-\begin{align}
+\begin{aligned}
 f(x) &= ax^2 + bx + c \\
 f'(x) &= 2ax + b \\
 f''(x) &= 2a
-\end{align}
+\end{aligned}
 $$
 
 #### Cases and Piecewise Functions

@@ -1,17 +1,19 @@
 ---
 title: Getting Started
 date: 2025-09-06
-description: Quick start guide for Astro Modular - get your blog running in minutes.
+description: Quick start guide for Astro Modular - get your blog running in minutes. This will walk you through Vault CMS and the particulars of this theme.
 tags:
-  - Astro
+  - tutorial
+  - setup
+  - quick-start
+  - astro
+  - blog
 image: "[[attachments/sunset.png]]"
 imageAlt: Sunset skyline.
 imageOG: true
 hideCoverImage: false
 hideTOC: false
-targetKeyword: astro blog quick start
 draft: true
-noIndex: true
 ---
 Welcome to Astro Modular! This quick start guide will get your blog running in minutes. Choose your preferred workflow [below](posts/getting-started.md#Choose%20Your%20Workflow).
 

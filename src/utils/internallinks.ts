@@ -96,7 +96,7 @@ function parseLinkWithAnchor(linkText: string): {
 
   const link = linkText.substring(0, anchorIndex);
   const anchor = linkText.substring(anchorIndex + 1);
-  
+
   // Decode URL-encoded anchor text (e.g., %20 -> space)
   // This ensures both "#Choose Your Workflow" and "#Choose%20Your%20Workflow" produce the same slug
   const decodedAnchor = anchor ? decodeAnchorText(anchor) : null;
@@ -132,17 +132,17 @@ function isWikilinkInCode(content: string, wikilinkIndex: number): boolean {
   // First check for code blocks (triple backticks)
   const codeBlockRegex = /```[\s\S]*?```/g;
   let codeBlockMatch;
-  
+
   while ((codeBlockMatch = codeBlockRegex.exec(content)) !== null) {
     const codeBlockStart = codeBlockMatch.index;
     const codeBlockEnd = codeBlockMatch.index + codeBlockMatch[0].length;
-    
+
     // Check if the wikilink is inside this code block
     if (wikilinkIndex >= codeBlockStart && wikilinkIndex < codeBlockEnd) {
       return true;
     }
   }
-  
+
   // Then check for inline code (single backticks)
   const backtickRegex = /`([^`]*)`/g;
   let match;
@@ -486,13 +486,13 @@ export function remarkWikilinks() {
           if (isSamePageAnchor) {
             // Same-page anchor: [[#heading]] or [[#heading|text]]
             // Extract anchor from linkText (which starts with #)
-            const anchorText = linkText.startsWith("#") 
-              ? linkText.substring(1) 
+            const anchorText = linkText.startsWith("#")
+              ? linkText.substring(1)
               : linkText;
-            
+
             // Decode URL-encoded anchor if present
             const decodedAnchor = decodeAnchorText(anchorText);
-            
+
             // Generate slug for same-page anchor
             const anchorSlug = createAnchorSlug(decodedAnchor);
             url = `#${anchorSlug}`;
@@ -729,21 +729,21 @@ export function remarkStandardLinks() {
       // Check both encoded and decoded versions
       if (node.url.startsWith("#") && node.url.length > 1) {
         let anchorText = node.url.substring(1);
-        
+
         // Decode URL-encoded anchor text first (e.g., Choose%20Your%20Workflow -> Choose Your Workflow)
         try {
           anchorText = decodeURIComponent(anchorText);
         } catch {
           // If decoding fails, use as-is
         }
-        
+
         // Now create slug from decoded text
         const anchorSlug = createAnchorSlug(anchorText);
         const normalizedUrl = `#${anchorSlug}`;
-        
+
         // Set the URL in both the node.url and hProperties.href to ensure it's rendered correctly
         node.url = normalizedUrl;
-        
+
         // Ensure link has proper data attributes for styling/identification
         if (!node.data) {
           node.data = {};
@@ -751,10 +751,10 @@ export function remarkStandardLinks() {
         if (!node.data.hProperties) {
           node.data.hProperties = {};
         }
-        
+
         // CRITICAL: Set href in hProperties to ensure HTML rendering uses the correct URL
         node.data.hProperties.href = normalizedUrl;
-        
+
         // Add wikilink class for styling consistency (dashed underline)
         node.data.hProperties.className = node.data.hProperties.className || [];
         if (!Array.isArray(node.data.hProperties.className)) {
@@ -764,7 +764,7 @@ export function remarkStandardLinks() {
         if (!node.data.hProperties.className.includes('wikilink')) {
           node.data.hProperties.className.push('wikilink');
         }
-        
+
         return; // Early return - no further processing needed
       }
 
@@ -788,72 +788,78 @@ export function remarkStandardLinks() {
           // Convert .md file references to proper URLs based on collection
           else if (node.url.endsWith(".md") || node.url.includes(".md#")) {
             let baseUrl = "";
+            // Strip .md extension and anything after (anchor handled separately via `anchor`)
+            const strippedUrl = node.url.replace(/\.md.*$/, "");
 
-            // Determine collection and URL based on path structure
-            if (node.url.startsWith("special/")) {
-              // Special pages: handle special routing
-              const specialPath = node.url
-                .replace("special/", "")
-                .replace(/\.md.*$/, "");
-              if (specialPath === "home") {
-                baseUrl = "/"; // Homepage
-              } else if (specialPath === "404") {
-                baseUrl = "/404"; // 404 page
-              } else {
-                // Other special pages - use normal page routing
-                baseUrl = `/${specialPath}`;
-              }
-            } else if (linkText === "homepage") {
+            // Determine collection and URL based on path structure.
+            // Each branch accepts both `foo/` and `/foo/` variants, strips .md first,
+            // then strips trailing `/index` for folder-based content.
+            if (linkText === "homepage") {
               // Handle special homepage marker
               baseUrl = "/";
             } else if (linkText === "404") {
               // Handle special 404 marker
               baseUrl = "/404";
-            } else if (node.url.startsWith("posts/")) {
-              // Posts: /posts/slug/ (handle posts/ prefixed URLs WITH .md extension)
-              // Extract path and handle anchor properly
-              let postPath = node.url.replace("posts/", "").replace(/\.md.*$/, "");
-              // Remove /index if present
+            } else if (strippedUrl.startsWith("special/") || strippedUrl.startsWith("/special/")) {
+              // Special pages: handle special routing (accepts both with/without leading slash)
+              const specialPath = strippedUrl.replace(/^\/?special\//, "").replace(/\/index$/, "");
+              if (specialPath === "home") {
+                baseUrl = "/"; // Homepage
+              } else if (specialPath === "404") {
+                baseUrl = "/404"; // 404 page
+              } else if (specialPath === "projects") {
+                baseUrl = "/projects"; // Projects index
+              } else if (specialPath === "docs") {
+                baseUrl = "/docs"; // Docs index
+              } else {
+                // Other special pages - use normal page routing
+                baseUrl = `/${specialPath}`;
+              }
+            } else if (strippedUrl.startsWith("posts/") || strippedUrl.startsWith("/posts/")) {
+              // Posts: /posts/slug/ (accepts both with/without leading slash)
+              let postPath = strippedUrl.replace(/^\/?posts\//, "");
+              // Remove /index for folder-based posts
               if (postPath.endsWith("/index") && postPath.split("/").length === 2) {
-                postPath = postPath.replace("/index", "");
+                postPath = postPath.replace(/\/index$/, "");
               }
               baseUrl = `/posts/${postPath}`;
-            } else if (node.url.startsWith("pages/")) {
-              // Pages: /slug/ (no prefix) - use URL mapping
-              baseUrl = mapRelativeUrlToSiteUrl(
-                node.url.replace(/\.md.*$/, "")
-              );
-            } else if (node.url.startsWith("/pages/")) {
-              // Pages: /slug/ (no prefix) - use URL mapping
-              baseUrl = mapRelativeUrlToSiteUrl(node.url);
-            } else if (node.url.startsWith("/special/")) {
-              // Special pages: handle special routing
-              baseUrl = mapRelativeUrlToSiteUrl(node.url);
-            } else if (node.url.startsWith("special/")) {
-              // Special pages: handle special routing
-              baseUrl = mapRelativeUrlToSiteUrl(node.url);
-            } else if (node.url.startsWith("projects/")) {
+            } else if (strippedUrl.startsWith("pages/") || strippedUrl.startsWith("/pages/")) {
+              // Pages: /slug/ (no /pages prefix in final URL)
+              let pagePath = strippedUrl.replace(/^\/?pages\//, "");
+              if (pagePath.endsWith("/index")) {
+                pagePath = pagePath.replace(/\/index$/, "");
+              }
+              baseUrl = pagePath === "" ? "/" : `/${pagePath}`;
+            } else if (strippedUrl.startsWith("projects/") || strippedUrl.startsWith("/projects/")) {
               // Projects: /projects/slug/
-              baseUrl = `/${node.url.replace(/\.md.*$/, "")}`;
-              // Remove /index for folder-based projects
-              // Pattern: /projects/folder-name/index -> /projects/folder-name
-              if (
-                baseUrl.endsWith("/index") &&
-                baseUrl.split("/").length === 4
-              ) {
-                baseUrl = baseUrl.replace("/index", "");
+              let projectPath = strippedUrl.replace(/^\/?projects\//, "");
+              if (projectPath.endsWith("/index") && projectPath.split("/").length === 2) {
+                projectPath = projectPath.replace(/\/index$/, "");
               }
-            } else if (node.url.startsWith("docs/")) {
+              baseUrl = `/projects/${projectPath}`;
+            } else if (strippedUrl.startsWith("docs/") || strippedUrl.startsWith("/docs/")) {
               // Docs: /docs/slug/
-              baseUrl = `/${node.url.replace(/\.md.*$/, "")}`;
-              // Remove /index for folder-based docs
-              // Pattern: /docs/folder-name/index -> /docs/folder-name
-              if (
-                baseUrl.endsWith("/index") &&
-                baseUrl.split("/").length === 4
-              ) {
-                baseUrl = baseUrl.replace("/index", "");
+              let docPath = strippedUrl.replace(/^\/?docs\//, "");
+              if (docPath.endsWith("/index") && docPath.split("/").length === 2) {
+                docPath = docPath.replace(/\/index$/, "");
               }
+              baseUrl = `/docs/${docPath}`;
+            } else if (strippedUrl.startsWith("../") || strippedUrl.startsWith("./")) {
+              // Relative path (e.g., Obsidian exports like `../sibling-post/index.md`).
+              // Strip leading ../ and ./ segments; resolve against the current collection.
+              let cleanPath = strippedUrl.replace(/^(?:\.\.\/)+/, "").replace(/^\.\//, "");
+              if (cleanPath.endsWith("/index") && cleanPath.split("/").length === 2) {
+                cleanPath = cleanPath.replace(/\/index$/, "");
+              }
+              // Determine collection from current file's path; default to posts.
+              let collection: "posts" | "pages" | "projects" | "docs" = "posts";
+              if (file && (file as any).path) {
+                const normalizedPath = String((file as any).path).replace(/\\/g, "/");
+                if (normalizedPath.includes("/pages/")) collection = "pages";
+                else if (normalizedPath.includes("/projects/")) collection = "projects";
+                else if (normalizedPath.includes("/docs/")) collection = "docs";
+              }
+              baseUrl = collection === "pages" ? `/${cleanPath}` : `/${collection}/${cleanPath}`;
             } else {
               // Direct .md reference without collection prefix - check for special pages first
               if (linkText === "special/home") {
@@ -886,11 +892,11 @@ export function remarkStandardLinks() {
             // Aggressively remove /index from the end of any URL (multiple passes to be sure)
             baseUrl = baseUrl.replace(/\/index$/, "");
             baseUrl = baseUrl.replace(/\/index#/, "#"); // Handle /index#anchor pattern
-            
+
             if (anchor) {
               baseUrl += `#${createAnchorSlug(anchor)}`;
             }
-            
+
             // ABSOLUTE FINAL CHECK - Remove /index from final URL no matter what
             // Use a more aggressive regex that catches /index at end or before #
             let finalUrl = baseUrl.replace(/\/index(?=#|$)/g, "");
@@ -906,7 +912,7 @@ export function remarkStandardLinks() {
               // Remove /index if present
               const cleanPath = pathWithoutAnchor.replace(/\/index$/, "");
               let mappedUrl = `/posts/${cleanPath}`;
-              
+
               if (anchor) {
                 mappedUrl += `#${createAnchorSlug(anchor)}`;
               }
@@ -1240,46 +1246,46 @@ function extractExcerptAtPosition(
   // If link is near the end, extract more context from before (can't extend after)
   const isNearEnd = (contentLength - (position + linkLength)) < minContextLength;
   const contextBeforeLink = isNearEnd ? Math.max(contextLength * 2, 250) : contextLength; // Double context if near end
-  
+
   let start = Math.max(0, position - contextBeforeLink);
   let end = Math.min(contentLength, position + linkLength + (isNearEnd ? 0 : contextLength));
-  
+
   // Store initial boundaries to check minimum context after adjustments
   const initialStart = start;
   const initialEnd = end;
-  
+
   // Check if our excerpt window includes any code blocks - if so, adjust boundaries
   const codeBlockRegex = /```[\s\S]*?```/g;
   let codeBlockMatch;
   codeBlockRegex.lastIndex = 0; // Reset
-  
+
   while ((codeBlockMatch = codeBlockRegex.exec(content)) !== null) {
     const codeBlockStart = codeBlockMatch.index;
     const codeBlockEnd = codeBlockMatch.index + codeBlockMatch[0].length;
-    
+
     // If the link itself is inside a code block, we shouldn't be extracting an excerpt
     // (This should be caught by isWikilinkInCode, but double-check)
     if (position >= codeBlockStart && position < codeBlockEnd) {
       // This is an error case - return empty excerpt
       return { excerpt: "", isAtStart: false, isAtEnd: false };
     }
-    
+
     // If code block starts within our excerpt window, adjust end to before it
     if (codeBlockStart > start && codeBlockStart < end && codeBlockStart > position) {
       end = codeBlockStart; // Stop excerpt before code block
     }
-    
+
     // If code block ends within our excerpt window and starts before, adjust start to after it
     if (codeBlockEnd > start && codeBlockEnd < position && codeBlockStart < start) {
       start = codeBlockEnd; // Start excerpt after code block
     }
   }
-  
+
   // After code block adjustments, ensure we still have minimum context
   // Re-check context before/after to ensure we have enough
   const contextBefore = position - start;
   const contextAfter = end - (position + linkLength);
-  
+
   // If code block adjustments reduced context too much, try to extend in the other direction
   if (contextBefore < minContextLength && start > 0) {
     const neededBefore = minContextLength - contextBefore;
@@ -1298,7 +1304,7 @@ function extractExcerptAtPosition(
       start = desiredStart;
     }
   }
-  
+
   if (contextAfter < minContextLength && end < contentLength) {
     const neededAfter = minContextLength - contextAfter;
     const desiredEnd = Math.min(contentLength, end + neededAfter);
@@ -1316,7 +1322,7 @@ function extractExcerptAtPosition(
       end = desiredEnd;
     }
   }
-  
+
   // Check if the match itself is a wikilink - if so, find its complete length
   // This handles wikilinks with anchors and display text that are longer than expected
   const matchContent = content.substring(position, Math.min(position + 100, contentLength));
@@ -1332,16 +1338,16 @@ function extractExcerptAtPosition(
       }
     }
   }
-  
+
   // Check if we're cutting off in the middle of a link after our match
   const afterPosition = content.substring(position + linkLength);
-  
+
   // Check for markdown links after our match
   const markdownLinkMatch = afterPosition.match(/^[^\]]*\][^\)]*\)/);
   if (markdownLinkMatch && end < position + linkLength + markdownLinkMatch[0].length) {
     end = Math.min(contentLength, position + linkLength + markdownLinkMatch[0].length + 50);
   }
-  
+
   // Check for wikilinks after our match
   const wikilinkMatch = afterPosition.match(/^\[\[([^\]]+)(?:\|([^\]]+))?\]\]/);
   if (wikilinkMatch && end < position + linkLength + wikilinkMatch[0].length) {
@@ -1397,7 +1403,7 @@ function extractExcerptAtPosition(
   for (let pass = 0; pass < 5; pass++) {
     excerpt = excerpt
       // Remove patterns like "Label: - Label:" (consecutive orphaned labels)
-      .replace(/([A-Z][a-z]+):\s*-\s*([A-Z][a-z]+):/g, "") 
+      .replace(/([A-Z][a-z]+):\s*-\s*([A-Z][a-z]+):/g, "")
       // Remove "Label: - " patterns (but only if it's truly orphaned - followed by another label or end)
       .replace(/\b([A-Z][a-z]+):\s*-\s*(?=[A-Z][a-z]+:|$)/g, "") // Only if followed by label or end
       // Remove orphaned labels at end (any label ending with colon and no content)
@@ -1415,10 +1421,10 @@ function extractExcerptAtPosition(
       .replace(/\s+/g, " ")
       .trim();
   }
-  
+
   // Final cleanup - remove only syntax/formatting artifacts
   // NO WORD OR PHRASE MATCHING - only structural markdown syntax patterns
-  
+
   excerpt = excerpt
     // Remove any remaining code block markers (markdown syntax)
     .replace(/```+/g, " ") // Remove ``` markers (one or more)
@@ -1431,7 +1437,7 @@ function extractExcerptAtPosition(
     // Clean up whitespace
     .replace(/\s+/g, " ")
     .trim();
-    
+
     // Remove duplicate consecutive words/phrases (common after code stripping)
     // Only remove duplicates if they're clearly unintentional (very close together)
     // Be conservative - don't remove duplicates that might be intentional
@@ -1452,10 +1458,10 @@ function extractExcerptAtPosition(
   const cleanedWords = excerpt.split(/\s+/).filter(w => w.length > 0 && w.match(/[a-zA-Z0-9]/));
   const minCleanedWords = 10; // Minimum words in cleaned excerpt
   const minCleanedLength = 60; // Minimum characters in cleaned excerpt
-  
+
   // Recalculate context before link (start may have changed during code block adjustments)
   const currentContextBefore = position - start;
-  
+
   // If cleaned excerpt is too short, we need more raw content
   if ((cleanedWords.length < minCleanedWords || excerpt.length < minCleanedLength) && start > 0) {
     // Calculate how much more raw content we need (markdown takes ~2-3x space)
@@ -1463,10 +1469,10 @@ function extractExcerptAtPosition(
     const ratio = excerpt.length > 0 ? currentRawLength / excerpt.length : 3; // How much raw content per cleaned char (default 3x if empty)
     const neededCleaned = Math.max(minCleanedLength - excerpt.length, (minCleanedWords - cleanedWords.length) * 8);
     const additionalRaw = Math.ceil(neededCleaned * Math.max(ratio, 2) * 1.5); // Add buffer, minimum 2x ratio
-    
+
     // Try extending before (prioritize getting context before the link)
     const newStart = Math.max(0, start - additionalRaw);
-    
+
     // Check for code blocks
     let canExtend = true;
     const codeBlockRegex4 = /```[\s\S]*?```/g;
@@ -1478,12 +1484,12 @@ function extractExcerptAtPosition(
         break;
       }
     }
-    
+
     if (canExtend && newStart < start) {
       start = newStart;
       // Re-extract and re-clean the extended excerpt
       let newExcerpt = content.slice(start, end);
-      
+
       // Re-run all cleaning steps
       newExcerpt = newExcerpt
         .replace(/\n+/g, " ")
@@ -1509,7 +1515,7 @@ function extractExcerptAtPosition(
         .replace(/\*\*+/g, "")
         .replace(/\s+/g, " ")
         .trim();
-      
+
       // Re-run cleanup passes
       for (let pass = 0; pass < 5; pass++) {
         newExcerpt = newExcerpt
@@ -1528,7 +1534,7 @@ function extractExcerptAtPosition(
           .replace(/\s+/g, " ")
           .trim();
       }
-      
+
       // Re-run pattern removal
       const patternsToRemove2 = [
         /\bStart\s+lines\s+with\b/gi,
@@ -1538,7 +1544,7 @@ function extractExcerptAtPosition(
         /\bUse\s+to\s+separate\s+columns\b/gi,
         /\bcolumns\b/gi,
       ];
-      
+
       for (const pattern of patternsToRemove2) {
         let previousExcerpt = '';
         while (newExcerpt !== previousExcerpt) {
@@ -1546,7 +1552,7 @@ function extractExcerptAtPosition(
           newExcerpt = newExcerpt.replace(pattern, ' ');
         }
       }
-      
+
       newExcerpt = newExcerpt
         .replace(/```+/g, " ")
         .replace(/\s*```\s*/g, " ")
@@ -1554,7 +1560,7 @@ function extractExcerptAtPosition(
         .replace(/\b([A-Z][a-z]+(?:\s+[a-z]+)?):\s*$/g, "")
         .replace(/\s+/g, " ")
         .trim();
-      
+
       excerpt = newExcerpt;
     }
   }
@@ -1564,17 +1570,17 @@ function extractExcerptAtPosition(
   // CRITICAL: If truncating would cut off a link at the end, try to include the complete link
   if (excerpt.length > maxExcerptLength) {
     const truncated = excerpt.substring(0, maxExcerptLength);
-    
+
     // Check if we're cutting off in the middle of a link (wikilink or markdown)
     const incompleteWikilinkMatch = truncated.match(/\[\[[^\]]*$/);
     const incompleteMarkdownMatch = truncated.match(/\[[^\]]*\]\([^\)]*$/);
-    
+
     // Also check if there's a complete link right after the truncation point
     const afterTruncation = excerpt.substring(maxExcerptLength);
     const completeLinkAfter = afterTruncation.match(/^[^\[]*(\[[^\]]+\]\([^\)]+\)|\[\[[^\]]+\]\])/);
-    
+
     let truncateAt = maxExcerptLength;
-    
+
     if (incompleteWikilinkMatch || incompleteMarkdownMatch) {
       // We're cutting off a link - check if we can include the complete link
       if (completeLinkAfter && completeLinkAfter.index !== undefined) {
@@ -1591,7 +1597,7 @@ function extractExcerptAtPosition(
           }
         } else {
           // Link is too far - truncate before the incomplete link
-          const incompleteStart = incompleteWikilinkMatch 
+          const incompleteStart = incompleteWikilinkMatch
             ? (incompleteWikilinkMatch.index || 0)
             : (incompleteMarkdownMatch?.index || 0);
           if (incompleteStart > 0) {
@@ -1600,7 +1606,7 @@ function extractExcerptAtPosition(
         }
       } else {
         // No complete link found after - truncate before incomplete link
-        const incompleteStart = incompleteWikilinkMatch 
+        const incompleteStart = incompleteWikilinkMatch
           ? (incompleteWikilinkMatch.index || 0)
           : (incompleteMarkdownMatch?.index || 0);
         if (incompleteStart > 0) {
@@ -1620,11 +1626,11 @@ function extractExcerptAtPosition(
         }
       }
     }
-    
+
     // ALWAYS truncate at word boundary - find last space before truncate point
     const toTruncate = excerpt.substring(0, truncateAt);
     const lastSpace = toTruncate.lastIndexOf(' ');
-    
+
     // Always use word boundary if available (unless it's at the very start)
     if (lastSpace > 10) {
       // Found a word boundary - use it (minimum 10 chars to avoid truncating too early)
@@ -1687,8 +1693,8 @@ export function processContentAwareWikilinks(
  */
 function convertToWebP(imagePath: string): string {
   // Don't convert external URLs, SVG, or already WebP files
-  if (!imagePath || 
-      imagePath.startsWith("http") || 
+  if (!imagePath ||
+      imagePath.startsWith("http") ||
       imagePath.toLowerCase().endsWith(".svg") ||
       imagePath.toLowerCase().endsWith(".webp")) {
     return imagePath;
@@ -1725,7 +1731,7 @@ export function remarkFolderImages() {
         // Normalize path separators (Windows uses backslashes, Unix uses forward slashes)
         const normalizedPath = file.path.replace(/\\/g, "/");
         const pathParts = normalizedPath.split("/");
-        
+
         // Check for posts
         if (normalizedPath.includes("/posts/")) {
           collection = "posts";
@@ -1768,7 +1774,7 @@ export function remarkFolderImages() {
       if (imagePath.startsWith("./")) {
         imagePath = imagePath.slice(2);
       }
-      
+
       // Fallback: If we couldn't detect collection but image starts with attachments/,
       // assume it's pages (most common case for attachments)
       if (!collection && imagePath.startsWith("attachments/")) {

@@ -42,9 +42,13 @@ import { siteConfig } from '../config';
         // Create gallery container
         const galleryContainer = document.createElement('div');
 
+        // TODO: return to below logic?
         // if (imageCount === 1) {
         //   galleryContainer.className = 'image-grid image-grid-1 my-2';
-        if (imageCount === 2) {
+        // if (imageCount === 2) {
+        if (imageCount === 1) {
+          galleryContainer.className = 'image-grid image-grid-1 my-2';
+        } else if (imageCount === 2) {
           galleryContainer.className = 'image-grid image-grid-2 my-8';
         } else if (imageCount === 3) {
           galleryContainer.className = 'image-grid image-grid-3 my-8';
@@ -54,41 +58,37 @@ import { siteConfig } from '../config';
 
         // Get all non-linked images from this paragraph
         const allImages = Array.from(paragraph.querySelectorAll('img'));
-        const images = allImages.filter(img => !img.closest('a'));
+        // Filter out linked images AND manually-sized (Obsidian) images
+        const images = allImages.filter(img => !img.closest('a') && !img.classList.contains('obsidian-sized'));
 
-        // Check if there's any non-image content (like captions)
+        // Skip processing if all images were manually sized
+        if (images.length === 0) {
+          return;
+        }
+
+        // Caption rule: only the very next line (same paragraph in HTML) = caption. Next paragraph (blank line in MD) = body.
         // ONLY for single images - grids don't have captions
-        let nonImageContent: Node[] = [];
+        let captionContent: Node[] = [];  // same-paragraph text = caption (centered)
+        let nextParagraphBody: Element | null = null;  // next <p> = had blank line in MD = normal body, move into container
         if (imageCount === 1) {
-          nonImageContent = Array.from(paragraph.childNodes).filter(node => {
+          const sameParagraphContent = Array.from(paragraph.childNodes).filter(node => {
             if (node.nodeType === Node.ELEMENT_NODE) {
-              const element = node as Element;
-              return element.tagName !== 'IMG' && element.tagName !== 'PICTURE';
+              const el = node as Element;
+              return el.tagName !== 'IMG' && el.tagName !== 'PICTURE';
             }
             if (node.nodeType === Node.TEXT_NODE) {
               return (node.textContent || '').trim() !== '';
             }
             return true;
           });
-
-          // If no caption content found in the same paragraph, check the next paragraph
-          // BUT only if it looks like a caption (has italic text or links, and is not a heading)
-          if (nonImageContent.length === 0) {
-            const nextParagraph = paragraph.nextElementSibling;
-            if (nextParagraph && nextParagraph.tagName === 'P') {
-              // Check if the next paragraph looks like a caption (contains italic text or links)
-              const hasItalic = nextParagraph.querySelector('em, i');
-              const hasLinks = nextParagraph.querySelector('a');
-              const isHeading = nextParagraph.querySelector('h1, h2, h3, h4, h5, h6');
-              const hasOnlyText = nextParagraph.textContent && nextParagraph.textContent.trim() !== '' &&
-                                nextParagraph.children.length <= 2; // Allow for simple formatting
-
-              // Only treat as caption if it has italic/links AND is not a heading
-              if ((hasItalic || hasLinks || hasOnlyText) && !isHeading) {
-                // This looks like a caption, include it
-                nonImageContent = Array.from(nextParagraph.childNodes);
-                // Mark the next paragraph for removal since we're moving its content
-                (nextParagraph as HTMLElement).style.display = 'none';
+          if (sameParagraphContent.length > 0) {
+            captionContent = sameParagraphContent;
+          } else {
+            const nextP = paragraph.nextElementSibling;
+            if (nextP && nextP.tagName === 'P' && !nextP.querySelector('h1, h2, h3, h4, h5, h6')) {
+              const text = (nextP.textContent || '').trim();
+              if (text !== '') {
+                nextParagraphBody = nextP;
               }
             }
           }
@@ -100,7 +100,7 @@ import { siteConfig } from '../config';
           imageItem.className = 'image-item';
 
           const button = document.createElement('button');
-          button.className =  'image-button w-full h-full group cursor-pointer';
+          button.className = 'image-button w-full h-full group cursor-pointer';
           button.setAttribute('data-lightbox', 'gallery');
           button.setAttribute('aria-label', `View ${img.alt} in full size`);
 
@@ -140,25 +140,29 @@ import { siteConfig } from '../config';
         container.className = 'image-container';
         container.appendChild(galleryContainer);
 
-        // Add any non-image content (like captions) after the gallery
-        if (nonImageContent.length > 0) {
+        const appendContent = (parent: Element, nodes: Node[]) => {
+          nodes.forEach(node => {
+            if (node.nodeType === Node.TEXT_NODE && (!node.textContent || !node.textContent.trim())) return;
+            if (node.nodeType === Node.ELEMENT_NODE && (node as Element).tagName === 'BR') return;
+            parent.appendChild(node.cloneNode(true));
+          });
+        };
+        if (captionContent.length > 0) {
           const captionContainer = document.createElement('div');
           captionContainer.className = 'image-caption-container';
-          nonImageContent.forEach(node => {
-            // Skip empty text nodes and br tags to reduce spacing
-            if (node.nodeType === Node.TEXT_NODE && (!node.textContent || !node.textContent.trim())) {
-              return;
-            }
-            if (node.nodeType === Node.ELEMENT_NODE && (node as Element).tagName === 'BR') {
-              return;
-            }
-            captionContainer.appendChild(node.cloneNode(true));
-          });
+          appendContent(captionContainer, captionContent);
           container.appendChild(captionContainer);
         }
+        if (nextParagraphBody) {
+          const bodyP = document.createElement('p');
+          appendContent(bodyP, Array.from(nextParagraphBody.childNodes));
+          container.appendChild(bodyP);
+        }
 
-        // Replace the paragraph with the container
         paragraph.parentNode?.replaceChild(container, paragraph);
+        if (nextParagraphBody?.parentNode) {
+          nextParagraphBody.parentNode.removeChild(nextParagraphBody);
+        }
       }
     });
   }

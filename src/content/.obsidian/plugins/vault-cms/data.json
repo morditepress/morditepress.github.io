@@ -1,103 +1,101 @@
 {
   "projectRoot": "../..",
-  "configFilePath": "../../slate.config.ts",
+  "configFilePath": "../config.ts",
   "contentTypes": [
     {
-      "id": "content-type-1769199160540-kfotja472",
-      "name": "Docs",
+      "id": "content-1765432406133",
+      "name": "Documentation",
       "folder": "docs",
       "fileOrganization": "file",
-      "enabled": true,
-      "indexFileName": "index"
+      "indexFileName": "index",
+      "linkBasePath": "/docs/",
+      "enabled": true
     },
     {
-      "id": "content-type-1769199160540-an05byu4x",
+      "id": "pages-1765432337485",
       "name": "Pages",
       "folder": "pages",
       "fileOrganization": "file",
-      "enabled": true,
-      "indexFileName": "index"
-    },
-    {
-      "id": "content-type-1768696374549-cqke1tque",
-      "name": "Posts",
-      "folder": "post",
-      "fileOrganization": "file",
-      "enabled": true,
       "indexFileName": "index",
-      "linkBasePath": "/posts/"
+      "linkBasePath": "/",
+      "enabled": true
     },
     {
-      "id": "content-type-1769199160540-xc07ngwtn",
+      "id": "posts-1765432337485",
       "name": "Posts",
       "folder": "posts",
       "fileOrganization": "file",
-      "enabled": false,
-      "indexFileName": "index"
+      "indexFileName": "index",
+      "linkBasePath": "/posts/",
+      "enabled": true
     },
     {
-      "id": "content-type-1769199160540-hqtrbieqx",
+      "id": "content-1765432392567",
       "name": "Projects",
       "folder": "projects",
       "fileOrganization": "file",
-      "enabled": true,
-      "indexFileName": "index"
+      "indexFileName": "index",
+      "linkBasePath": "/projects/",
+      "enabled": true
     },
     {
-      "id": "content-type-1769199160540-fpwcdy4hn",
-      "name": "Special",
+      "id": "content-type-1769839757487-w482ctdm8",
+      "name": "Special Pages",
       "folder": "special",
       "fileOrganization": "file",
       "enabled": true,
-      "indexFileName": "index"
+      "indexFileName": "index",
+      "linkBasePath": "/"
     }
   ],
   "frontmatterProperties": {
-    "content-type-1768696374549-cqke1tque": {
+    "content-1765432406133": {
       "titleProperty": "title",
-      "dateProperty": "pubDate",
-      "descriptionProperty": "description",
-      "tagsProperty": "tags",
-      "hasDraftStatus": false,
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ntags: []\ndate: {{date}}\nimage: \"[[attachments/vagrants-attack-card.png]]\"\nimageAlt: \"Mordite Press\"\n---\n"
-    },
-    "content-type-1769199160540-kfotja472": {
-      "titleProperty": "title",
+      "dateProperty": "lastModified",
       "descriptionProperty": "description",
       "draftProperty": "draft",
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ncategory: \"\"\norder: 2\nversion: \"\"\nlastModified: {{date}}\nimage: \"[[attachments/vagrants-attack-card.png]]\"\nimageAlt: \"Mordite Press\"\nhideCoverImage: false\nhideTOC: false\ndraft: false\nfeatured: false\nnoIndex: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ncategory: \"\"\norder: 2\nversion: \"\"\nlastModified: {{date}}\nimage:\nimageAlt:\nhideCoverImage: false\nhideTOC: false\ndraft: false\nfeatured: true\n---\n"
     },
-    "content-type-1769199160540-an05byu4x": {
+    "pages-1765432337485": {
       "titleProperty": "title",
       "descriptionProperty": "description",
       "draftProperty": "draft",
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
-      "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nnoIndex: false\nhideTOC: true\ndraft: true\nimage: \"[[attachments/vagrants-attack-card.png]]\"\nimageAlt: \"Mordite Press\"\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nnoIndex: false\nhideTOC: false\ndraft: false\n---\n"
     },
-    "content-type-1769199160540-hqtrbieqx": {
+    "posts-1765432337485": {
       "titleProperty": "title",
       "dateProperty": "date",
       "descriptionProperty": "description",
-      "tagsProperty": "categories",
+      "tagsProperty": "tags",
       "draftProperty": "draft",
       "draftLogic": "true-draft",
       "hasDraftStatus": true,
       "imageProperty": "image",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ndate: {{date}}\ncategories: []\nrepositoryUrl:\nprojectUrl: \"\"\nstatus: \"completed\"\nimage: \"[[attachments/vagrants-attack-card.png]]\"\nimageAlt: \"Mordite Press\"\nhideCoverImage: false\nhideTOC: false\ndraft: false\nfeatured: false\nnoIndex: false\n---\n"
+      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ntags: []\nimage: \"\"\nimageAlt: \"\"\nimageOG: false\nhideCoverImage: false\nhideTOC: false\ntargetKeyword: \"\"\ndraft: false\n---\n"
     },
-    "content-type-1769199160540-fpwcdy4hn": {
+    "content-1765432392567": {
+      "titleProperty": "title",
+      "dateProperty": "date",
+      "descriptionProperty": "description",
+      "draftProperty": "draft",
+      "draftLogic": "true-draft",
+      "hasDraftStatus": true,
+      "imageProperty": "image",
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\ndate: {{date}}\ncategories: []\nrepositoryUrl:\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: false\nfeatured: false\n---\n"
+    },
+    "content-type-1769839757487-w482ctdm8": {
       "titleProperty": "title",
       "descriptionProperty": "description",
       "hasDraftStatus": false,
       "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\n---\n"
     }
   },
-  "attachmentHandlingMode": "specified-folder",
+  "attachmentHandlingMode": "subfolder",
   "preset": "vanilla",
   "presetName": "",
   "presetsRepo": "davidvkimball/vault-cms-presets",
@@ -134,8 +132,7 @@
     "titleProperty": "title",
     "scanDirectories": "docs,pages,posts,projects,special",
     "useFilenameAsTitle": false,
-    "useFilenameAsSlug": true,
-    "enableMDXSupport": false
+    "useFilenameAsSlug": true
   },
   "propertyOverFileName": {
     "propertyKey": "title"
@@ -149,20 +146,19 @@
     "defaultProvider": "unsplash",
     "unsplashProxyServer": "",
     "pexelsApiKey": "",
-    "pexelsApiKeySecretId": "",
+    "pexelsApiKeySecretId": "pexels-api-key",
     "pixabayApiKey": "",
-    "pixabayApiKeySecretId": "",
+    "pixabayApiKeySecretId": "pixabay-api-key",
     "defaultOrientation": "any",
     "defaultImageSize": "large",
     "enablePropertyPaste": true,
-    "propertyLinkFormat": "obsidian",
-    "customPropertyLinkFormat": "{image-url}",
-    "defaultPropertyName": "banner",
+    "propertyLinkFormat": "custom",
+    "customPropertyLinkFormat": "[[attachments/{image-url}]]",
+    "defaultPropertyName": "image",
     "defaultIconPropertyName": "icon",
     "autoConvertRemoteImages": false,
     "convertOnNoteOpen": false,
     "convertOnNoteSave": false,
-    "showRenameDialog": true,
     "autoRename": false,
     "dupNumberDelimiter": "-",
     "dupNumberAtStart": false,
@@ -174,7 +170,7 @@
     "appendReferral": false,
     "banner": {
       "properties": {
-        "imageProperty": "banner",
+        "imageProperty": "image",
         "iconProperty": "icon"
       },
       "desktop": {
@@ -188,7 +184,7 @@
           8,
           8
         ],
-        "padding": 8,
+        "padding": 0,
         "fade": true,
         "iconEnabled": false,
         "iconSize": 96,
@@ -199,7 +195,8 @@
         "iconAlignmentH": "flex-start",
         "iconAlignmentV": "flex-end",
         "iconOffsetX": 0,
-        "iconOffsetY": -24
+        "iconOffsetY": -24,
+        "animation": false
       },
       "tablet": {
         "enabled": true,
@@ -251,12 +248,12 @@
       }
     },
     "supportedExtensions": [
-      "md",
-      "mdx"
+      "md"
     ],
     "debugMode": false
   },
   "homeBase": {
+    "homeBasePath": "bases/Home.base",
     "homeBaseType": "File",
     "homeBaseValue": "bases/Home.base",
     "openOnStartup": true,
@@ -265,24 +262,27 @@
     "manualOpenMode": "retain",
     "replaceNewTab": false,
     "newTabMode": "only-when-empty",
-    "openWhenAllTabsClosed": true,
+    "openWhenAllTabsClosed": false,
+    "keepExistingTabs": false,
     "useDifferentFileForNewTab": false,
     "newTabType": "File",
-    "newTabValue": "",
+    "newTabValue": "bases/Home.base",
     "newTabSeparateMobile": false,
-    "mobileNewTabType": "File",
+    "mobileNewTabType": "Graph view",
     "mobileNewTabValue": "",
     "showStickyHomeIcon": true,
-    "stickyIconName": "home",
+    "stickyIconName": "lucide-home",
     "hideHomeTabHeader": true,
     "replaceMobileNewTab": false,
     "separateMobile": false,
+    "mobileHomeBasePath": "",
     "mobileHomeBaseType": "File",
     "mobileHomeBaseValue": "",
     "commandOnOpen": "",
     "revertView": false,
     "autoScroll": false,
     "hideReleaseNotes": false,
+    "openWhenEmpty": false,
     "stickyIconReplaceTab": false
   },
   "explorerFocus": {},
@@ -296,18 +296,8 @@
     "branchName": "main",
     "autoConfigureObsidianGit": true
   },
-  "deploymentPlatform": "",
-  "resolvePublicImages": false,
   "runWizardOnStartup": false,
   "wizardCompleted": true,
-  "enableWYSIWYG": false,
-  "commanderConfig": {
-    "pageHeaderCommands": []
-  },
-  "imageInserter": {
-    "valueFormat": "[[attachments/{image-url}]]",
-    "insertFormat": "[[attachments/{image-url}]]"
-  },
-  "enableMdxSupport": true,
-  "defaultContentTypeId": "content-type-1768696374549-cqke1tque"
+  "enableMdxSupport": false,
+  "defaultContentTypeId": "posts-1765432337485"
 }

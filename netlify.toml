@@ -3,7 +3,7 @@
   command = "pnpm run build"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22"
   PNPM_VERSION = "8"
 
 # Enable compression for all text-based files
@@ -144,6 +144,18 @@
   publish = "dist"
 
 # Generated redirects from content aliases
+
+[[redirects]]
+  from = "/contact-me"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact-us"
+  to = "/contact"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/privacy"

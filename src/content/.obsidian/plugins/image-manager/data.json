@@ -7,20 +7,21 @@
   "defaultProvider": "unsplash",
   "unsplashProxyServer": "",
   "pexelsApiKey": "",
-  "pexelsApiKeySecretId": "",
+  "pexelsApiKeySecretId": null,
   "pixabayApiKey": "",
-  "pixabayApiKeySecretId": "",
+  "pixabayApiKeySecretId": null,
   "defaultOrientation": "any",
   "defaultImageSize": "large",
   "enablePropertyPaste": true,
-  "propertyLinkFormat": "obsidian",
-  "customPropertyLinkFormat": "{image-url}",
-  "defaultPropertyName": "banner",
+  "propertyLinkFormat": "custom",
+  "customPropertyLinkFormat": "[[attachments/{image-url}]]",
+  "defaultPropertyName": "image",
   "defaultIconPropertyName": "icon",
+  "altTextProperty": "",
   "autoConvertRemoteImages": false,
   "convertOnNoteOpen": false,
   "convertOnNoteSave": false,
-  "processBackgroundChanges": true,
+  "processBackgroundChanges": false,
   "showRenameDialog": true,
   "autoRename": false,
   "dupNumberDelimiter": "-",
@@ -33,22 +34,26 @@
   "appendReferral": false,
   "banner": {
     "properties": {
-      "imageProperty": "banner",
-      "iconProperty": "icon"
+      "imageProperty": "image",
+      "iconProperty": "icon",
+      "hidePropertyEnabled": false,
+      "hideProperty": ""
     },
     "desktop": {
       "enabled": true,
       "height": 240,
       "viewOffset": 0,
       "noteOffset": -32,
+      "bannerRadiusEnabled": false,
       "borderRadius": [
         8,
         8,
         8,
         8
       ],
-      "padding": 8,
+      "padding": 0,
       "fade": true,
+      "animation": false,
       "iconEnabled": false,
       "iconSize": 96,
       "iconRadius": 8,
@@ -65,6 +70,7 @@
       "height": 190,
       "viewOffset": 0,
       "noteOffset": -32,
+      "bannerRadiusEnabled": false,
       "borderRadius": [
         8,
         8,
@@ -73,6 +79,7 @@
       ],
       "padding": 8,
       "fade": true,
+      "animation": false,
       "iconEnabled": false,
       "iconSize": 96,
       "iconRadius": 8,
@@ -89,6 +96,7 @@
       "height": 160,
       "viewOffset": 0,
       "noteOffset": -32,
+      "bannerRadiusEnabled": false,
       "borderRadius": [
         8,
         8,
@@ -97,6 +105,7 @@
       ],
       "padding": 8,
       "fade": true,
+      "animation": false,
       "iconEnabled": false,
       "iconSize": 56,
       "iconRadius": 8,
@@ -110,8 +119,7 @@
     }
   },
   "supportedExtensions": [
-    "md",
-    "mdx"
+    "md"
   ],
   "debugMode": false
 }
