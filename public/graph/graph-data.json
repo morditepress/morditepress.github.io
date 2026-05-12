@@ -1,6 +1,41 @@
 {
   "nodes": [
     {
+      "id": "bacon-wrapped-setting",
+      "type": "post",
+      "title": "Bacon-wrapped Setting",
+      "slug": "bacon-wrapped-setting",
+      "connections": 0
+    },
+    {
+      "id": "circular-tactics",
+      "type": "post",
+      "title": "Circular Tactics",
+      "slug": "circular-tactics",
+      "connections": 0
+    },
+    {
+      "id": "duamn-on-born-to-lose",
+      "type": "post",
+      "title": "Duamn on Born To Lose",
+      "slug": "duamn-on-born-to-lose",
+      "connections": 0
+    },
+    {
+      "id": "encumbrance-brinksmanship",
+      "type": "post",
+      "title": "Encumbrance Brinksmanship",
+      "slug": "encumbrance-brinksmanship",
+      "connections": 0
+    },
+    {
+      "id": "forced-retreat-and-open-tables",
+      "type": "post",
+      "title": "Forced Retreat and Open tables",
+      "slug": "forced-retreat-and-open-tables",
+      "connections": 0
+    },
+    {
       "id": "formatting-reference",
       "type": "post",
       "title": "Formatting Reference",
@@ -15,10 +50,24 @@
       "connections": 6
     },
     {
+      "id": "group-rolls",
+      "type": "post",
+      "title": "Group Rolls",
+      "slug": "group-rolls",
+      "connections": 0
+    },
+    {
       "id": "it-cant-be",
       "type": "post",
       "title": "It Can't Be!",
       "slug": "it-cant-be",
+      "connections": 0
+    },
+    {
+      "id": "kickless",
+      "type": "post",
+      "title": "Kickless",
+      "slug": "kickless",
       "connections": 0
     },
     {
@@ -29,10 +78,45 @@
       "connections": 0
     },
     {
+      "id": "looters-a-game-of-unlicensed-adventure",
+      "type": "post",
+      "title": "LOOTERS, a game of unlicensed adventure.",
+      "slug": "looters-a-game-of-unlicensed-adventure",
+      "connections": 0
+    },
+    {
       "id": "obsidian-embeds-demo",
       "type": "post",
       "title": "Obsidian Embeds Demo",
       "slug": "obsidian-embeds-demo",
+      "connections": 0
+    },
+    {
+      "id": "open-licenses",
+      "type": "post",
+      "title": "Open Licenses",
+      "slug": "open-licenses",
+      "connections": 0
+    },
+    {
+      "id": "planescape-and-rpg-critique",
+      "type": "post",
+      "title": "Planescape & RPG Critique",
+      "slug": "planescape-and-rpg-critique",
+      "connections": 0
+    },
+    {
+      "id": "playground-treasure",
+      "type": "post",
+      "title": "Playground-Style Treasure",
+      "slug": "playground-treasure",
+      "connections": 0
+    },
+    {
+      "id": "rules-for-humans",
+      "type": "post",
+      "title": "Rules for Humans",
+      "slug": "rules-for-humans",
       "connections": 0
     },
     {
@@ -43,10 +127,45 @@
       "connections": 0
     },
     {
+      "id": "stochastic-duration-and-resource-crunch",
+      "type": "post",
+      "title": "Stochastic Duration and Resource Crunch",
+      "slug": "stochastic-duration-and-resource-crunch",
+      "connections": 0
+    },
+    {
+      "id": "stupid-fantasy",
+      "type": "post",
+      "title": "Stupid Fantasy",
+      "slug": "stupid-fantasy",
+      "connections": 0
+    },
+    {
+      "id": "tbd",
+      "type": "post",
+      "title": "Doppelgängers",
+      "slug": "tbd",
+      "connections": 0
+    },
+    {
+      "id": "torchbearer-a-retrospective",
+      "type": "post",
+      "title": "Torchbearer, A Retrospective",
+      "slug": "torchbearer-a-retrospective",
+      "connections": 0
+    },
+    {
       "id": "vault-cms-guide",
       "type": "post",
       "title": "Vault CMS Guide",
       "slug": "vault-cms-guide",
+      "connections": 0
+    },
+    {
+      "id": "yes-no-and-but",
+      "type": "post",
+      "title": "Yes-no-and-but",
+      "slug": "yes-no-and-but",
       "connections": 0
     }
   ],
@@ -133,9 +252,9 @@
     }
   ],
   "metadata": {
-    "totalPosts": 7,
+    "totalPosts": 24,
     "totalConnections": 16,
     "maxNodesApplied": false,
-    "originalNodeCount": 7
+    "originalNodeCount": 24
   }
 }
