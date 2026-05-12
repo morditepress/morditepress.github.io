@@ -1,6 +1,13 @@
 {
   "nodes": [
     {
+      "id": "duamn-on-born-to-lose",
+      "type": "post",
+      "title": "Duamn on Born To Lose",
+      "slug": "duamn-on-born-to-lose",
+      "connections": 0
+    },
+    {
       "id": "formatting-reference",
       "type": "post",
       "title": "Formatting Reference",
@@ -36,10 +43,24 @@
       "connections": 0
     },
     {
+      "id": "rules-for-humans",
+      "type": "post",
+      "title": "Rules for Humans",
+      "slug": "rules-for-humans",
+      "connections": 0
+    },
+    {
       "id": "sample-folder-based-post",
       "type": "post",
       "title": "Sample Folder-Based Post",
       "slug": "sample-folder-based-post",
+      "connections": 0
+    },
+    {
+      "id": "tbd",
+      "type": "post",
+      "title": "Doppelgängers",
+      "slug": "tbd",
       "connections": 0
     },
     {
@@ -133,9 +154,9 @@
     }
   ],
   "metadata": {
-    "totalPosts": 7,
+    "totalPosts": 10,
     "totalConnections": 16,
     "maxNodesApplied": false,
-    "originalNodeCount": 7
+    "originalNodeCount": 10
   }
 }
