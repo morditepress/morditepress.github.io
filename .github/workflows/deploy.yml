@@ -19,6 +19,10 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v5
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3 # docs https://pnpm.io/continuous-integration#github-actions
+        with:
+            version: 8  # Optional: specify a pnpm version
       - name: Approve pnpm builds
         run: pnpm approve-builds
       - name: Install, build, and upload your site
