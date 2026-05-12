@@ -23,8 +23,8 @@ jobs:
         uses: pnpm/action-setup@v3 # docs https://pnpm.io/continuous-integration#github-actions
         with:
             version: 8  # Optional: specify a pnpm version
-      - name: Approve pnpm builds
-        run: pnpm approve-builds
+      # - name: Approve pnpm builds
+      #   run: pnpm approve-builds
       - name: Install, build, and upload your site
         uses: withastro/action@v5
         with:
