@@ -18,7 +18,7 @@ It's been a few years now since Torchbearer 2e released. Many people enjoy it. S
 
 Whenever the topic is broached on Ross' excellent torchbearer podcast, *Born to Lose*, discussion of the rift seems confusing to 2e fans. 
 
-1e advocates are thought to be reactionary, resisting the new edition simply because they don't like change, or because they're committed to a D&D nostalgia that's now out of fashion. It doesn't help that there *are* some folks out there who *are* resistant to change, or *did* find D&D nostalgia appealing. I've read some of those posts. The quality varies.
+1e advocates are thought to be reactionary, resisting the new edition simply because they don't like change, or because they're committed to a D&D nostalgia that's now out of fashion. It doesn't help that there *are* some folks out there who're resistant to change, or did find D&D nostalgia appealing. I've read some of those posts. The quality varies.
 
 **But there are legitimate reasons that some folks who love 1e couldn't summon the same enthusiasm for 2e, and I'd like to get into them here.**  
 
@@ -72,19 +72,19 @@ But when you swap TB1's reimagined tropes for Middarmark's deep, historically in
 
 It's superficially the same. You do begin as have-nots. 
 
-Torchbearer 2e reverts to the zero-to-hero model of later D&D. Now our downtrodden adventurers are on the path to starting businesses and settlements, buying homes and gaining titles. Instead of being outside the system, they're starting at the bottom and working their way up the ladder of *precedence*. They just need to try hard enough within the system, and sure life will throw them some curveballs, but they can prevail. Those challenges only test their worthiness on the path to becoming *powerful.*
+Torchbearer 2e reverts to the zero-to-hero model of later D&D. Now our downtrodden adventurers are on the path to starting businesses and settlements, buying homes and gaining titles. Instead of being outside the system, they're starting at the bottom and working their way up the ladder of *precedence*. They just need to try hard enough within the system, and life will throw them some curveballs, but they can prevail. Those challenges only test their worthiness on the path to becoming *powerful.*
 
-Sure, it's a less rank message than *Dungeons & Dragons'* lionized colonialism or whatever the hell it's morphed into these days. But it's still a power fantasy of the same ilk. And that, to me, is a betrayal of what I thought the core theme of Torchbearer was. *Picaresque*. Imperfect people trying to survive by their wits in a world with no place for them.
+Sure, it's a less rank message than old *Dungeons & Dragons'* lionized colonialism. But it's still a power fantasy of the same ilk. And that, to me, is a betrayal of what I thought the core theme of Torchbearer was. *Picaresque*. Imperfect people trying to survive by their wits in a world with no place for them.
 
 The shift is compounded by incessant reference to economies and economics, something I find to be exceptionally tasteless in an adventure game. I don't give a single shit about inflation in the local village, and the idea that a GM would be tabulating that stuff in the background is utterly tedious. I don't even think the economics stand up to scrutiny, but I don't hate myself enough to bother proving it. 
 
-Likewise war. I cannot think of a less appropriate mechanic to introduce to torchbearer than an omniscient war sim with protagonists as generals. Surely we could have said something about the hobby here rather than recapitulating its weakest aspects.
+Likewise war. I can't think of a less appropriate mechanic to introduce to torchbearer than a war sim with protagonists as omniscient generals. Surely we could have said something worthwhile about the hobby here rather than regurgitating its weakest episodes.
 
 **I'm told that you know what a game is about by what it chooses to describe with rules. By this metric, Torchbearer 2e appears to be a game of colonial enterprise, like D&D before it.**
 
 These additions to the game, many of which are not even functional in play, are such a departure from Torchbearer's original appeal that they eroded my interest completely. And boy howdy was I invested in this game.
 
-**Geez, Tell Us How You Really Feel**
+## Geez, Tell Us How You Really Feel
 So where does this leave us? Am I going to be arranging a pyre to burn the TB2 books? No. Games are art, and lots of game-art falls apart under this level of scrutiny. I certainly think it's possible to play 2e and get the old mode out of it, even despite the points above. I don't begrudge the people who still play it. And it's certainly made an impression on me, enough that I have all these thoughts about it. 
 
-But I can't make books for this game anymore, for a host of reasons. Perhaps the loudest reason is that the message that resonated with me just isn't as strong as it was in the first version. But, as I've done with lots of other imperfect games, I plan to carry it forward into something new.
+But I can't make books for this game anymore, for a host of reasons. Perhaps the loudest reason is that the message that resonated with me just isn't as strong as it was in the first version. But, as I've done with lots of other games, I plan to carry its lessons forward into something new.
