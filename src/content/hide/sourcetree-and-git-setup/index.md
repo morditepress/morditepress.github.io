@@ -8,7 +8,7 @@ lastModified: 2024-01-15
 image: "[[sourcetree.png]]"
 imageAlt: SourceTree logo with a blue background.
 hideCoverImage: false
-hideTOC: false
+hideTOC: true
 draft: true
 featured: false
 aliases:

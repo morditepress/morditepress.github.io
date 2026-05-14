@@ -87,6 +87,7 @@ export default defineConfig({
   '/posts/mermaid-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagram-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagrams': '/posts/obsidian-embeds-demo',
+  '/posts/on-torchbearer': '/posts/torchbearers-edition-war',
   '/posts/astro-suite-vault-modular-guide': '/posts/vault-cms-guide',
   '/posts/astro-suite-obsidian-vault-guide-astro-modular': '/posts/vault-cms-guide',
   '/posts/obsidian-vault-guide': '/posts/vault-cms-guide',

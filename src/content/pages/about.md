@@ -12,4 +12,4 @@ draft: false
 We've made some open-license books for Torchbearer, collaborations with MRDR HOBO, and original games and adventures of our own.
 
 
-We're not using AI. Social media is painful. Everything we have to say is in our books.
+We're not using AI. Social media is painful. Everything we have to say is in our books or on this blog.

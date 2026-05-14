@@ -73,7 +73,7 @@ No problem! You can still use Astro Modular with any editor.
 3. **Deploy** when ready
 
 **Next Steps:**
-- Read the [setup guide](docs/configuration.md) for detailed configuration
+- Read the [setup guide](../hide/configuration.md) for detailed configuration
 - Explore the [reference guide](formatting-reference.md) for markdown features
 - Customize your theme and layout in `src/config.ts`
 
@@ -122,13 +122,13 @@ Optimized for performance with automatic image optimization and lazy loading.
 
 ### For Non-Obsidian Users:
 1. **Customize your site** - Edit `src/config.ts`
-2. **Read the full guide** - [Complete Setup Guide](docs/configuration.md)
+2. **Read the full guide** - [Complete Setup Guide](../hide/configuration.md)
 3. **Explore features** - [Formatting Reference](formatting-reference.md)
 4. **Start writing** - Create your first post
 
 ## Need Help?
 
-- **Complete Setup Guide**: [Configuration Documentation](docs/configuration.md)
+- **Complete Setup Guide**: [Configuration Documentation](../hide/configuration.md)
 - **Obsidian Vault Guide**: [Obsidian Vault Guide](vault-cms-guide.md)
 - **Formatting Reference**: [Formatting Reference](formatting-reference.md)
 

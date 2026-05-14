@@ -155,6 +155,13 @@
       "connections": 0
     },
     {
+      "id": "torchbearers-edition-war",
+      "type": "post",
+      "title": "Torchbearer's Edition War",
+      "slug": "torchbearers-edition-war",
+      "connections": 0
+    },
+    {
       "id": "vault-cms-guide",
       "type": "post",
       "title": "Vault CMS Guide",
@@ -252,9 +259,9 @@
     }
   ],
   "metadata": {
-    "totalPosts": 24,
+    "totalPosts": 25,
     "totalConnections": 16,
     "maxNodesApplied": false,
-    "originalNodeCount": 24
+    "originalNodeCount": 25
   }
 }

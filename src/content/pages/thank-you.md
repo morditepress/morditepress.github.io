@@ -1,8 +1,8 @@
 ---
 title: Thank You
 description: Thank you for your submission.
-hideTOC: true
-noIndex: true
-draft: false
+hideTOC: false
+noIndex: false
+draft: true
 ---
 Your submission has been sent. Expect a response soon!

@@ -49,7 +49,7 @@ pnpm build
 > [!Important] Important
 > If you're using Obsidian, you may be able to skip most of this and just jump in with the Astro Modular Settings Obsidian plugin. It has a wizard that walks you through site setup on startup and lets you tweak and manage practically everything covered here.
 >
-> If this applies to you, you can jump right to the [Content Structure](docs/configuration.md#Content%20Structure) section.
+> If this applies to you, you can jump right to the [Content Structure](configuration.md#Content%20Structure) section.
 
 ### Core Settings
 
@@ -275,7 +275,7 @@ Affects how cover images are displayed on post cards: `"all"`, `"featured"`, `"h
 
 ### Comments System
 
-The theme includes a Giscus-powered commenting system that uses GitHub Discussions. See the [full guide](docs/configuration.md#Comments%20System) for setup instructions.
+The theme includes a Giscus-powered commenting system that uses GitHub Discussions. See the [full guide](configuration.md#Comments%20System) for setup instructions.
 
 ## Content Structure
 
@@ -320,7 +320,7 @@ Open `src/content/` in Obsidian to use the preconfigured vault features:
 - **Minimal Theme**: Optimized for writing
 - **Git Plugin**: Commit and sync directly from Obsidian
 
-Read [the guide](../posts/vault-cms-guide.md) for more detailed information.
+Read [the guide](../../posts/vault-cms-guide.md) for more detailed information.
 
 ## Key Features
 
