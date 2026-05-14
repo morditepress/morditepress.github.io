@@ -48,7 +48,7 @@ Why am I so fixated on pastiche? Partly because it gave Torchbearer an [anti-can
 
 But I'm not against detailed settings. Hell, I love them, and I'm guilty of pushing in that direction myself. TB1 seemed to invite me to do so, and TB2 required me to live in Middarmark, or else do considerable work to leave it. Mordite [D. Koch](https://archive.mordite.press/author/d-koch) took that deal and made the [Chalk Horse](https://www.rimholm.com/about) books for Middarmark, which I also enjoy.
 
-Anti-canon core rules could easily have left space for multiple settings (and homebrews!) to hook into the Torchbearer rules. I would never begrudge BW putting Middarmark into their game, either. There was a way to do it that didn't invalidate collaborators' published material, and *much* more importantly, existing players' characters and previous participation in the game.
+BW could easily have left space for multiple settings (and homebrews!) to hook into Torchbearer. I would never begrudge BW putting Middarmark into their game, either. There was a way to do it that didn't invalidate collaborators' published material, and *much* more importantly, existing players' characters and previous participation in the game.
 
 I know because I asked them, repeatedly, not to do things like change spell levels or delete classes when you could just add a new spell, or a new class. They didn't have to deviate from the naming conventions they had gotten so right in the first edition. But ultimately, this wasn't the creative direction they wanted to go. They wanted to change the meaning of the game in specific ways, ways that changed my feelings on the game. Let's talk about that.
 
