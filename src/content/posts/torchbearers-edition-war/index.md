@@ -86,6 +86,4 @@ These additions to the game, many of which are not even functional in play, are 
 ## Geez, Tell Us How You Really Feel
 So where does this leave us? Am I arranging a pyre to burn the TB2 books? No. Games are art, and lots of game-art falls apart under this level of scrutiny. I certainly think it's possible to play 2e and get the old mode out of it, even despite the points above. I don't begrudge the people who still play it. And it's certainly made an impression on me, enough that I have all these thoughts about it. 
 
-So where does this leave us? Am I going to be arranging a pyre to burn the TB2 books? No. Games are art, and lots of game-art falls apart under this level of scrutiny. I certainly think it's possible to play 2e and get the old mode out of it, even despite the points above. I don't begrudge the people who still play it. And it's certainly made an impression on me, enough that I have all these thoughts about it.
-
 But I can't make books for this game anymore, for a host of reasons. Perhaps the loudest reason is that the message that resonated with me just isn't as strong as it was in the first version. But, as I've done with lots of other games, I plan to carry its lessons forward into something new.
