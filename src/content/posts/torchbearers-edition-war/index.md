@@ -10,7 +10,7 @@ imageOG: false
 hideCoverImage: false
 hideTOC: false
 targetKeyword:
-draft: false
+draft: true
 ---
 Please forgive the provocative title, a blogger's gotta blog.
 
