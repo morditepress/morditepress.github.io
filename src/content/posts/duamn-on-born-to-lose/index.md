@@ -1,6 +1,6 @@
 ---
 title: Duamn on Born To Lose
-date: 2026-05-11
+date: 2026-05-14
 description: The Born to Lose podcast sat down to interview game designer and avowed mordite Duamn Figueroa Rassol!
 tags: []
 image: "[[Chimera_Skull_Rattle_Lineup.jpg]]"
@@ -15,6 +15,6 @@ aliases:
 ---
 The *Born to Lose* podcast sat down to interview game designer and avowed mordite Duamn Figueroa Rassol!
 
-Mordite press fans will recognize Duamn's style from his illustrations in many of our books, but it's worth noting that he's a major contributor, art director and de facto editor.
+Mordite press fans will recognize Duamn's style from his illustrations in many of our books, but it's worth noting that he's a major contributor, art director and de facto editor at Mordite Press in addition to his own work as MRDR HOBO.
 
 Go [have a listen!](https://open.spotify.com/episode/0whgH9TAavZk7rlAZ9JXId?si=5cQGQcfxR0uIRKTdo2zMYg) 
