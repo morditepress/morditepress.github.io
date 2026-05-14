@@ -3,13 +3,15 @@ title: Duamn on Born To Lose
 date: 2026-05-11
 description: The Born to Lose podcast sat down to interview game designer and avowed mordite Duamn Figueroa Rassol!
 tags: []
-image: "[[attachments/Chimera_Skull_Rattle_Lineup.jpg]]"
+image: "[[Chimera_Skull_Rattle_Lineup.jpg]]"
 imageAlt: Born to Lose Podcast Logo
 imageOG: true
 hideCoverImage: false
 hideTOC: false
 draft: false
 noIndex: false
+aliases:
+  - duamn-on-born-to-lose
 ---
 The *Born to Lose* podcast sat down to interview game designer and avowed mordite Duamn Figueroa Rassol!
 
