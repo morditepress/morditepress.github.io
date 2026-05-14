@@ -148,13 +148,6 @@
       "connections": 0
     },
     {
-      "id": "torchbearer-a-retrospective",
-      "type": "post",
-      "title": "Torchbearer, A Retrospective",
-      "slug": "torchbearer-a-retrospective",
-      "connections": 0
-    },
-    {
       "id": "torchbearers-edition-war",
       "type": "post",
       "title": "Torchbearer's Edition War",
@@ -259,9 +252,9 @@
     }
   ],
   "metadata": {
-    "totalPosts": 25,
+    "totalPosts": 24,
     "totalConnections": 16,
     "maxNodesApplied": false,
-    "originalNodeCount": 25
+    "originalNodeCount": 24
   }
 }

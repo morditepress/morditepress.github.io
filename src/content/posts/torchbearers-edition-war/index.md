@@ -1,7 +1,7 @@
 ---
 title: Torchbearer's Edition War
 date: 2026-05-14
-description: It's been a few years now since Torchbearer 2e released. Many people enjoy it. Some found it divisive. I found it inconvenient at first, then existentially destructive for Mordite Press.
+description: It's been a few years now since Torchbearer 2e released. Many people enjoy it. Some found it divisive. I found it inconvenient at first, then ultimately destructive for Mordite Press.
 tags:
   - torchbearer
 image: ./chess_game.png
@@ -9,10 +9,8 @@ imageAlt: A Mordite and a King play at a chessboard
 imageOG: false
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
-draft: true
-aliases:
-  - torchbearers-edition-war
+targetKeyword:
+draft: false
 ---
 Please forgive the provocative title, a blogger's gotta blog.
 
