@@ -3,13 +3,13 @@ import { siteConfig } from '../config';
 import ThemeToggle from './ThemeToggle.astro';
 import Icon from './Icon.astro';
 
-const showProfilePicture = siteConfig.profilePicture.enabled && siteConfig.profilePicture.placement === 'header';
+// const showProfilePicture = siteConfig.profilePicture.enabled && siteConfig.profilePicture.placement === 'header';
 const profilePicture = siteConfig.profilePicture;
 
 // Style classes for profile picture in header
 const getHeaderProfilePictureClasses = (style: string) => {
   switch (style) {
-    case 'circle': return 'w-8 h-8 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700 inline-block';
+    case 'circle': return 'w-8 h-8 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700 inline-block mr-2';
     case 'square': return 'w-8 h-8 rounded-lg object-cover border-2 border-primary-200 dark:border-primary-700';
     default: return 'h-8 object-contain'; // none - height constrained, width flexible
   }
@@ -19,7 +19,7 @@ const getHeaderProfilePictureClasses = (style: string) => {
 const hasShortcut = siteConfig.commandPalette.shortcut && siteConfig.commandPalette.shortcut.trim();
 
 // Extract the key from the shortcut (e.g., 'ctrl+k' -> 'K')
-const shortcutKey = hasShortcut ? siteConfig.commandPalette.shortcut.split('+').pop()?.toUpperCase() || 'K' : '';
+// const shortcutKey = hasShortcut ? siteConfig.commandPalette.shortcut.split('+').pop()?.toUpperCase() || 'K' : '';
 
 // Check if all command palette sections are disabled
 const allSectionsDisabled = !siteConfig.commandPalette.sections.quickActions &&
@@ -172,10 +172,10 @@ const paletteIcon = allSectionsDisabled ? 'search' : 'command';
               class="flex items-center space-x-2 px-3 py-2 text-sm text-primary-500 dark:text-primary-400 bg-primary-50 dark:bg-primary-800 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-700 transition-colors"
               aria-label="Open command palette"
             >
-              <Icon name={paletteIcon} class="w-5 h-5" />
-              <kbd class="text-xs font-medium text-primary-600 dark:text-primary-300">
+              <Icon name="search" class="w-4 h-4 mr-2" /> Search
+              {/* <kbd class="text-xs font-medium text-primary-600 dark:text-primary-300">
                 {shortcutKey}
-              </kbd>
+              </kbd> */}
             </button>
           ) : (
             <button
