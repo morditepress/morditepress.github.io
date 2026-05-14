@@ -9,7 +9,7 @@ const profilePicture = siteConfig.profilePicture;
 // Style classes for profile picture in header
 const getHeaderProfilePictureClasses = (style: string) => {
   switch (style) {
-    case 'circle': return 'w-8 h-8 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700';
+    case 'circle': return 'w-8 h-8 rounded-full object-cover border-2 border-primary-200 dark:border-primary-700 inline-block';
     case 'square': return 'w-8 h-8 rounded-lg object-cover border-2 border-primary-200 dark:border-primary-700';
     default: return 'h-8 object-contain'; // none - height constrained, width flexible
   }
@@ -36,17 +36,16 @@ const paletteIcon = allSectionsDisabled ? 'search' : 'command';
       <!-- Logo / Site Title / Profile Picture -->
       <div class="flex items-center">
         <a href="/" class="hover:opacity-75 transition-opacity">
-          {showProfilePicture ? (
+          {profilePicture.image && (
             <img
               src={profilePicture.image}
               alt={profilePicture.alt}
               class={getHeaderProfilePictureClasses(profilePicture.style)}
             />
-          ) : (
-            <span class="font-semibold text-primary-900 dark:text-primary-50 [font-variant:small-caps]">
-              {siteConfig.title}
-            </span>
           )}
+          <span class="font-semibold text-primary-900 dark:text-primary-50 [font-variant:small-caps]">
+            {siteConfig.title}
+          </span>
         </a>
       </div>
 
