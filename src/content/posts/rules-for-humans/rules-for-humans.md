@@ -3,7 +3,7 @@ title: Rules for Humans
 date: 2026-05-06
 description: What if we play with the notion of unreliable execution as a design space.
 tags: []
-image: "[[attachments/Resource Crunch Final.jpg]]"
+image:
 imageAlt: Mountains and water.
 imageOG: true
 hideCoverImage: false

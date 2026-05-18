@@ -84,13 +84,9 @@ export default defineConfig({
   '/contact-me': '/contact',
   '/contact-us': '/contact',
   '/privacy': '/privacy-policy',
-  '/posts/posts': '/posts/looters-a-game-of-unlicensed-adventure',
   '/posts/mermaid-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagram-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagrams': '/posts/obsidian-embeds-demo',
-  '/posts/astro-suite-vault-modular-guide': '/posts/vault-cms-guide',
-  '/posts/astro-suite-obsidian-vault-guide-astro-modular': '/posts/vault-cms-guide',
-  '/posts/obsidian-vault-guide': '/posts/vault-cms-guide',
   '/projects/the-vagrants-guide-to-surviving-the-wild': '/projects/the-vagrants-guide-to-surviving-the-wild-release'
 } : {},
 image: {
