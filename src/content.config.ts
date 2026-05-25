@@ -9,7 +9,7 @@ const postsCollection = defineCollection({
     description: z.string().nullable().optional().default('No description provided'),
     date: z.coerce.date().default(() => new Date()),
     tags: z.array(z.string()).nullable().optional(),
-    environment: z.enum(['Obsidian', 'Local', 'Production']).default('Production'),
+    environment: z.enum(['Obsidian', 'Local', 'Production']).default('Obsidian'),
     image: z.any().nullable().optional().transform((val) => {
       // Handle various Obsidian syntax formats
       if (Array.isArray(val)) {
@@ -39,7 +39,7 @@ const pagesCollection = defineCollection({
   schema: z.object({
     title: z.string().default('Untitled Page'),
     description: z.string().nullable().optional().default('No description provided'),
-    environment: z.enum(['Obsidian', 'Local', 'Production']).default('Production'),
+    environment: z.enum(['Obsidian', 'Local', 'Production']).default('Obsidian'),
     lastModified: z.coerce.date().optional(),
     image: z.any().nullable().optional().transform((val) => {
       // Handle various Obsidian syntax formats
@@ -90,7 +90,7 @@ const projectsCollection = defineCollection({
     hideCoverImage: z.boolean().optional(),
     hideTOC: z.boolean().optional(),
     showTOC: z.boolean().optional(),
-    environment: z.enum(['Obsidian', 'Local', 'Production']).default('Production'),
+    environment: z.enum(['Obsidian', 'Local', 'Production']).default('Obsidian'),
     noIndex: z.boolean().optional(),
     featured: z.boolean().optional(),
   }),
@@ -121,7 +121,7 @@ const docsCollection = defineCollection({
     imageAlt: z.string().nullable().optional(),
     hideCoverImage: z.boolean().optional(),
     hideTOC: z.boolean().optional(),
-    environment: z.enum(['Obsidian', 'Local', 'Production']).default('Production'),
+    environment: z.enum(['Obsidian', 'Local', 'Production']).default('Obsidian'),
     noIndex: z.boolean().optional(),
     showTOC: z.boolean().optional(),
     featured: z.boolean().optional(),
