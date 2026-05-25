@@ -9,7 +9,7 @@ image: "[[attachments/astro-modular-configuration.png]]"
 imageAlt: Astro Modular preview, showing different theme and layout options.
 hideCoverImage: false
 hideTOC: false
-draft: true
+environment: Obsidian
 featured: false
 aliases:
   - astro-modular-configuration
@@ -302,7 +302,7 @@ description: "A brief description"
 tags: ["tag1", "tag2"]
 image: "cover.jpg"
 imageAlt: "Cover image description"
-draft: false
+environment: Production
 ---
 
 ## Start with H2

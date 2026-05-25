@@ -12,6 +12,7 @@ import Lightbox from '@/components/Lightbox.astro';
 import ImageWrapper from '@/components/ImageWrapper.astro';
 import DocsSidebar from '@/components/DocsSidebar.astro';
 import Icon from '@/components/Icon.astro';
+import EnvironmentBanner from '@/components/EnvironmentBanner.astro';
 import { shouldShowContent, getAdjacentDocs, formatDate } from '@/utils/markdown';
 
 export interface Props {
@@ -230,6 +231,7 @@ const structuredData = {
 
           <!-- Documentation content -->
           <div class="prose dark:prose-dark max-w-none" id="documentation-content">
+            <EnvironmentBanner environment={documentation.data.environment} />
             <Content />
           </div>
         </div>

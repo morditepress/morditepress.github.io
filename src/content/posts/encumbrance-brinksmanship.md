@@ -8,6 +8,6 @@ imageAlt: Mountains and water.
 imageOG: true
 hideCoverImage: false
 hideTOC: false
-draft: true
+environment: Obsidian
 noIndex: true
 ---

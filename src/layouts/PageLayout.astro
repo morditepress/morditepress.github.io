@@ -9,6 +9,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import TableOfContents from '@/components/TableOfContents.astro';
 import Lightbox from '@/components/Lightbox.astro';
 import ImageWrapper from '@/components/ImageWrapper.astro';
+import EnvironmentBanner from '@/components/EnvironmentBanner.astro';
 
 export interface Props {
   page: Page;
@@ -156,6 +157,7 @@ const structuredData = {
 
           <!-- Page content -->
           <div class="prose dark:prose-dark max-w-none" id="page-content">
+            <EnvironmentBanner environment={page.data.environment} />
             <Content />
           </div>
         </div>

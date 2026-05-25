@@ -10,7 +10,7 @@ image: "[[https://cdn2.hubspot.net/hubfs/2068068/The%20Grind%20Front%20Cover.jpg
 imageAlt: "The Grind Front Cover"
 hideCoverImage: false
 hideTOC: true
-draft: false
+environment: Production
 featured: false
 ---
 Torchbearer RPG Zine

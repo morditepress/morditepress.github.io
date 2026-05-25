@@ -4,15 +4,15 @@ description: Complete API reference for the Astro Modular theme
 category: Astro Modular
 order: 2
 version: 0.8.1
-lastModified: 2026-02-22
+lastModified: 2026-05-18
 image:
 imageAlt:
 hideCoverImage: false
 hideTOC: false
 environment: Obsidian
-featured: false
+featured: true
 aliases:
-  - api-reference
+date: 2026-05-18
 ---
 This document provides a complete reference for the Astro Modular theme APIs, utilities, and configuration options.
 

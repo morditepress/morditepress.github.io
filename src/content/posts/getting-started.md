@@ -13,7 +13,7 @@ imageAlt: Sunset skyline.
 imageOG: true
 hideCoverImage: false
 hideTOC: false
-draft: true
+environment: Obsidian
 ---
 Welcome to Astro Modular! This quick start guide will get your blog running in minutes. Choose your preferred workflow [below](posts/getting-started.md#Choose%20Your%20Workflow).
 

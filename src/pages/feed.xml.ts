@@ -10,7 +10,7 @@ function normalizeSiteUrl(url: string): string {
 export const GET: APIRoute = async () => {
   const siteUrl = normalizeSiteUrl(import.meta.env.SITE || siteConfig.site);
   const posts = await getCollection("posts", ({ data }) => {
-    return !data.draft;
+    return data.environment === 'Production';
   });
 
   // Sort posts by date (newest first)

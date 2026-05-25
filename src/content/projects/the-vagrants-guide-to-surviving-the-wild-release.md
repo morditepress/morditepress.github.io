@@ -10,7 +10,7 @@ image: "[[attachments/vagrants-attack-card.png]]"
 imageAlt: "Attack card in The Vagrant’s Guide to Surviving the Wild"
 hideCoverImage: false
 hideTOC: true
-draft: false
+environment: Production
 featured: true
 aliases:
   - the-vagrants-guide-to-surviving-the-wild

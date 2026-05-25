@@ -3,7 +3,7 @@ title: About
 description: Learn more about Mordite Press. Tabletop role-playing games and misadventures. Seattle - Boston - Argentina - Ireland.
 noIndex: false
 hideTOC: false
-draft: false
+environment: Production
 ---
 **Mordite Press** makes stuff for tabletop RPGs.
 

@@ -8,7 +8,7 @@ imageAlt: Mountains and water.
 imageOG: true
 hideCoverImage: false
 hideTOC: false
-draft: true
+environment: Obsidian
 noIndex: true
 ---
 Way back at the end of 2023, Michael Prescott said [some things](https://blog.trilemma.com/2023/12/whose-mechanic-is-it-anyway.html) about mechanic ownership on his Trilemma Blog and they split my skull open like a woodaxe.

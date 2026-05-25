@@ -9,7 +9,7 @@ image: "[[sourcetree.png]]"
 imageAlt: SourceTree logo with a blue background.
 hideCoverImage: false
 hideTOC: true
-draft: true
+environment: Obsidian
 featured: false
 aliases:
   - sourcetree-and-git

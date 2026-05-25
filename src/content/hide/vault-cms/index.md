@@ -14,7 +14,7 @@ image: "[[glacier.png]]"
 imageAlt: Blue glaciers and mountains.
 hideCoverImage: false
 hideTOC: false
-draft: true
+environment: Obsidian
 featured: false
 aliases:
   - obsidian-astro-suite
