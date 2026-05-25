@@ -10,7 +10,7 @@ image: "[[https://f.hubspotusercontent10.net/hubfs/2068068/grind.jpg]]"
 imageAlt: "Image for The Grind Turn 3: Hell or Highwater"
 hideCoverImage: false
 hideTOC: true
-draft: false
+environment: Production
 featured: false
 ---
 Chaos reigns!

@@ -9,7 +9,7 @@ image: "[[../../attachments/Tactic Fight Final.jpg]]"
 imageAlt:
 hideCoverImage: false
 hideTOC: false
-draft: true
+environment: Local
 featured: true
 aliases:
 date: 2026-05-18
@@ -17,7 +17,7 @@ date: 2026-05-18
 
 ## Heading
 
-Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn 
+Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn
 ## another heading
 
-Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn 
+Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn

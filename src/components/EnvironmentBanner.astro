@@ -1,0 +1,33 @@
+---
+/**
+ * EnvironmentBanner Component
+ * Shows a warning banner when content is set to 'Local' environment in dev mode
+ * Only visible in development and when environment === 'Local'
+ */
+
+interface Props {
+  environment?: string;
+}
+
+const { environment } = Astro.props;
+
+// Only show in development mode and when environment is 'Local'
+const isDev = import.meta.env.DEV;
+const showBanner = isDev && environment === 'Local';
+---
+
+{
+  showBanner && (
+    <div class="mb-6 rounded-lg border-l-4 border-highlight-500 bg-highlight-50 p-4 dark:border-highlight-400 dark:bg-highlight-900/20">
+      <div class="flex flex-col gap-2">
+        <strong class="text-highlight-700 dark:text-highlight-300">Warning: Local Preview Only</strong>
+        <p class="m-0 text-sm text-primary-700 dark:text-primary-300">
+          This post will show locally only and will not be
+          published to the live site. To publish it, set the environment to
+          'Production'.
+        </p>
+        <p class="m-0 text-xs text-primary-700 dark:text-primary-300">Don't worry, this banner won't show in production.</p>
+      </div>
+    </div>
+  )
+}

@@ -10,7 +10,7 @@ image: "[[https://cdn2.hubspot.net/hubfs/2068068/grind-2-mistvale-nights.jpg]]"
 imageAlt: "Image for The Grind Turn 2: Mistvale Nights"
 hideCoverImage: false
 hideTOC: true
-draft: false
+environment: Production
 featured: false
 ---
 Chaos has spread to the valley of Mistvale...

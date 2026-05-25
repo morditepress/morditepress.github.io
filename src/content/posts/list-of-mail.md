@@ -9,7 +9,7 @@ image: "[[https://cdn2.hubspot.net/hubfs/2068068/Mordite%20Mail.png]]"
 imageAlt: "Image for List of Mail"
 hideCoverImage: false
 hideTOC: true
-draft: false
+environment: Production
 featured: false
 ---
 Loyal followers, we have more projects in the works than ever! If you want to stay on top of the latest Mordite Monday posts, crowd-funding announcements and product releases, you should submit to our mailing list.

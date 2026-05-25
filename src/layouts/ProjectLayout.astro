@@ -19,6 +19,7 @@ import { Image } from 'astro:assets';
 import { devConfig } from '@/config/dev';
 import { getOptimizedFormat } from '@/utils/images';
 import ImageWrapper from '@/components/ImageWrapper.astro';
+import EnvironmentBanner from '@/components/EnvironmentBanner.astro';
 
 export interface Props {
   project: CollectionEntry<'projects'>;
@@ -283,6 +284,7 @@ const { prev: prevProject, next: nextProject } = getAdjacentPosts(visibleProject
 
           <!-- Article content -->
           <div class="prose dark:prose-dark max-w-none" id="project-content">
+            <EnvironmentBanner environment={project.data.environment} />
             <Content />
           </div>
 

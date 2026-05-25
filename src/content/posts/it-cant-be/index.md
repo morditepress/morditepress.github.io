@@ -9,7 +9,7 @@ image: ./woe_is_you.jpg
 imageAlt: Quint staggers down a corridor, pursued by a megaplasm
 hideCoverImage: false
 hideTOC: true
-draft: false
+environment: Production
 featured: false
 aliases:
 ---

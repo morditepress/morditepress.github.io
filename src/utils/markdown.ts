@@ -236,58 +236,57 @@ function isDevelopmentMode(): boolean {
 
 // Check if a post should be shown in production
 export function shouldShowPost(post: Post, isDev: boolean | undefined = undefined): boolean {
-  const { draft, title, date } = post.data;
+  const { environment, title, date } = post.data;
 
   // Always require title and date
   if (!title || !date) {
     return false;
   }
 
-  // Determine if we're in dev mode (use provided value or check environment)
-  const inDevMode = isDev !== undefined ? isDev : isDevelopmentMode();
-
-  if (inDevMode && draft) {
-    // Hide drafts in dev mode
-   return false;
-  }
-
-  // In development mode only, show all posts (even drafts)
-  // In preview and production builds, hide drafts
-  if (inDevMode) {
-    return true;
-  }
-
-  // In production/preview, hide drafts (draft: true or undefined draft defaults to false)
-  if (draft === true) {
+  // Obsidian environment posts never show on the site (vault-only)
+  if (environment === 'Obsidian') {
     return false;
   }
 
-  return true;
+  // Determine if we're in dev mode (use provided value or check environment)
+  const inDevMode = isDev !== undefined ? isDev : isDevelopmentMode();
+
+  // In development mode, show Local and Production posts
+  if (inDevMode) {
+    return environment === 'Local' || environment === 'Production';
+  }
+
+  // In production/preview, only show Production environment posts
+  return environment === 'Production';
 }
 
 // Generic function to check if any content item should be shown
 export function shouldShowContent(
-  item: { data: { title: string; draft?: boolean } },
+  item: { data: { title: string; environment?: string } },
   isDev: boolean | undefined = undefined
 ): boolean {
-  const { draft, title } = item.data;
+  const { environment, title } = item.data;
 
   // Always require title
   if (!title) {
     return false;
   }
 
+  // Obsidian environment content never shows on the site (vault-only)
+  if (environment === 'Obsidian') {
+    return false;
+  }
+
   // Determine if we're in dev mode (use provided value or check environment)
   const inDevMode = isDev !== undefined ? isDev : isDevelopmentMode();
 
-  // In development mode only, show all content (even drafts)
-  // In preview and production builds, hide drafts
+  // In development mode, show Local and Production content
   if (inDevMode) {
-    return true;
+    return environment === 'Local' || environment === 'Production';
   }
 
-  // In production/preview, hide drafts
-  return !draft;
+  // In production/preview, only show Production environment content
+  return environment === 'Production';
 }
 
 // Sort content by date (newest first)

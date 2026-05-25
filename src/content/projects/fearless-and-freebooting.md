@@ -9,7 +9,7 @@ image: "[[https://cdn2.hubspot.net/hubfs/2068068/Fear-and-Free-cover_300.jpg]]"
 imageAlt: "Fearless and Freebooting cover"
 hideCoverImage: false
 hideTOC: true
-draft: false
+environment: Production
 featured: false
 ---
 Nine indispensable character classes for bravely plundering, raiding, and looting.

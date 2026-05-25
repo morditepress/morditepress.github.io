@@ -371,8 +371,9 @@ function parseMarkdownFile(content, slug) {
           // Single value
           if (key === "date") {
             data[key] = new Date(value);
-          } else if (key === "draft") {
-            data[key] = value === "true";
+          } else if (key === "environment") {
+            // Keep environment as string
+            data[key] = value;
           } else if (
             key === "imageOG" ||
             key === "hideCoverImage" ||
@@ -424,9 +425,17 @@ async function generateGraphData() {
     const posts = readContentFiles(postsDir);
     log.info(`📄 Found ${posts.length} posts`);
 
-    // Filter out draft posts in production
+    // Filter out non-visible posts (Obsidian environment posts never show, Local/Production show in dev, only Production in prod)
     const isDev = process.env.NODE_ENV !== "production" && !process.argv.includes("--production");
-    const visiblePosts = posts.filter((post) => isDev || !post.data.draft);
+    const visiblePosts = posts.filter((post) => {
+      if (post.data.environment === 'Obsidian') {
+        return false; // Never show Obsidian posts
+      }
+      if (isDev) {
+        return post.data.environment === 'Local' || post.data.environment === 'Production';
+      }
+      return post.data.environment === 'Production';
+    });
 
     log.info(`📄 Processing ${visiblePosts.length} visible posts`);
 

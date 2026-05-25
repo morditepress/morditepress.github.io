@@ -3,6 +3,6 @@ title: Thank You
 description: Thank you for your submission.
 hideTOC: false
 noIndex: false
-draft: true
+environment: Obsidian
 ---
 Your submission has been sent. Expect a response soon!
