@@ -13,7 +13,7 @@ hideTOC: false
 environment: Production
 noIndex: false
 ---
-The *Born to Lose* podcast sat down to interview game designer and avowed mordite Duamn Figueroa Rassol!
+The *Born to Lose* podcast sat down to interview game designer, artist and avowed mordite Duamn Figueroa Rassol!
 
 Mordite press fans will recognize Duamn's style from his illustrations in many of our books, but it's worth noting that he's a major contributor, art director and de facto editor at Mordite Press in addition to his own work as MRDR HOBO.
 

@@ -129,7 +129,7 @@ __export(settings_schema_exports, {
   readCMSSettings: () => readCMSSettings
 });
 function readCMSSettings(config, pluginSettings) {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x;
+  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z;
   const getConfig = (key) => {
     var _a2;
     return (_a2 = config == null ? void 0 : config.get) == null ? void 0 : _a2.call(config, key);
@@ -156,9 +156,11 @@ function readCMSSettings(config, pluginSettings) {
     dateIncludeTime: (_b = getConfig("dateIncludeTime")) != null ? _b : false,
     showTextPreview: (_c = getConfig("showTextPreview")) != null ? _c : true,
     fallbackToContent: (_d = getConfig("fallbackToContent")) != null ? _d : true,
-    truncatePreviewProperty: (_e = getConfig("truncatePreviewProperty")) != null ? _e : false,
-    descriptionMaxLength: (_f = getConfig("descriptionMaxLength")) != null ? _f : 500,
-    descriptionMaxLines: (_g = getConfig("descriptionMaxLines")) != null ? _g : 5,
+    richContentPreview: (_e = getConfig("richContentPreview")) != null ? _e : false,
+    richContentPreviewScroll: (_f = getConfig("richContentPreviewScroll")) != null ? _f : false,
+    truncatePreviewProperty: (_g = getConfig("truncatePreviewProperty")) != null ? _g : false,
+    descriptionMaxLength: (_h = getConfig("descriptionMaxLength")) != null ? _h : 500,
+    descriptionMaxLines: (_i = getConfig("descriptionMaxLines")) != null ? _i : 5,
     fallbackToEmbeds: (() => {
       const value = getConfig("fallbackToEmbeds");
       if (value === "always" || value === "if-empty" || value === "never") return value;
@@ -178,13 +180,13 @@ function readCMSSettings(config, pluginSettings) {
     propertyDisplay12: getProp("propertyDisplay12") || "",
     propertyDisplay13: getProp("propertyDisplay13") || "",
     propertyDisplay14: getProp("propertyDisplay14") || "",
-    propertyLayout12SideBySide: (_h = getConfig("propertyLayout12SideBySide")) != null ? _h : false,
-    propertyLayout34SideBySide: (_i = getConfig("propertyLayout34SideBySide")) != null ? _i : false,
-    propertyLayout56SideBySide: (_j = getConfig("propertyLayout56SideBySide")) != null ? _j : false,
-    propertyLayout78SideBySide: (_k = getConfig("propertyLayout78SideBySide")) != null ? _k : false,
-    propertyLayout910SideBySide: (_l = getConfig("propertyLayout910SideBySide")) != null ? _l : false,
-    propertyLayout1112SideBySide: (_m = getConfig("propertyLayout1112SideBySide")) != null ? _m : false,
-    propertyLayout1314SideBySide: (_n = getConfig("propertyLayout1314SideBySide")) != null ? _n : false,
+    propertyLayout12SideBySide: (_j = getConfig("propertyLayout12SideBySide")) != null ? _j : false,
+    propertyLayout34SideBySide: (_k = getConfig("propertyLayout34SideBySide")) != null ? _k : false,
+    propertyLayout56SideBySide: (_l = getConfig("propertyLayout56SideBySide")) != null ? _l : false,
+    propertyLayout78SideBySide: (_m = getConfig("propertyLayout78SideBySide")) != null ? _m : false,
+    propertyLayout910SideBySide: (_n = getConfig("propertyLayout910SideBySide")) != null ? _n : false,
+    propertyLayout1112SideBySide: (_o = getConfig("propertyLayout1112SideBySide")) != null ? _o : false,
+    propertyLayout1314SideBySide: (_p = getConfig("propertyLayout1314SideBySide")) != null ? _p : false,
     propertyGroup1Position: getConfig("propertyGroup1Position") || "bottom",
     propertyGroup2Position: getConfig("propertyGroup2Position") || "bottom",
     propertyGroup3Position: getConfig("propertyGroup3Position") || "bottom",
@@ -195,19 +197,19 @@ function readCMSSettings(config, pluginSettings) {
     imageFormat: getConfig("imageFormat") || "thumbnail",
     imagePosition: getConfig("imagePosition") || "right",
     propertyLabels: getConfig("propertyLabels") || "hide",
-    propertyDisplayMaxLength: (_o = getConfig("propertyDisplayMaxLength")) != null ? _o : 0,
-    showDraftStatus: (_p = getConfig("showDraftStatus")) != null ? _p : false,
+    propertyDisplayMaxLength: (_q = getConfig("propertyDisplayMaxLength")) != null ? _q : 0,
+    showDraftStatus: (_r = getConfig("showDraftStatus")) != null ? _r : false,
     draftStatusProperty: getProp("draftStatusProperty") || "",
-    draftStatusReverse: (_q = getConfig("draftStatusReverse")) != null ? _q : false,
-    draftStatusUseFilenamePrefix: (_r = getConfig("draftStatusUseFilenamePrefix")) != null ? _r : false,
-    showTags: (_s = getConfig("showTags")) != null ? _s : false,
+    draftStatusReverse: (_s = getConfig("draftStatusReverse")) != null ? _s : false,
+    draftStatusUseFilenamePrefix: (_t = getConfig("draftStatusUseFilenamePrefix")) != null ? _t : false,
+    showTags: (_u = getConfig("showTags")) != null ? _u : false,
     tagsProperty: getProp("tagsProperty") || "",
-    maxTagsToShow: (_t = getConfig("maxTagsToShow")) != null ? _t : 3,
-    customizeNewButton: (_u = getConfig("customizeNewButton")) != null ? _u : false,
+    maxTagsToShow: (_v = getConfig("maxTagsToShow")) != null ? _v : 3,
+    customizeNewButton: (_w = getConfig("customizeNewButton")) != null ? _w : false,
     newNoteLocation: getConfig("newNoteLocation") || "",
-    hideQuickEditIcon: (_v = getConfig("hideQuickEditIcon")) != null ? _v : false,
-    cardSize: (_w = getConfig("cardSize")) != null ? _w : 250,
-    imageAspectRatio: (_x = getConfig("imageAspectRatio")) != null ? _x : 0.55
+    hideQuickEditIcon: (_x = getConfig("hideQuickEditIcon")) != null ? _x : false,
+    cardSize: (_y = getConfig("cardSize")) != null ? _y : 250,
+    imageAspectRatio: (_z = getConfig("imageAspectRatio")) != null ? _z : 0.55
   };
 }
 function getPropItems(displayName, key) {
@@ -260,6 +262,8 @@ function getCMSViewOptions() {
         { type: "toggle", displayName: "Show text preview", key: "showTextPreview", default: true },
         ...getPropItems("Text preview property", "descriptionProperty"),
         { type: "toggle", displayName: "Use note content if text preview property unavailable", key: "fallbackToContent", default: true },
+        { type: "toggle", displayName: "Render preview as Markdown", key: "richContentPreview", default: false },
+        { type: "toggle", displayName: "Scroll Markdown preview when it overflows", key: "richContentPreviewScroll", default: false, showWhen: { key: "richContentPreview", value: true } },
         { type: "toggle", displayName: "Truncate preview property", key: "truncatePreviewProperty", default: false },
         { type: "slider", displayName: "Description max length (when truncation is on)", key: "descriptionMaxLength", min: 50, max: 2e3, step: 50, default: 500, showWhen: { key: "truncatePreviewProperty", value: true } },
         { type: "slider", displayName: "Description max lines", key: "descriptionMaxLines", min: 1, max: 20, step: 1, default: 5 }
@@ -1480,7 +1484,7 @@ function removeDuplication(str) {
   }
   return str;
 }
-async function basesEntryToCardData(entry, settings, sortMethod, isShuffled, snippet, imageUrl, hasImageAvailable, app, mdxFrontmatterCache) {
+async function basesEntryToCardData(entry, settings, sortMethod, isShuffled, snippetData, imageUrl, hasImageAvailable, app, mdxFrontmatterCache) {
   var _a;
   const fileName = entry.file.basename || entry.file.name;
   let titleValue = null;
@@ -1620,7 +1624,8 @@ async function basesEntryToCardData(entry, settings, sortMethod, isShuffled, sni
     ctime,
     mtime,
     folderPath,
-    snippet,
+    snippet: snippetData == null ? void 0 : snippetData.text,
+    snippetSource: snippetData == null ? void 0 : snippetData.source,
     imageUrl,
     hasImageAvailable: hasImageAvailable || false,
     displayTags: displayTags.length > 0 ? displayTags : void 0
@@ -2084,6 +2089,16 @@ function sanitizeForPreview(content, omitFirstLine = false, filename, titleValue
   }
   return preview;
 }
+function prepareMarkdownPreview(content, omitFirstLine, filename, titleValue) {
+  let body = content.replace(/^---[\s\S]*?---/, "").trim();
+  const firstLineEnd = body.indexOf("\n");
+  const firstLineRaw = firstLineEnd !== -1 ? body.substring(0, firstLineEnd) : body;
+  const firstLineText = firstLineRaw.replace(/^#{1,6}\s+/, "").trim();
+  if (omitFirstLine || filename && firstLineText === filename || titleValue && firstLineText === titleValue) {
+    body = firstLineEnd !== -1 ? body.substring(firstLineEnd + 1).trim() : "";
+  }
+  return body;
+}
 async function loadFilePreview(file, app, propertyValue, settings, fileName, titleValue) {
   var _a;
   let result = null;
@@ -2110,18 +2125,22 @@ async function loadFilePreview(file, app, propertyValue, settings, fileName, tit
         result += "\u2026";
       }
     }
-    return result;
+    return { text: result, source: "property" };
   }
   if (settings.fallbackToContent) {
     const content = await app.vault.cachedRead(file);
-    return sanitizeForPreview(
-      content,
-      settings.omitFirstLine,
-      fileName,
-      titleValue
-    );
+    if (settings.richContentPreview) {
+      return {
+        text: prepareMarkdownPreview(content, settings.omitFirstLine, fileName, titleValue),
+        source: "content"
+      };
+    }
+    return {
+      text: sanitizeForPreview(content, settings.omitFirstLine, fileName, titleValue),
+      source: "content"
+    };
   }
-  return "";
+  return { text: "", source: "empty" };
 }
 
 // src/shared/content-loader.ts
@@ -2182,7 +2201,7 @@ async function loadImagesForEntries(entries, fallbackToEmbeds, app, imageCache, 
     );
   }
 }
-async function loadSnippetsForEntries(entries, fallbackToContent, omitFirstLine, app, snippetCache, truncatePreviewProperty, descriptionMaxLength) {
+async function loadSnippetsForEntries(entries, fallbackToContent, omitFirstLine, app, snippetCache, truncatePreviewProperty, descriptionMaxLength, richContentPreview) {
   await Promise.all(
     entries.map(async (entry) => {
       if (entry.path in snippetCache) {
@@ -2197,6 +2216,7 @@ async function loadSnippetsForEntries(entries, fallbackToContent, omitFirstLine,
             {
               fallbackToContent,
               omitFirstLine,
+              richContentPreview,
               truncatePreviewProperty,
               descriptionMaxLength
             },
@@ -2204,11 +2224,11 @@ async function loadSnippetsForEntries(entries, fallbackToContent, omitFirstLine,
             entry.titleString
           );
         } else {
-          snippetCache[entry.path] = "";
+          snippetCache[entry.path] = { text: "", source: "empty" };
         }
       } catch (error) {
         console.error(`Failed to load snippet for ${entry.path}:`, error);
-        snippetCache[entry.path] = "";
+        snippetCache[entry.path] = { text: "", source: "empty" };
       }
     })
   );
@@ -3047,12 +3067,26 @@ function resolveImageUrl(app, url) {
   const vaultCms = (_b = (_a = app.plugins) == null ? void 0 : _a.plugins) == null ? void 0 : _b["vault-cms"];
   return (_d = (_c = vaultCms == null ? void 0 : vaultCms.resolvePublicPath) == null ? void 0 : _c.call(vaultCms, url)) != null ? _d : url;
 }
+function addCodeBlockFlair(root) {
+  const codeEls = root.querySelectorAll('pre > code[class*="language-"]');
+  codeEls.forEach((codeEl) => {
+    const langClass = Array.from(codeEl.classList).find((c) => c.startsWith("language-"));
+    if (!langClass) return;
+    const lang = langClass.substring("language-".length);
+    if (!lang) return;
+    const pre = codeEl.parentElement;
+    if (!pre || pre.querySelector(":scope > .code-block-flair")) return;
+    pre.createSpan({ cls: "code-block-flair", text: lang });
+  });
+}
 var SharedCardRenderer = class {
   constructor(app, plugin, propertyObservers, updateLayoutRef, basesConfig, basesController) {
     this.app = app;
     this.plugin = plugin;
     this.propertyObservers = propertyObservers;
     this.updateLayoutRef = updateLayoutRef;
+    /** Components backing rich Markdown previews; unloaded on re-render/close. */
+    this.markdownComponents = [];
     this.basesConfig = basesConfig;
     this.basesController = basesController;
     this.propertyRenderer = new PropertyRenderer(
@@ -3068,6 +3102,50 @@ var SharedCardRenderer = class {
    */
   setMdxFrontmatterCache(cache) {
     this.mdxFrontmatterCache = cache;
+  }
+  /**
+   * Unload all rich-preview Markdown components, releasing their Dataview/
+   * embed child contexts. Called by the view before re-render and on close.
+   * Mutates the array in place so the reference stays valid.
+   */
+  clearMarkdownComponents() {
+    this.markdownComponents.forEach((c) => c.unload());
+    this.markdownComponents.length = 0;
+  }
+  /**
+   * Renders the card text preview. Rich Markdown rendering (with the visual
+   * treatment) is reserved for the note-content fallback path: a description
+   * property always renders as plain text, even with rich mode on, so short
+   * one-line previews don't get the clamp/fade treatment.
+   */
+  renderPreviewContent(el, card, settings) {
+    if (!card.snippet) return;
+    const isRichContent = settings.richContentPreview && card.snippetSource === "content";
+    if (isRichContent) {
+      el.addClass("card-text-preview-rich", "markdown-rendered");
+      if (settings.richContentPreviewScroll) {
+        el.addClass("card-text-preview-rich-scroll");
+      }
+      const component = new import_obsidian11.Component();
+      component.load();
+      this.markdownComponents.push(component);
+      const updateOverflow = () => {
+        if (el.scrollHeight > el.clientHeight + 1) {
+          el.addClass("has-overflow");
+        } else {
+          el.removeClass("has-overflow");
+        }
+      };
+      const observer = new ResizeObserver(updateOverflow);
+      observer.observe(el);
+      component.register(() => observer.disconnect());
+      void import_obsidian11.MarkdownRenderer.render(this.app, card.snippet, el, card.path, component).then(() => {
+        addCodeBlockFlair(el);
+        updateOverflow();
+      });
+    } else {
+      el.setText(card.snippet);
+    }
   }
   /**
    * Renders a complete card with CMS features
@@ -3341,9 +3419,7 @@ var SharedCardRenderer = class {
         const textWrapper = contentContainer.createDiv("card-text-wrapper");
         if (settings.showTextPreview) {
           const textPreviewEl = textWrapper.createDiv("card-text-preview");
-          if (card.snippet) {
-            textPreviewEl.setText(card.snippet);
-          }
+          this.renderPreviewContent(textPreviewEl, card, settings);
           cardEl.__textPreviewEl = textPreviewEl;
           cardEl.__cardPath = card.path;
         }
@@ -3368,9 +3444,7 @@ var SharedCardRenderer = class {
       } else {
         if (settings.showTextPreview) {
           const textPreviewEl = contentContainer.createDiv("card-text-preview");
-          if (card.snippet) {
-            textPreviewEl.setText(card.snippet);
-          }
+          this.renderPreviewContent(textPreviewEl, card, settings);
           cardEl.__textPreviewEl = textPreviewEl;
           cardEl.__cardPath = card.path;
         }
@@ -5188,6 +5262,7 @@ var BasesCMSView = class extends import_obsidian22.BasesView {
     if (this.cardRenderer && typeof this.cardRenderer.setMdxFrontmatterCache === "function") {
       this.cardRenderer.setMdxFrontmatterCache(this.mdxFrontmatterCache);
     }
+    this.cardRenderer.clearMarkdownComponents();
     this.containerEl.empty();
     this.propertyObservers.forEach((obs) => obs.disconnect());
     this.propertyObservers = [];
@@ -5558,6 +5633,7 @@ var BasesCMSView = class extends import_obsidian22.BasesView {
       descriptionProperty: initialSettings.descriptionProperty,
       showTextPreview: initialSettings.showTextPreview,
       fallbackToContent: initialSettings.fallbackToContent,
+      richContentPreview: initialSettings.richContentPreview,
       truncatePreviewProperty: initialSettings.truncatePreviewProperty,
       descriptionMaxLength: initialSettings.descriptionMaxLength,
       imageProperty: initialSettings.imageProperty,
@@ -5590,9 +5666,9 @@ var BasesCMSView = class extends import_obsidian22.BasesView {
       if (!this.lastSettings) {
         return;
       }
-      const settingsChanged = this.lastSettings.descriptionProperty !== currentSettings.descriptionProperty || this.lastSettings.showTextPreview !== currentSettings.showTextPreview || this.lastSettings.fallbackToContent !== currentSettings.fallbackToContent || this.lastSettings.truncatePreviewProperty !== currentSettings.truncatePreviewProperty || this.lastSettings.descriptionMaxLength !== currentSettings.descriptionMaxLength || this.lastSettings.imageProperty !== currentSettings.imageProperty || this.lastSettings.imageFormat !== currentSettings.imageFormat || this.lastSettings.fallbackToEmbeds !== currentSettings.fallbackToEmbeds || this.lastSettings.propertyDisplay1 !== currentSettings.propertyDisplay1 || this.lastSettings.propertyDisplay2 !== currentSettings.propertyDisplay2 || this.lastSettings.propertyDisplay3 !== currentSettings.propertyDisplay3 || this.lastSettings.propertyDisplay4 !== currentSettings.propertyDisplay4 || this.lastSettings.propertyDisplay5 !== currentSettings.propertyDisplay5 || this.lastSettings.propertyDisplay6 !== currentSettings.propertyDisplay6 || this.lastSettings.propertyDisplay7 !== currentSettings.propertyDisplay7 || this.lastSettings.propertyDisplay8 !== currentSettings.propertyDisplay8 || this.lastSettings.propertyDisplay9 !== currentSettings.propertyDisplay9 || this.lastSettings.propertyDisplay10 !== currentSettings.propertyDisplay10 || this.lastSettings.propertyDisplay11 !== currentSettings.propertyDisplay11 || this.lastSettings.propertyDisplay12 !== currentSettings.propertyDisplay12 || this.lastSettings.propertyDisplay13 !== currentSettings.propertyDisplay13 || this.lastSettings.propertyDisplay14 !== currentSettings.propertyDisplay14 || this.lastSettings.propertyDisplayMaxLength !== currentSettings.propertyDisplayMaxLength;
+      const settingsChanged = this.lastSettings.descriptionProperty !== currentSettings.descriptionProperty || this.lastSettings.showTextPreview !== currentSettings.showTextPreview || this.lastSettings.fallbackToContent !== currentSettings.fallbackToContent || this.lastSettings.richContentPreview !== currentSettings.richContentPreview || this.lastSettings.truncatePreviewProperty !== currentSettings.truncatePreviewProperty || this.lastSettings.descriptionMaxLength !== currentSettings.descriptionMaxLength || this.lastSettings.imageProperty !== currentSettings.imageProperty || this.lastSettings.imageFormat !== currentSettings.imageFormat || this.lastSettings.fallbackToEmbeds !== currentSettings.fallbackToEmbeds || this.lastSettings.propertyDisplay1 !== currentSettings.propertyDisplay1 || this.lastSettings.propertyDisplay2 !== currentSettings.propertyDisplay2 || this.lastSettings.propertyDisplay3 !== currentSettings.propertyDisplay3 || this.lastSettings.propertyDisplay4 !== currentSettings.propertyDisplay4 || this.lastSettings.propertyDisplay5 !== currentSettings.propertyDisplay5 || this.lastSettings.propertyDisplay6 !== currentSettings.propertyDisplay6 || this.lastSettings.propertyDisplay7 !== currentSettings.propertyDisplay7 || this.lastSettings.propertyDisplay8 !== currentSettings.propertyDisplay8 || this.lastSettings.propertyDisplay9 !== currentSettings.propertyDisplay9 || this.lastSettings.propertyDisplay10 !== currentSettings.propertyDisplay10 || this.lastSettings.propertyDisplay11 !== currentSettings.propertyDisplay11 || this.lastSettings.propertyDisplay12 !== currentSettings.propertyDisplay12 || this.lastSettings.propertyDisplay13 !== currentSettings.propertyDisplay13 || this.lastSettings.propertyDisplay14 !== currentSettings.propertyDisplay14 || this.lastSettings.propertyDisplayMaxLength !== currentSettings.propertyDisplayMaxLength;
       if (settingsChanged) {
-        if (this.lastSettings.descriptionProperty !== currentSettings.descriptionProperty || this.lastSettings.showTextPreview !== currentSettings.showTextPreview || this.lastSettings.fallbackToContent !== currentSettings.fallbackToContent || this.lastSettings.truncatePreviewProperty !== currentSettings.truncatePreviewProperty || this.lastSettings.descriptionMaxLength !== currentSettings.descriptionMaxLength) {
+        if (this.lastSettings.descriptionProperty !== currentSettings.descriptionProperty || this.lastSettings.showTextPreview !== currentSettings.showTextPreview || this.lastSettings.fallbackToContent !== currentSettings.fallbackToContent || this.lastSettings.richContentPreview !== currentSettings.richContentPreview || this.lastSettings.truncatePreviewProperty !== currentSettings.truncatePreviewProperty || this.lastSettings.descriptionMaxLength !== currentSettings.descriptionMaxLength) {
           this.snippets = {};
         }
         if (this.lastSettings.imageProperty !== currentSettings.imageProperty || this.lastSettings.imageFormat !== currentSettings.imageFormat || this.lastSettings.fallbackToEmbeds !== currentSettings.fallbackToEmbeds) {
@@ -5603,6 +5679,7 @@ var BasesCMSView = class extends import_obsidian22.BasesView {
           descriptionProperty: currentSettings.descriptionProperty,
           showTextPreview: currentSettings.showTextPreview,
           fallbackToContent: currentSettings.fallbackToContent,
+          richContentPreview: currentSettings.richContentPreview,
           truncatePreviewProperty: currentSettings.truncatePreviewProperty,
           descriptionMaxLength: currentSettings.descriptionMaxLength,
           imageProperty: currentSettings.imageProperty,
@@ -5682,7 +5759,8 @@ var BasesCMSView = class extends import_obsidian22.BasesView {
           this.app,
           this.snippets,
           settings.truncatePreviewProperty,
-          settings.descriptionMaxLength
+          settings.descriptionMaxLength,
+          settings.richContentPreview
         );
       }
     }
@@ -6020,6 +6098,7 @@ var BasesCMSView = class extends import_obsidian22.BasesView {
     }
     this.propertyObservers.forEach((obs) => obs.disconnect());
     this.propertyObservers = [];
+    this.cardRenderer.clearMarkdownComponents();
     if (this.bulkToolbar) {
       this.bulkToolbar.destroy();
     }

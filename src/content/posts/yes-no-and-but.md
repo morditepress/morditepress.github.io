@@ -1,6 +1,6 @@
 ---
-title: "Yes-no-and-but"
-date: 2026-05-06
+title: Yes-no-and-but
+date: 2026-05-25
 description: ""
 tags: []
 image: "[[attachments/mountains.png]]"

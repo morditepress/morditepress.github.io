@@ -1003,6 +1003,7 @@ body[data-astro-modular-ribbon-removed="true"] .menu-item .menu-item-icon:has(.l
 		max-width: 95vw;
 		margin: 10px;
 	}
+
 	.template-options,
 	.theme-options,
 	.org-options {
@@ -1816,6 +1817,7 @@ body[data-astro-modular-ribbon-removed="true"] .menu-item .menu-item-icon:has(.l
 		grid-template-columns: 1fr;
 		gap: 10px;
 	}
+
 	.profile-picture-options,
 	.comments-options {
 		padding: 10px;
@@ -1829,11 +1831,13 @@ body[data-astro-modular-ribbon-removed="true"] .menu-item .menu-item-icon:has(.l
 		width: 18px;
 		height: 18px;
 	}
+
 	.simple-color-input {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 8px;
 	}
+
 	.simple-color-input label {
 		min-width: auto;
 	}
