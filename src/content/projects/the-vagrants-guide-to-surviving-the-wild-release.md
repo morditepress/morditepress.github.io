@@ -1,19 +1,18 @@
 ---
-title: "The Vagrant’s Guide to Surviving the Wild"
+title: The Vagrant’s Guide to Surviving the Wild
 description: A New Torchbearer Sagas Rulebook for Travelers in the Wilderness
 date: 2020-03-01
 categories:
-  - "Vagrant's Guide"
-  - "Torchbearer"
+  - Vagrant's Guide
+  - Torchbearer
 status: released
 image: "[[attachments/vagrants-attack-card.png]]"
-imageAlt: "Attack card in The Vagrant’s Guide to Surviving the Wild"
+imageAlt: Attack card in The Vagrant’s Guide to Surviving the Wild
 hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: true
 aliases:
-  - the-vagrants-guide-to-surviving-the-wild
 ---
 
 **The Vagrant’s Guide to Surviving the Wild** is a Torchbearer Sagas supplement for travelers in the wilderness. The nearby ruins are now emptied—picked clean by freebooters and ne’er-do-wells who improved their lot with plundered treasure. If you’re going to join their ranks, that means finding loot that nobody’s gotten to, and that means you’ve got a long slog ahead of you. 

@@ -1,17 +1,17 @@
 ---
 title: "The Grind Turn 3: Hell or Highwater"
-description: "New Zine Quest adventures for Torchbearer"
+description: New Zine Quest adventures for Torchbearer
 date: 2021-01-26
 categories:
-  - "Torchbearer"
-  - "Grind"
+  - Torchbearer
+  - Grind
 status: released
 image: "[[https://f.hubspotusercontent10.net/hubfs/2068068/grind.jpg]]"
 imageAlt: "Image for The Grind Turn 3: Hell or Highwater"
 hideCoverImage: false
 hideTOC: true
 environment: Production
-featured: false
+featured: true
 ---
 Chaos reigns!
 

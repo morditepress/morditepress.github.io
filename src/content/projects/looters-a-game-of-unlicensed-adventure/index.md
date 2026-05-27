@@ -12,6 +12,7 @@ hideTOC: true
 targetKeyword: ""
 environment: Local
 status: in-progress
+featured: true
 ---
 ## Heare Ye, Heare Ye!  
 ***By order of His Royal Majesty, the King:***   

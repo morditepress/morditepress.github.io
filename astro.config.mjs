@@ -86,8 +86,7 @@ export default defineConfig({
   '/privacy': '/privacy-policy',
   '/posts/mermaid-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagram-test': '/posts/obsidian-embeds-demo',
-  '/posts/mermaid-diagrams': '/posts/obsidian-embeds-demo',
-  '/projects/the-vagrants-guide-to-surviving-the-wild': '/projects/the-vagrants-guide-to-surviving-the-wild-release'
+  '/posts/mermaid-diagrams': '/posts/obsidian-embeds-demo'
 } : {},
 image: {
     service: {
