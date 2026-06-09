@@ -184,7 +184,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://new.mordite.press",
+  site: "https://www.mordite.press",
   // Github repo name
   base: '/',
   homepageTitle: "Mordite Press - Tabletop RPGs and Misadventures",
