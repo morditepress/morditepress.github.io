@@ -1,6 +1,6 @@
 ---
-title: "Stochastic Duration and Resource Crunch"
-date: 2026-05-06
+title: Stochastic Duration and Resource Crunch
+date: 2026-01-01
 description: ""
 tags: []
 image: "[[attachments/mountains.png]]"

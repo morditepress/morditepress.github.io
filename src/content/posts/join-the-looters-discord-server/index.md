@@ -1,9 +1,9 @@
 ---
 title: Join the Looters Discord Server
-date: 2026-06-01
-description: Come talk to us about Looters, other Mordite Press books, or anything you like really.
+date: 2026-06-12
+description: Come chat with us about Looters, other Mordite Press books, or anything you like really.
 tags:
-  - Torchbearer
+  - Looters
 image: ./Gryphon_Mascot.png
 imageAlt: The Royal Gryphon Coin
 imageOG: true

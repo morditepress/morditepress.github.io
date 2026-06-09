@@ -1,6 +1,6 @@
 ---
-title: "Group Rolls"
-date: 2026-05-06
+title: Group Rolls
+date: 2026-01-01
 description: ""
 tags: []
 image: "[[attachments/mountains.png]]"

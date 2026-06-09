@@ -1,6 +1,6 @@
 ---
 title: Planescape & RPG Critique
-date: 2026-05-06
+date: 2026-01-01
 description: ""
 tags: []
 image: "[[attachments/mountains.png]]"

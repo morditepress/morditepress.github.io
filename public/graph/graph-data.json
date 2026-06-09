@@ -29,6 +29,13 @@
       "connections": 0
     },
     {
+      "id": "looters-smash-grab",
+      "type": "post",
+      "title": "LOOTERS: Smash & Grab",
+      "slug": "looters-smash-grab",
+      "connections": 0
+    },
+    {
       "id": "owen-on-born-to-lose",
       "type": "post",
       "title": "Owen on Born to Lose",
@@ -38,9 +45,9 @@
   ],
   "connections": [],
   "metadata": {
-    "totalPosts": 5,
+    "totalPosts": 6,
     "totalConnections": 0,
     "maxNodesApplied": false,
-    "originalNodeCount": 5
+    "originalNodeCount": 6
   }
 }

@@ -1,6 +1,6 @@
 ---
 title: Rules for Humans
-date: 2026-05-06
+date: 2026-01-01
 description: What if we play with the notion of unreliable execution as a design space.
 tags: []
 image:

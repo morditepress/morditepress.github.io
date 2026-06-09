@@ -1,6 +1,6 @@
 ---
-title: "Stupid Fantasy"
-date: 2026-05-06
+title: Stupid Fantasy
+date: 2026-01-01
 description: ""
 tags: []
 image: "[[attachments/mountains.png]]"
