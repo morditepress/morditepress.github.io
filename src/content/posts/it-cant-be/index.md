@@ -21,7 +21,7 @@ Why, it's the **MORDITE PRESS BLOG**!
 
 We're back! 
 
-Mordite Press has been pretty quiet since we shipped *Grind II: Hell or Highwater.* A little more than two years have gone by. 
+**Mordite Press** has been pretty quiet since we shipped *Grind II: Hell or Highwater.* A little more than two years have gone by. 
 
 You didn't think we were sitting idle, did you? 
 
@@ -34,6 +34,3 @@ I can't say much more than that, but soon all will be revealed.
 
 
 *Woe is You,* art by Paul O'Connell 
-
-
-*Art by Paul O'Connell*
