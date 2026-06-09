@@ -26,7 +26,7 @@ aliases:
 <a href="https://cta-redirect.hubspot.com/cta/redirect/2068068/262728da-df27-44f5-9f5d-fe0a671be91b" class="no-styling no-underline" target="_blank"><span class="btn btn-primary">Get Vagrant's PDF</span></a>
 
 
-![VagrantsGuideToSurvivingTheWild_MorditePress](https://www.mordite.press/hs-fs/hubfs/VagrantsGuideToSurvivingTheWild_MorditePress.png?width=415&name=VagrantsGuideToSurvivingTheWild_MorditePress.png)
+![VagrantsGuideToSurvivingTheWild_MorditePress](https://archive.mordite.press/hs-fs/hubfs/VagrantsGuideToSurvivingTheWild_MorditePress.png?width=415&name=VagrantsGuideToSurvivingTheWild_MorditePress.png)
 
 ### _The Vagrant’s Guide_ contains:
 
