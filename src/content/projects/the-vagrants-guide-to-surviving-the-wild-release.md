@@ -55,7 +55,7 @@ Check out these reviews:
 >
 > — Shane E.
 
-Buy it on DriveThruRPG and you'll also get the free expansion, _[The Delver's Guide to Surviving the Underworld](https://www.mordite.press/the-delvers-guide-to-suriving-the-underworld)_ by Jared Sorensen of [Memento Mori Theatricks](http://www.memento-mori.com/)!
+Buy it on DriveThruRPG and you'll also get the free expansion, _[The Delver's Guide to Surviving the Underworld](/projects/the-delvers-guide-to-surviving-the-underworld)_ by Jared Sorensen of [Memento Mori Theatricks](http://www.memento-mori.com/)!
 
 * * *
 

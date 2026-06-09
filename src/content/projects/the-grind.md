@@ -39,8 +39,8 @@ From the minds that bring you Mordite Monday… comes a new zine, jam-packed wit
 
 ### **More on The Grind**
 
-*   [Turns Before the Grind (Heists)](/before-the-grind)
-*   [Journey to the Dreaded Isle](/journey-to-the-dreaded-isle)
+*   [Turns Before the Grind (Heists)](https://archive.mordite.press/before-the-grind)
+*   [Journey to the Dreaded Isle](https://archive.mordite.press/journey-to-the-dreaded-isle)
 *   [The Grind Kickstarter Campaign](https://www.kickstarter.com/projects/morditepress/the-grind-2?ref=h) page.
 
 * * *
