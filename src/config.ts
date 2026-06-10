@@ -187,11 +187,11 @@ export const siteConfig: SiteConfig = {
   site: "https://www.mordite.press",
   // Github repo name
   base: '/',
-  homepageTitle: "Mordite Press - Tabletop RPGs and Misadventures",
+  homepageTitle: "Mordite Press",
   // [CONFIG:SITE_TITLE]
   title: "Mordite Press",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "Tabletop role-playing games and misadventures. Seattle - Boston - Argentina - Ireland.",
+  description: "Tabletop role-playing games and misadventures. Argentina | Ireland | United States.",
   // [CONFIG:SITE_AUTHOR]
   author: "Liz Shaw",
   // [CONFIG:SITE_LANGUAGE]
