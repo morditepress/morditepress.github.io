@@ -191,7 +191,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:SITE_TITLE]
   title: "Mordite Press",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "Tabletop role-playing games and misadventures. Argentina | Ireland | United States.",
+  description: "Tabletop role-playing games and misadventures.",
   // [CONFIG:SITE_AUTHOR]
   author: "Liz Shaw",
   // [CONFIG:SITE_LANGUAGE]
