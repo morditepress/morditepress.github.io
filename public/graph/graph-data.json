@@ -1,6 +1,13 @@
 {
   "nodes": [
     {
+      "id": "a-proclamation",
+      "type": "post",
+      "title": "A Proclamation",
+      "slug": "a-proclamation",
+      "connections": 0
+    },
+    {
       "id": "duamn-on-born-to-lose",
       "type": "post",
       "title": "Duamn on Born To Lose",
@@ -45,9 +52,9 @@
   ],
   "connections": [],
   "metadata": {
-    "totalPosts": 6,
+    "totalPosts": 7,
     "totalConnections": 0,
     "maxNodesApplied": false,
-    "originalNodeCount": 6
+    "originalNodeCount": 7
   }
 }
