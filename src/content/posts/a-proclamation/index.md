@@ -3,6 +3,7 @@ title: A Proclamation
 date: 2026-06-17
 description: By order of His Royal Majesty, the King
 tags:
+  - Looters
 image: ./Proclamation.png
 imageAlt:
 imageOG: false
