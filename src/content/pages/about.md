@@ -5,7 +5,7 @@ noIndex: false
 hideTOC: false
 environment: Production
 ---
-**Mordite Press** makes stuff for tabletop RPGs.
+<center>**Mordite Press** makes stuff for tabletop RPGs.</center>
 
 ![637](attachments/Mordite%20Helm%20Outlined.png)
 
