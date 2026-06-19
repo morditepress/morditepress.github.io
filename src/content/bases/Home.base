@@ -39,12 +39,35 @@ properties:
     displayName: Path
   note.draft:
     displayName: Draft
+  note.environment:
+    displayName: Environment
+  note.tags:
+    displayName: Tags
+  note.description:
+    displayName: Description
+  note.image:
+    displayName: Image
+  note.imageAlt:
+    displayName: ImageAlt
 views:
   - type: cms
     name: Posts
     filters:
       and:
         - file.folder.startsWith("posts")
+    order:
+      - file.name
+      - title
+      - description
+      - date
+      - image
+      - imageAlt
+      - featured
+      - hideTOC
+      - tags
+      - environment
+      - noIndex
+      - aliases
     sort:
       - property: date
         direction: DESC
