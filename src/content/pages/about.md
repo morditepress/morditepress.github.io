@@ -4,10 +4,9 @@ description: Learn more about Mordite Press. Tabletop role-playing games and mis
 noIndex: false
 hideTOC: false
 environment: Production
-aliases:
-  - about-us
+aliases: about-us
 ---
-<center>**Mordite Press** makes stuff for tabletop RPGs.</center>
+<center><strong>Mordite Press</strong> makes stuff for tabletop RPGs.</center>
 
 ![637](attachments/Mordite%20Helm%20Outlined.png)
 
