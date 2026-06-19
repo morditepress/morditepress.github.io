@@ -11,7 +11,7 @@ hideCoverImage: false
 hideTOC: true
 environment: Obsidian
 featured: false
-alias:
+aliases:
   - sourcetree-and-git
 ---
 This comprehensive guide will walk you through setting up SourceTree and Git for your Astro Modular blog, enabling seamless version control and deployment workflows.

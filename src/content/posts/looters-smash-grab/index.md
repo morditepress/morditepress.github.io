@@ -11,7 +11,7 @@ hideCoverImage: false
 hideTOC: false
 targetKeyword: ""
 environment: Local
-alias:
+aliases:
 ---
 ***LOOTERS: Smash & Grab*** is now available as a PDF from DriveThruRPG.
 ![](looters-sng-cover.png)

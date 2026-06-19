@@ -4,7 +4,7 @@ description: Contact me.
 noIndex: false
 hideTOC: false
 environment: Production
-alias:
+aliases:
   - contact-me
   - contact-us
 ---

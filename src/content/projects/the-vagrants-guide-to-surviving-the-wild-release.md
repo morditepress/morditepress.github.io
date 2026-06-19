@@ -13,7 +13,7 @@ hideTOC: true
 environment: Production
 featured: true
 projectUrl: https://cta-redirect.hubspot.com/cta/redirect/2068068/262728da-df27-44f5-9f5d-fe0a671be91b
-alias:
+aliases:
 ---
 
 **The Vagrant’s Guide to Surviving the Wild** is a Torchbearer Sagas supplement for travelers in the wilderness. The nearby ruins are now emptied—picked clean by freebooters and ne’er-do-wells who improved their lot with plundered treasure. If you’re going to join their ranks, that means finding loot that nobody’s gotten to, and that means you’ve got a long slog ahead of you. 

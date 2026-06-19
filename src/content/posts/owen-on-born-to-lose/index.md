@@ -10,7 +10,7 @@ hideCoverImage: false
 hideTOC: false
 targetKeyword: ""
 environment: Local
-alias:
+aliases:
 ---
 
 The *Born to Lose* podcast sat down to interview game designer, and mordite ringleader Owen O'Connell.

@@ -11,8 +11,8 @@ hideCoverImage: false
 hideTOC: false
 environment: Local
 noIndex: false
-alias:
+aliases:
 ---
-Come chat with about Looters, other Mordite Press books, or anything you like really.
+Come chat with about Looters, other Mordite Press books, or anything you like really. 
 
 [Let me in!](https://discord.gg/E6RHuePZ6W)

@@ -11,11 +11,11 @@ hideCoverImage: false
 hideTOC: false
 environment: Obsidian
 featured: true
-alias:
+aliases:
 ---
 ## Heading
 
-Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn
+Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn 
 ## another heading
 
-Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn
+Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn Loerm iprsiumm alsoiufgn 
