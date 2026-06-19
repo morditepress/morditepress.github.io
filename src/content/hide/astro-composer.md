@@ -15,7 +15,7 @@ hideCoverImage: false
 hideTOC: false
 environment: Obsidian
 featured: false
-aliases:
+alias:
   - obsidian-astro-composer
 ---
 ## Project Overview

@@ -11,7 +11,7 @@ hideCoverImage: false
 hideTOC: false
 environment: Local
 featured: false
-aliases:
+alias:
 ---
 ## Heading
 

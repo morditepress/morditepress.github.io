@@ -11,7 +11,7 @@ hideCoverImage: false
 hideTOC: false
 environment: Obsidian
 featured: false
-aliases:
+alias:
   - api-reference
 ---
 This document provides a complete reference for the Astro Modular theme APIs, utilities, and configuration options.

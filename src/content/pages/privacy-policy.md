@@ -4,7 +4,7 @@ description: This privacy policy explains how your information is collected, use
 noIndex: true
 hideTOC: false
 environment: Production
-aliases:
+alias:
   - privacy
 ---
 Last updated: September 5, 2025

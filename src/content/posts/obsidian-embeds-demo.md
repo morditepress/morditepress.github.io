@@ -13,7 +13,7 @@ hideCoverImage: false
 hideTOC: false
 targetKeyword: obsidian embeds
 environment: Obsidian
-aliases:
+alias:
   - mermaid-test
   - mermaid-diagram-test
   - mermaid-diagrams

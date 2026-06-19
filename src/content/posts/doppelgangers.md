@@ -10,5 +10,5 @@ hideCoverImage: false
 hideTOC: false
 environment: Obsidian
 noIndex: true
-aliases:
+alias:
 ---
