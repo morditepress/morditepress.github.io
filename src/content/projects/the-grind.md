@@ -12,6 +12,7 @@ hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: false
+projectUrl: https://cta-redirect.hubspot.com/cta/redirect/2068068/a3f9e9e5-1130-4657-bbd1-c52faa4522b4
 ---
 Torchbearer RPG Zine
 

@@ -12,6 +12,7 @@ hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: true
+projectUrl: https://www.drivethrurpg.com/product/335443/Torchbearer-Sagas-The-Grind-Turn-2-Mistvale-Nights
 ---
 Chaos has spread to the valley of Mistvale...
 

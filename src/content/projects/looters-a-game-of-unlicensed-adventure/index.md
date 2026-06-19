@@ -13,21 +13,22 @@ targetKeyword: ""
 environment: Local
 status: in-progress
 featured: true
+projectUrl:
 ---
-## Heare Ye, Heare Ye!  
-***By order of His Royal Majesty, the King:***   
+## Heare Ye, Heare Ye!
+***By order of His Royal Majesty, the King:*** 
 
-For the safety and protection of such wayward peasants as would venture therein, all **RUINS**, **CRYPTS**, **TOMBS** & **DUNGEONS** are henceforth prohibited entry, unless by expressed permission of the **GUILD OF ADVENTURE**.  
+For the safety and protection of such wayward peasants as would venture therein, all **RUINS**, **CRYPTS**, **TOMBS** & **DUNGEONS** are henceforth prohibited entry, unless by expressed permission of the **GUILD OF ADVENTURE**.
 
 For even if ye should prevail against the cunning **TRAPS**, fearsome **GUARDIANS**, and barbarous creatures of **CHAOS** who dwell there, any valuables with which ye might abscond are rightly the property of the **KING**, and no other.  
 
-## THE KING CLAIMS *ALL* TREASURE. 
+## THE KING CLAIMS *ALL* TREASURE.
 
-Any ancient **COIN**, **JEWELS**, and **WONDERS** of sorcerous invention must remain unmolested until such time as His Majesty deigns to retrieve them. 
+Any ancient **COIN**, **JEWELS**, and **WONDERS** of sorcerous invention must remain unmolested until such time as His Majesty deigns to retrieve them.
 
 Furthermore, the idolatrous **RELICS** and **PAGAN ALTARS** of the heathen cults are to be shunned by His Majesty's loyal subjects, and upon discovery must be reported to a duly-appointed officer of the Inquisition without delay.
 
-Incursion into these forbidden places, and the sale or trade of any poached treasures thus obtained shall henceforth be considered **LOOTING**.   
+Incursion into these forbidden places, and the sale or trade of any poached treasures thus obtained shall henceforth be considered **LOOTING**. 
 
 ***This heinous crime is punishable by:***
 
@@ -39,17 +40,17 @@ Incursion into these forbidden places, and the sale or trade of any poached trea
 - Conscription as a trapfinder under the **GUILD of ADVENTURE**.
 - Hanging by the neck until **DEATH**!
 
-Further penalties may be levied if the looter is found concurrently guilty of the following crimes (as is often the case):   
+Further penalties may be levied if the looter is found concurrently guilty of the following crimes (as is often the case): 
 
-**BRIGANDRY**, **THIEVERY**, **VAGRANCY**, **HERESY**, **WITCHCRAFT** and/or incitement of **REBELLION**.  
+**BRIGANDRY**, **THIEVERY**, **VAGRANCY**, **HERESY**, **WITCHCRAFT** and/or incitement of **REBELLION**.
 
-The King’s adventure-minded subjects would do better to seek employment within the Guild of Adventure, which entitles you to a most generous claim of **ONE-FIFTH** of the recovered spoils.  
+The King’s adventure-minded subjects would do better to seek employment within the Guild of Adventure, which entitles you to a most generous claim of **ONE-FIFTH** of the recovered spoils.
 
 DO NOT foolishly presume transgressions will be forgiven or overlooked. 
 
 *Only the **KING** shall **SAVE**.*
 
---- 
+---
 
 From the creators of ***The Vagrant's Guide to Surviving the Wild***, ***Noctis Labyrinth***, and the ***Grind turns I, II, & III*** comes an all-new, stand-alone role-playing game.
 

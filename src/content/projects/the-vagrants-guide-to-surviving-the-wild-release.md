@@ -12,6 +12,7 @@ hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: true
+projectUrl: https://cta-redirect.hubspot.com/cta/redirect/2068068/262728da-df27-44f5-9f5d-fe0a671be91b
 aliases:
 ---
 
