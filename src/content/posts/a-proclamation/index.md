@@ -10,7 +10,6 @@ imageOG: false
 hideCoverImage: false
 hideTOC: false
 targetKeyword:
-draft: false
 environment: Local
 ---
 ![](Proclamation.png)

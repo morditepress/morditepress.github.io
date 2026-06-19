@@ -324,6 +324,14 @@ settings:
         format: hex
         default-light: '#2E7D32'
         default-dark: '#2E7D32'
+		-
+				id: bases-cms-badge-obsidian-color
+				title: Obsidian badge color
+				description: Custom color for Obsidian status badge (only used when Badge style is set to Custom colors)
+				type: variable-themed-color
+				format: hex
+				default-light: '#7e1dfb'
+				default-dark: '#7e1dfb'
     -
         id: bases-cms-badge-font-size
         title: Badge font size
@@ -1104,6 +1112,12 @@ body:not(.bases-cms-badge-style-minimal):not(.bases-cms-badge-style-custom) .bas
 	color: rgba(255, 255, 255, 1);
 }
 
+body.bases-cms-badge-style-default .bases-cms .card-status-badge.status-obsidian,
+body:not(.bases-cms-badge-style-minimal):not(.bases-cms-badge-style-custom) .bases-cms .card-status-badge.status-obsidian {
+	background-color: rgba(126, 29, 251, 0.95);
+	color: rgba(255, 255, 255, 1);
+}
+
 /* Minimal style */
 body.bases-cms-badge-style-minimal .bases-cms .card-status-badge {
 	background-color: transparent;
@@ -1120,6 +1134,11 @@ body.bases-cms-badge-style-custom .bases-cms .card-status-badge.status-draft {
 
 body.bases-cms-badge-style-custom .bases-cms .card-status-badge.status-published {
 	background-color: var(--bases-cms-badge-published-color, rgba(46, 125, 50, 0.95));
+	color: rgba(255, 255, 255, 1);
+}
+
+body.bases-cms-badge-style-custom .bases-cms .card-status-badge.status-obsidian {
+	background-color: var(--bases-cms-badge-obsidian-color, rgba(126, 29, 251, 0.95));
 	color: rgba(255, 255, 255, 1);
 }
 

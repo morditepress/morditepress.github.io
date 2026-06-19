@@ -37,18 +37,8 @@ properties:
     displayName: Date
   formula.Slug:
     displayName: Path
-  note.draft:
-    displayName: Draft
   note.environment:
     displayName: Environment
-  note.tags:
-    displayName: Tags
-  note.description:
-    displayName: Description
-  note.image:
-    displayName: Image
-  note.imageAlt:
-    displayName: ImageAlt
 views:
   - type: cms
     name: Posts
@@ -74,6 +64,7 @@ views:
     imageProperty: note.image
     fallbackToEmbeds: if-empty
     propertyDisplay1: formula.Slug
+    propertyDisplay2: note.environment
     showTextPreview: true
     imageFormat: cover
     showDate: true
@@ -91,7 +82,7 @@ views:
     newNoteLocation: posts
     cardSize: 250
     imageAspectRatio: 0.55
-    maxTagsToShow: 2
+    maxTagsToShow: 3
     dateIncludeTime: false
     fallbackToContent: true
     draftStatusReverse: false
@@ -107,7 +98,6 @@ views:
         direction: ASC
     imageProperty: note.image
     fallbackToEmbeds: true
-    propertyDisplay1: formula.Slug
     showTextPreview: true
     imageFormat: cover
     showDate: true
@@ -117,6 +107,7 @@ views:
     dateProperty: note.date
     draftStatusProperty: note.draft
     descriptionProperty: note.description
+    propertyDisplay2: note.environment
     propertyLayout12SideBySide: false
     propertyLayout34SideBySide: false
     showTags: true
@@ -125,7 +116,6 @@ views:
     newNoteLocation: pages
     cardSize: 250
     imageAspectRatio: 0.55
-    maxTagsToShow: 2
   - type: cms
     name: Projects
     filters:
@@ -137,6 +127,7 @@ views:
     imageProperty: note.image
     fallbackToEmbeds: true
     propertyDisplay1: formula.Slug
+    propertyDisplay2: note.environment
     showTextPreview: true
     imageFormat: cover
     showDate: true
@@ -154,7 +145,7 @@ views:
     newNoteLocation: projects
     cardSize: 250
     imageAspectRatio: 0.55
-    maxTagsToShow: 2
+    maxTagsToShow: 3
   - type: cms
     name: Documentation
     filters:
@@ -169,6 +160,7 @@ views:
     imageProperty: note.image
     fallbackToEmbeds: true
     propertyDisplay1: formula.Slug
+    propertyDisplay2: note.environment
     showTextPreview: true
     imageFormat: cover
     showDate: true
@@ -180,70 +172,10 @@ views:
     descriptionProperty: note.description
     propertyLayout12SideBySide: false
     propertyLayout34SideBySide: false
-    showTags: false
+    showTags: true
     tagsProperty: note.tags
     customizeNewButton: true
     newNoteLocation: docs
     cardSize: 250
     imageAspectRatio: 0.55
-    maxTagsToShow: 2
-    propertyDisplay2: note.version
-  - type: cms
-    name: Special Pages
-    filters:
-      and:
-        - file.folder.startsWith("special")
-    sort:
-      - property: title
-        direction: ASC
-    imageProperty: note.image
-    fallbackToEmbeds: true
-    propertyDisplay1: formula.Slug
-    showTextPreview: false
-    imageFormat: none
-    showDate: false
-    showDraftStatus: false
-    propertyLabels: above
-    titleProperty: note.title
-    dateProperty: note.date
-    descriptionProperty: note.description
-    propertyLayout12SideBySide: false
-    propertyLayout34SideBySide: false
-    showTags: false
-    tagsProperty: note.tags
-    customizeNewButton: true
-    newNoteLocation: pages
-    cardSize: 250
-    imageAspectRatio: 0.55
-    maxTagsToShow: 2
-    hideQuickEditIcon: true
-  - type: cms
-    name: All Content
-    groupBy:
-      property: formula.Content Folder
-      direction: ASC
-    sort:
-      - property: title
-        direction: ASC
-    imageProperty: note.image
-    fallbackToEmbeds: true
-    propertyDisplay1: formula.Slug
-    showTextPreview: true
-    imageFormat: thumbnail
-    showDate: true
-    showDraftStatus: true
-    propertyLabels: above
-    titleProperty: note.title
-    dateProperty: note.lastModified
-    draftStatusProperty: note.draft
-    descriptionProperty: note.description
-    propertyLayout12SideBySide: false
-    propertyLayout34SideBySide: false
-    showTags: false
-    tagsProperty: note.tags
-    customizeNewButton: true
-    newNoteLocation: ""
-    cardSize: 250
-    imageAspectRatio: 0.55
-    maxTagsToShow: 2
-    hideQuickEditIcon: true
+    maxTagsToShow: 3

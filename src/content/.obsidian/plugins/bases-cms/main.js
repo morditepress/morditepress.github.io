@@ -2631,8 +2631,9 @@ function renderDraftStatusBadge(container, entry, cardPath, settings, onProperty
     return;
   }
   const { booleanValue: syncValue, isDraft: syncIsDraft } = calculateDraftStatus(entry, settings);
+  const environment = entry.getValue(settings.propertyDisplay2);
   if (syncValue !== null) {
-    renderBadge(container, syncValue, syncIsDraft, onPropertyToggle, cardPath, settings, app);
+    renderBadge(container, syncValue, syncIsDraft, onPropertyToggle, cardPath, settings, app, environment);
   } else if (app) {
     const file = app.vault.getAbstractFileByPath(entry.file.path);
     if (file instanceof import_obsidian8.TFile && file.extension === "mdx" && mdxFrontmatterCache) {
@@ -2643,31 +2644,39 @@ function renderDraftStatusBadge(container, entry, cardPath, settings, onProperty
         if (typeof frontmatterValue === "boolean") {
           const booleanValue = frontmatterValue;
           const isDraft = settings.draftStatusReverse ? !booleanValue : booleanValue;
-          renderBadge(container, booleanValue, isDraft, onPropertyToggle, cardPath, settings, app);
+          renderBadge(container, booleanValue, isDraft, onPropertyToggle, cardPath, settings, app, environment);
           return;
         }
       }
     }
     void (async () => {
       const { booleanValue, isDraft } = await calculateDraftStatusAsync(entry, settings, app, mdxFrontmatterCache);
-      if (booleanValue !== null && container.isConnected) {
-        renderBadge(container, booleanValue, isDraft, onPropertyToggle, cardPath, settings, app);
+      if (container.isConnected) {
+        renderBadge(container, booleanValue, isDraft, onPropertyToggle, cardPath, settings, app, environment);
       }
     })();
   }
 }
-function renderBadge(container, booleanValue, isDraft, onPropertyToggle, cardPath, settings, app) {
+function renderBadge(container, booleanValue, isDraft, onPropertyToggle, cardPath, settings, app, environment) {
   if (container.querySelector(".card-status-badge")) {
     return;
   }
   const statusBadge = container.createDiv("card-status-badge");
-  if (isDraft) {
-    statusBadge.addClass("status-draft");
-    statusBadge.appendText("Draft");
-  } else {
+  // statusBadge.appendText(environment);
+
+  const envStr = String(environment).toLowerCase().trim();
+
+  if (envStr === 'obsidian') {
+    // Obsidian only
+    statusBadge.addClass("status-obsidian");
+  } else if (envStr === 'production') {
     statusBadge.addClass("status-published");
-    statusBadge.appendText("Published");
+  } else {
+    // Local
+    statusBadge.addClass("status-draft");
   }
+  statusBadge.appendText(envStr);
+
   const isUnderscoreMode = settings == null ? void 0 : settings.draftStatusUseFilenamePrefix;
   if (isUnderscoreMode && app) {
     statusBadge.addClass("bases-cms-cursor-pointer");
