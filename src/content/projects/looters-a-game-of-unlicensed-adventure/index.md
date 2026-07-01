@@ -69,21 +69,15 @@ As looters, you've only got a limited time in the dungeon before the authorities
 This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the LOOTERS RPG:
 
 • Steps for "booking" a new looter (character creation).
-
 • The first 4 criminal charges (classes): The **Brigand**, the **Thief**, the **Heretic**, and the **Witch**.
-
 • Eight detailed NPC accomplices to help you do the deeds.
-
 • Loads of weird new rules for hauling and stashing piles upon piles of coin and magic wonders.
-
 • Unique danger rules that emphasize your wits as much as your weapons.
-
 • Steps for the judge to bring the dangers of the dungeon to life, with example threats, traps and monsters.
-
 • Too many illustrations!
 
 If you're hooked and you want more, _Smash & Grab_ has just enough extra crunch to spend your ill-gotten gains and go back to the dungeon for more. Build up a nice stash of coin in anticipation of **_LOOTERS: Life of Crime_**, coming soon.
 
-Snag your early-access PDF from DriveThruRPG now, before the cops get here!
+Snag your [early-access PDF from DriveThruRPG](https://www.drivethrurpg.com/en/product/573045/looters-smash-grab) now, before the cops get here!
 
-...and join us on the LOOTERS RPG Discord server for a peek into what's coming next. 
+...and join us on the [LOOTERS RPG Discord server](https://www.mordite.press/posts/join-the-looters-discord-server) for a peek into what's coming next. 
