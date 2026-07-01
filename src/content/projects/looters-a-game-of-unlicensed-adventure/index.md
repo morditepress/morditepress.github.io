@@ -1,6 +1,6 @@
 ---
 title: LOOTERS, A Game of Unlicensed Adventure
-date: 2026-06-15
+date: 2026-07-01
 description: The new stand-alone role-playing game from Mordite Press.
 tags:
   - Looters
