@@ -14,6 +14,7 @@ environment: Production
 aliases:
 ---
 ***LOOTERS: Smash & Grab*** is now available as a PDF from DriveThruRPG.
+
 ![](looters-sng-cover.png)
 
 This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the LOOTERS RPG:

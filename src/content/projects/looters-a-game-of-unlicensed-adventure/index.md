@@ -8,10 +8,10 @@ image: ./CampaignCover2.jpg
 imageAlt: "A lineup of criminals, each holding a sign with the crime they're accused of: Brigand, Thief, Vagrant, Witch, Heretic, Rebel."
 imageOG: false
 hideCoverImage: false
-hideTOC: true
+hideTOC: false
 targetKeyword: ""
 environment: Production
-status: in-progress
+status: released
 featured: true
 projectUrl: https://www.drivethrurpg.com/en/product/573045/looters-smash-grab
 ---
