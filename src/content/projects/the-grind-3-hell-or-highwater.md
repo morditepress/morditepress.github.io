@@ -12,7 +12,7 @@ hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: true
-projectUrl: https://www.kickstarter.com/projects/1022527423/the-grind-turn-3-hell-or-highwater-0
+projectUrl: https://www.drivethrurpg.com/en/product/468408/grind-iii-hell-or-highwater
 ---
 Chaos reigns!
 
