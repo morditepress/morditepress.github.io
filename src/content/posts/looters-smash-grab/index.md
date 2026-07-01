@@ -32,4 +32,4 @@ If you're hooked and you want more, *Smash & Grab* has just enough extra crunch 
 
 Snag your [early-access PDF from DriveThruRPG](https://www.drivethrurpg.com/en/product/573045/looters-smash-grab) now, before the cops get here!
 
-...and join us on the [LOOTERS RPG Discord server](https://discord.gg/E6RHuePZ6W) for a peak into what's coming next.
+...and join us on the [LOOTERS RPG Discord server]([https://discord.gg/E6RHuePZ6W](https://www.mordite.press/posts/join-the-looters-discord-server)) for a peak into what's coming next.
