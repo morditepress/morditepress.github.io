@@ -16,26 +16,21 @@ featured: true
 projectUrl:
 ---
 
-![A criminal lineup of looters](https://www.drivethrurpg.com/images/11809/_product_images/573045/CampaignCover2.jpg "Lineup")
-
-• • •
+![A criminal lineup of looters](./CampaignCover2.jpg)
 
 ---
 
-From the creators of _[The Vagrant's Guide to Surviving the Wild](https://www.drivethrurpg.com/en/product/301549/torchbearer-sagas-the-vagrant-s-guide-to-surviving-the-wild "The Vagrant's Guide to Surviving the Wild"), [Noctis Labyrinth](https://www.drivethrurpg.com/en/product/551428/noctis-labyrinth "Noctis Labyrinth"),_ and the _Grind turns [I](https://www.drivethrurpg.com/en/product/283895/torchbearer-sagas-the-grind "The Grind Turn I"), [II](https://www.drivethrurpg.com/en/product/335443/torchbearer-sagas-the-grind-turn-2-mistvale-nights "The Gring Turn II"), & [III](https://www.drivethrurpg.com/en/product/468408/grind-iii-hell-or-highwater "The Grind Turn III")_ comes an all-new, stand-alone role-playing game.
+From the creators of _[The Vagrant's Guide to Surviving the Wild](https://www.drivethrurpg.com/en/product/301549/torchbearer-sagas-the-vagrant-s-guide-to-surviving-the-wild), [Noctis Labyrinth](https://www.drivethrurpg.com/en/product/551428/noctis-labyrinth),_ and the _Grind turns [I](https://www.drivethrurpg.com/en/product/283895/torchbearer-sagas-the-grind), [II](https://www.drivethrurpg.com/en/product/335443/torchbearer-sagas-the-grind-turn-2-mistvale-nights), & [III](https://www.drivethrurpg.com/en/product/468408/grind-iii-hell-or-highwater)_ comes an all-new, stand-alone role-playing game.
 
 ---
 
-• • •
+![A Royal Proclamation. Part 1](./LOOTERS_Proclamation_Part_1.png)
 
-![A Royal Proclamation. Part 1](https://www.drivethrurpg.com/images/11809/_product_images/573045/LOOTERS_Proclamation_Part_1.png "A Royal Proclamation. Part 1")
-
-![A Royal Proclamation, Part 2](https://www.drivethrurpg.com/images/11809/_product_images/573045/LOOTERS_Proclamation_Part_2.png "A Royal Proclamation, Part 2")
+![A Royal Proclamation, Part 2](./LOOTERS_Proclamation_Part_2.png)
 
 
 ---
 
-<center>• • •</center>
 
 Back in the old days, any starving commoner could raid their attic for an ancestral sword, strap it to their back and plunge recklessly into some ancient ruins. A series of thrilling adventures would ensue, and they'd return with a wagon-load of riches and magical wonders. You could make a name for yourself as an _adventurer_, beholden to no one.
 
