@@ -12,7 +12,7 @@ hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: true
-projectUrl: https://cta-redirect.hubspot.com/cta/redirect/2068068/262728da-df27-44f5-9f5d-fe0a671be91b
+projectUrl: https://www.drivethrurpg.com/en/product/301549/torchbearer-sagas-the-vagrant-s-guide-to-surviving-the-wild
 aliases:
 ---
 
