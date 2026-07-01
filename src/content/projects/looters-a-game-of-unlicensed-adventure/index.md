@@ -13,7 +13,7 @@ targetKeyword: ""
 environment: Production
 status: in-progress
 featured: true
-projectUrl:
+projectUrl: https://www.drivethrurpg.com/en/product/573045/looters-smash-grab
 ---
 
 ![A criminal lineup of looters](./CampaignCover2.jpg)

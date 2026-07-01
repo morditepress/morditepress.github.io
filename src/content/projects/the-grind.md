@@ -1,18 +1,18 @@
 ---
-title: "The Grind"
-description: "A Wicked Dope Torchbearer RPG Zine"
+title: The Grind
+description: A Wicked Dope Torchbearer RPG Zine
 date: 2019-01-25
 categories:
-  - "Torchbearer"
-  - "Grind"
+  - Torchbearer
+  - Grind
 status: released
 image: "[[https://cdn2.hubspot.net/hubfs/2068068/The%20Grind%20Front%20Cover.jpg]]"
-imageAlt: "The Grind Front Cover"
+imageAlt: The Grind Front Cover
 hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: false
-projectUrl: https://cta-redirect.hubspot.com/cta/redirect/2068068/a3f9e9e5-1130-4657-bbd1-c52faa4522b4
+projectUrl: https://www.drivethrurpg.com/en/product/283895/torchbearer-sagas-the-grind
 ---
 Torchbearer RPG Zine
 
