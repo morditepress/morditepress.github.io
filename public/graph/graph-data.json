@@ -1,6 +1,13 @@
 {
   "nodes": [
     {
+      "id": "a-proclamation",
+      "type": "post",
+      "title": "A Proclamation",
+      "slug": "a-proclamation",
+      "connections": 0
+    },
+    {
       "id": "duamn-on-born-to-lose",
       "type": "post",
       "title": "Duamn on Born To Lose",
@@ -34,13 +41,20 @@
       "title": "LOOTERS: Smash & Grab",
       "slug": "looters-smash-grab",
       "connections": 0
+    },
+    {
+      "id": "owen-on-born-to-lose",
+      "type": "post",
+      "title": "Owen on Born to Lose",
+      "slug": "owen-on-born-to-lose",
+      "connections": 0
     }
   ],
   "connections": [],
   "metadata": {
-    "totalPosts": 5,
+    "totalPosts": 7,
     "totalConnections": 0,
     "maxNodesApplied": false,
-    "originalNodeCount": 5
+    "originalNodeCount": 7
   }
 }
