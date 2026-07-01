@@ -20,7 +20,7 @@ projectUrl: https://www.drivethrurpg.com/en/product/573045/looters-smash-grab
 
 ---
 
-<center>From the creators of _[The Vagrant's Guide to Surviving the Wild](https://www.drivethrurpg.com/en/product/301549/torchbearer-sagas-the-vagrant-s-guide-to-surviving-the-wild), [Noctis Labyrinth](https://www.drivethrurpg.com/en/product/551428/noctis-labyrinth),_ and the _Grind turns [I](https://www.drivethrurpg.com/en/product/283895/torchbearer-sagas-the-grind), [II](https://www.drivethrurpg.com/en/product/335443/torchbearer-sagas-the-grind-turn-2-mistvale-nights), & [III](https://www.drivethrurpg.com/en/product/468408/grind-iii-hell-or-highwater)_ comes an all-new, stand-alone role-playing game.</center>
+From the creators of _[The Vagrant's Guide to Surviving the Wild](https://www.drivethrurpg.com/en/product/301549/torchbearer-sagas-the-vagrant-s-guide-to-surviving-the-wild), [Noctis Labyrinth](https://www.drivethrurpg.com/en/product/551428/noctis-labyrinth),_ and the _Grind turns [I](https://www.drivethrurpg.com/en/product/283895/torchbearer-sagas-the-grind), [II](https://www.drivethrurpg.com/en/product/335443/torchbearer-sagas-the-grind-turn-2-mistvale-nights), & [III](https://www.drivethrurpg.com/en/product/468408/grind-iii-hell-or-highwater)_ comes an all-new, stand-alone role-playing game.
 
 ---
 
