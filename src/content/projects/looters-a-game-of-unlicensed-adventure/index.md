@@ -15,62 +15,103 @@ status: in-progress
 featured: true
 projectUrl:
 ---
-## Heare Ye, Heare Ye!
-***By order of His Royal Majesty, the King:*** 
+![A criminal lineup of looters](https://www.drivethrurpg.com/images/11809/_product_images/573045/CampaignCover2.jpg "Lineup")
 
-For the safety and protection of such wayward peasants as would venture therein, all **RUINS**, **CRYPTS**, **TOMBS** & **DUNGEONS** are henceforth prohibited entry, unless by expressed permission of the **GUILD OF ADVENTURE**.
-
-For even if ye should prevail against the cunning **TRAPS**, fearsome **GUARDIANS**, and barbarous creatures of **CHAOS** who dwell there, any valuables with which ye might abscond are rightly the property of the **KING**, and no other.  
-
-## THE KING CLAIMS *ALL* TREASURE.
-
-Any ancient **COIN**, **JEWELS**, and **WONDERS** of sorcerous invention must remain unmolested until such time as His Majesty deigns to retrieve them.
-
-Furthermore, the idolatrous **RELICS** and **PAGAN ALTARS** of the heathen cults are to be shunned by His Majesty's loyal subjects, and upon discovery must be reported to a duly-appointed officer of the Inquisition without delay.
-
-Incursion into these forbidden places, and the sale or trade of any poached treasures thus obtained shall henceforth be considered **LOOTING**. 
-
-***This heinous crime is punishable by:***
-
-- A fine of not less than 100 crowns.
-- Confiscation of all poached treasure.
-- Public humiliation in the stocks or gibbet.
-- Imprisonment in a **DUNGEON** of diabolical design.
-- Transportation to the penal colonies on the Borderlands.
-- Conscription as a trapfinder under the **GUILD of ADVENTURE**.
-- Hanging by the neck until **DEATH**!
-
-Further penalties may be levied if the looter is found concurrently guilty of the following crimes (as is often the case): 
-
-**BRIGANDRY**, **THIEVERY**, **VAGRANCY**, **HERESY**, **WITCHCRAFT** and/or incitement of **REBELLION**.
-
-The King’s adventure-minded subjects would do better to seek employment within the Guild of Adventure, which entitles you to a most generous claim of **ONE-FIFTH** of the recovered spoils.
-
-DO NOT foolishly presume transgressions will be forgiven or overlooked. 
-
-*Only the **KING** shall **SAVE**.*
+• • •
 
 ---
 
-From the creators of ***The Vagrant's Guide to Surviving the Wild***, ***Noctis Labyrinth***, and the ***Grind turns I, II, & III*** comes an all-new, stand-alone role-playing game.
+From the creators of _[The Vagrant's Guide to Surviving the Wild](https://www.drivethrurpg.com/en/product/301549/torchbearer-sagas-the-vagrant-s-guide-to-surviving-the-wild "The Vagrant's Guide to Surviving the Wild"), [Noctis Labyrinth](https://www.drivethrurpg.com/en/product/551428/noctis-labyrinth "Noctis Labyrinth"),_ and the _Grind turns [I](https://www.drivethrurpg.com/en/product/283895/torchbearer-sagas-the-grind "The Grind Turn I"), [II](https://www.drivethrurpg.com/en/product/335443/torchbearer-sagas-the-grind-turn-2-mistvale-nights "The Gring Turn II"), & [III](https://www.drivethrurpg.com/en/product/468408/grind-iii-hell-or-highwater "The Grind Turn III")_ comes an all-new, stand-alone role-playing game.
+
+---
+
+• • •
+
+![A Royal Proclamation. Part 1](https://www.drivethrurpg.com/images/11809/_product_images/573045/LOOTERS_Proclamation_Part_1.png "A Royal Proclamation. Part 1")
+
+![A Royal Proclamation, Part 2](https://www.drivethrurpg.com/images/11809/_product_images/573045/LOOTERS_Proclamation_Part_2.png "A Royal Proclamation, Part 2")
 
 
 ---
 
-Back in the day, a starving commoner could find an ancestral sword in the attic, strap it to their back, and plunge recklessly into some ancient ruins. A series of thrilling adventures would ensue, and they'd soon return with a wagon-load of riches and magical wonders. You could make a name for yourself as an _adventurer_, beholden to no one.
+• • •
 
-**_That’s not how it works anymore._**
+Back in the old days, any starving commoner could raid their attic for an ancestral sword, strap it to their back and plunge recklessly into some ancient ruins. A series of thrilling adventures would ensue, and they'd return with a wagon-load of riches and magical wonders. You could make a name for yourself as an _adventurer_, beholden to no one.
 
-Along came one great adventurer who went and made himself king. Not content just to rule over the kingdom, **His Majesty** decreed that all dungeon plunder was his by birthright. He then commanded **The Guild of Adventure** to cut off all access to wondrous treasure for the common folk.
+That’s how it used to work, anyhow.
 
-Now only the Guilders may descend into the king’s dungeons, vanquish monsters and win treasure. They return and declare themselves **Barons**, and make us their subjects. If you don't like it, you can tell it to the points of their talking magic swords.
+Along came one great adventurer who went and made himself king. Not content to simply rule over the kingdom, **HIS MAJESTY** decreed that all future dungeon-plunder would fill _his_ coffers. And so he formed The Guild of Adventure—most just call them the **GUILDERS**—and cut off all access to wondrous treasure for the common folk.
 
-That's how it goes. To survive, either pull strings to get into the Guild or toil for those that do. 
+These days it’s against the law to lay down your hoe and risk life and limb in search of treasure. But just because it’s illegal doesn’t mean it’s not decent work.
 
-But maybe that's not for you. Maybe you're the sort who’d risk poaching that treasure right out from under the Guilders' noses. Maybe you've even got what it takes to get away with it.
+Enter you, the _**LOOTERS**_, who by choice or desperation walk the path of old-fashioned adventuresome types, rules be damned.
 
-Enter the **Looters**, who— by choice or desperation —walk the path of old-fashioned adventuresome types, rules be damned.
+• • •
 
 ---
-Get the early-access PDF now from DriveThruRPG.com
-Join the party over on the Looters discord.
+
+**What's the Story Here?**
+
+---
+
+• • •
+
+_**LOOTERS**_ is set in a the post-medieval world that comes _after_ the earliest fantasy role-playing books. You know the ones I mean.
+
+_It's an outlaw ballad, and superheroic adventurers are the sheriff._
+
+You and your friends play the brigands, witches, and cultists who are usually slain in droves by "heroes," just for the crime of looting the same dungeon as the rich and powerful. It's a silly setting, but not for the people in it.
+
+**• • •**
+
+---
+
+**What Kind of RPG is this?**
+
+---
+
+****• • •****
+
+_**LOOTERS**_ is an adventure RPG with some story game bits. It's a dungeon-crawler focused on teamwork, danger, and big personalities. Your looter's driven by their **motive** to adventure illegally, and they've got to rely on their **accomplices** to turn a profit and stay one step ahead of their **accusers**.
+
+As you face down the perils of ancient dungeons, you'll build a dice pool by applying your methods, honing your specialties, and tapping into your personality quirks. 
+
+Dungeon crawling is punishing work, and as you drag your ill-gotten loot around the dungeon you face increasing danger from fatigue, dwindling supplies and lurking monsters. The more stuff you're hauling around, the greater the risk.
+
+**Built for hard outs and open tables**
+
+**_LOOTERS: Smash & Grab_** was made with one-shot sessions in mind, perfect for an action-packed introduction the the game.
+
+As looters, you've only got a limited time in the dungeon before the authorities come and run you off. Your goal is to have looted the valuables before that happens. Looters sessions end with a bang; you either get away with the loot, or you get nabbed and thrown in jail. This is great news for players with tight schedules and real-world obligations, and it sets you up for open table play where you might have a different cast of characters every time.
+
+_**• • •**_
+
+---
+
+**What's in the Book?**
+
+---
+
+_**• • •**_
+
+This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the LOOTERS RPG:
+
+• Steps for "booking" a new looter (character creation).
+
+• The first 4 criminal charges (classes): The **Brigand**, the **Thief**, the **Heretic**, and the **Witch**.
+
+• Eight detailed NPC accomplices to help you do the deeds.
+
+• Loads of weird new rules for hauling and stashing piles upon piles of coin and magic wonders.
+
+• Unique danger rules that emphasize your wits as much as your weapons.
+
+• Steps for the judge to bring the dangers of the dungeon to life, with example threats, traps and monsters.
+
+• Too many illustrations!
+
+If you're hooked and you want more, _Smash & Grab_ has just enough extra crunch to spend your ill-gotten gains and go back to the dungeon for more. Build up a nice stash of coin in anticipation of **_LOOTERS: Life of Crime_**, coming soon.
+
+Snag your early-access PDF from DriveThruRPG now, before the cops get here!
+
+...and join us on the LOOTERS RPG Discord server for a peek into what's coming next. (link in product)
