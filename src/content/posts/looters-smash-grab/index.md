@@ -30,6 +30,6 @@ This 60-page booklet has what you need to create some looters and play the dunge
 
 If you're hooked and you want more, *Smash & Grab* has just enough extra crunch to spend your ill-gotten gains and go back to the dungeon for more. Build up a nice stash of coin in anticipation of ***LOOTERS: Life of Crime***, coming soon.
 
-Snag your early-access PDF from DriveThruRPG now, before the cops get here!
+Snag your [early-access PDF from DriveThruRPG](https://www.drivethrurpg.com/en/product/573045/looters-smash-grab) now, before the cops get here!
 
-...and join us on the LOOTERS RPG Discord server for a peak into what's coming next.
+...and join us on the [LOOTERS RPG Discord server](https://discord.gg/E6RHuePZ6W) for a peak into what's coming next.
