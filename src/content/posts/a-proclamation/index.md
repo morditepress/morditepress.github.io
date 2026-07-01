@@ -1,6 +1,6 @@
 ---
 title: A Proclamation
-date: 2026-06-17
+date: 2026-07-01
 description: By order of His Royal Majesty, the King
 tags:
   - Looters
