@@ -36,7 +36,7 @@ Back in the old days, any starving commoner could raid their attic for an ancest
 
 That’s how it used to work, anyhow.
 
-Along came one great adventurer who went and made himself king. Not content to simply rule over the kingdom, **HIS MAJESTY** decreed that all future dungeon-plunder would fill _his_ coffers. And so he formed The Guild of Adventure—most just call them the **GUILDERS**—and cut off all access to wondrous treasure for the common folk.
+Along came one great adventurer who went and made himself **KING**. Not content to simply rule over the kingdom, His Majesty decreed that all future dungeon-plunder would fill _his_ coffers. And so he formed The Guild of Adventure—most just call them the **GUILDERS**—and cut off all access to wondrous treasure for the common folk.
 
 These days it’s against the law to lay down your hoe and risk life and limb in search of treasure. But just because it’s illegal doesn’t mean it’s not decent work.
 
