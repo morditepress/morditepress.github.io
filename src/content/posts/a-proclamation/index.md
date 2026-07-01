@@ -12,4 +12,4 @@ hideTOC: false
 targetKeyword:
 environment: Production
 ---
-![](Proclamation.jpg)
+![By order of His Royal Majesty, the King](Proclamation.jpg)
