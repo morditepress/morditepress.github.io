@@ -15,7 +15,8 @@ status: in-progress
 featured: true
 projectUrl:
 ---
-<center>![A criminal lineup of looters](https://www.drivethrurpg.com/images/11809/_product_images/573045/CampaignCover2.jpg "Lineup")
+
+![A criminal lineup of looters](https://www.drivethrurpg.com/images/11809/_product_images/573045/CampaignCover2.jpg "Lineup")
 
 • • •
 
@@ -34,7 +35,7 @@ From the creators of _[The Vagrant's Guide to Surviving the Wild](https://www.dr
 
 ---
 
-• • •</center>
+<center>• • •</center>
 
 Back in the old days, any starving commoner could raid their attic for an ancestral sword, strap it to their back and plunge recklessly into some ancient ruins. A series of thrilling adventures would ensue, and they'd return with a wagon-load of riches and magical wonders. You could make a name for yourself as an _adventurer_, beholden to no one.
 
@@ -46,15 +47,8 @@ These days it’s against the law to lay down your hoe and risk life and limb in
 
 Enter you, the _**LOOTERS**_, who by choice or desperation walk the path of old-fashioned adventuresome types, rules be damned.
 
-<center>• • •
 
----
-
-**What's the Story Here?**
-
----
-
-• • •</center>
+## **What's the Story Here?**
 
 _**LOOTERS**_ is set in a the post-medieval world that comes _after_ the earliest fantasy role-playing books. You know the ones I mean.
 
@@ -62,15 +56,7 @@ _It's an outlaw ballad, and superheroic adventurers are the sheriff._
 
 You and your friends play the brigands, witches, and cultists who are usually slain in droves by "heroes," just for the crime of looting the same dungeon as the rich and powerful. It's a silly setting, but not for the people in it.
 
-<center>**• • •**
-
----
-
-**What Kind of RPG is this?**
-
----
-
-****• • •</center>****
+## **What Kind of RPG is this?**
 
 _**LOOTERS**_ is an adventure RPG with some story game bits. It's a dungeon-crawler focused on teamwork, danger, and big personalities. Your looter's driven by their **motive** to adventure illegally, and they've got to rely on their **accomplices** to turn a profit and stay one step ahead of their **accusers**.
 
@@ -83,16 +69,7 @@ Dungeon crawling is punishing work, and as you drag your ill-gotten loot around 
 **_LOOTERS: Smash & Grab_** was made with one-shot sessions in mind, perfect for an action-packed introduction the the game.
 
 As looters, you've only got a limited time in the dungeon before the authorities come and run you off. Your goal is to have looted the valuables before that happens. Looters sessions end with a bang; you either get away with the loot, or you get nabbed and thrown in jail. This is great news for players with tight schedules and real-world obligations, and it sets you up for open table play where you might have a different cast of characters every time.
-
-<center>_**• • •**_
-
----
-
-**What's in the Book?**
-
----
-
-_**• • •</center>**_
+## **What's in the Book?**
 
 This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the LOOTERS RPG:
 
@@ -114,4 +91,4 @@ If you're hooked and you want more, _Smash & Grab_ has just enough extra crunch 
 
 Snag your early-access PDF from DriveThruRPG now, before the cops get here!
 
-...and join us on the LOOTERS RPG Discord server for a peek into what's coming next. (link in product)
+...and join us on the LOOTERS RPG Discord server for a peek into what's coming next. 
