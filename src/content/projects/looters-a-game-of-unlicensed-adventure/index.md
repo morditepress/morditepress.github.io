@@ -25,7 +25,6 @@ From the creators of _[The Vagrant's Guide to Surviving the Wild](https://www.dr
 ---
 
 ![A Royal Proclamation. Part 1](./LOOTERS_Proclamation_Part_1.png)
-
 ![A Royal Proclamation, Part 2](./LOOTERS_Proclamation_Part_2.png)
 
 
