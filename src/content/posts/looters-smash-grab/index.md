@@ -16,10 +16,10 @@ aliases:
 ![](CampaignCover2.jpg)
 
 
+## ***LOOTERS: Smash & Grab*** is now available as a PDF from DriveThruRPG.
 
-***LOOTERS: Smash & Grab*** is now available as a PDF from DriveThruRPG.
 
-![](looters-sng-cover.png)
+![The cover of LOOTERS: Smash & Grab](LOOTERS_SNG_cover.png)
 
 This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the LOOTERS RPG:
 
