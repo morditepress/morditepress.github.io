@@ -25,11 +25,10 @@ From the creators of _[The Vagrant's Guide to Surviving the Wild](https://www.dr
 ---
 
 ![A Royal Proclamation. Part 1](./LOOTERS_Proclamation_Part_1.png)
-![A Royal Proclamation, Part 2](./LOOTERS_Proclamation_Part_2.png)
-
 
 ---
 
+![A Royal Proclamation, Part 2](./LOOTERS_Proclamation_Part_2.png)
 
 Back in the old days, any starving commoner could raid their attic for an ancestral sword, strap it to their back and plunge recklessly into some ancient ruins. A series of thrilling adventures would ensue, and they'd return with a wagon-load of riches and magical wonders. You could make a name for yourself as an _adventurer_, beholden to no one.
 
