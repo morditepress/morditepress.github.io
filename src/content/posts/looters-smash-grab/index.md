@@ -21,7 +21,7 @@ aliases:
 
 ![The cover of LOOTERS: Smash & Grab](LOOTERS_SNG_cover.png)
 
-This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the LOOTERS RPG:
+This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the [LOOTERS RPG](https://www.mordite.press/projects/looters-a-game-of-unlicensed-adventure):
 
 * Steps for "booking" a new looter (character creation).
 * The first 4 criminal charges (classes): The Brigand, the Thief, the Heretic, and the Witch.
