@@ -319,14 +319,13 @@ export const siteConfig: SiteConfig = {
     pages: [
       { title: "Posts", url: "/posts"},
       { title: "Projects", url: "/projects", children: [
-        { title: 'View All', url: '/projects' },
+        { title: 'LOOTERS, A Game of Unlicensed Adventure', url: '/projects/looters-a-game-of-unlicensed-adventure' },
         { title: 'The Grind Turn 3: Hell or Highwater', url: '/projects/the-grind-3-hell-or-highwater'},
         { title: 'The Grind Turn 2: Mistvale Nights', url: '/projects/the-grind-turn-2'},
         { title: 'The Delver\'s Guide to Surviving the Underworld', url: '/projects/the-delvers-guide-to-surviving-the-underworld'},
         { title: 'The Vagrant\'s Guide to Surviving the Wild', url: '/projects/the-vagrants-guide-to-surviving-the-wild-release'},
         { title: 'The Grind', url: '/projects/the-grind'},
-        { title: 'Roost of the Condor Queen', url: '/projects/roost-of-the-condor-queen'},
-        { title: 'Fearless and Freebooting', url: '/projects/fearless-and-freebooting'},
+        { title: 'View All', url: '/projects' },
       ] },
       { title: "Docs", url: "/docs" },
       { title: "Archives", url: "https://archive.mordite.press"},
