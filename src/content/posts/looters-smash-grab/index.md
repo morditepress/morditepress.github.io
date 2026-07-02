@@ -4,7 +4,7 @@ date: 2026-06-15
 description: The very first LOOTERS booklet PDF is now available. Get down into the  king's dungeon and get yours before the cops show up!
 tags:
   - Looters
-image: ./looters-sng-cover.png
+image: ./CampaignCover2.jpg
 imageAlt: The Looters Smash & Grab cover
 imageOG: false
 hideCoverImage: false
@@ -13,6 +13,10 @@ targetKeyword: ""
 environment: Production
 aliases:
 ---
+![](CampaignCover2.jpg)
+
+
+
 ***LOOTERS: Smash & Grab*** is now available as a PDF from DriveThruRPG.
 
 ![](looters-sng-cover.png)
