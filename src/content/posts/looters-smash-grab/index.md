@@ -1,6 +1,6 @@
 ---
 title: "LOOTERS: Smash & Grab"
-date: 2026-06-15
+date: 2026-07-02
 description: The very first LOOTERS booklet PDF is now available. Get down into the  king's dungeon and get yours before the cops show up!
 tags:
   - Looters
