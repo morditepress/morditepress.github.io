@@ -10,7 +10,7 @@ aliases: about-us
 
 ![637](attachments/Mordite%20Helm%20Outlined.png)
 
-We've made open-license books for Torchbearer, collaborations with MRDR HOBO, and original games and adventures of our own.
+We've made open-license books for Torchbearer, collaborations with [MRDR HOBO](https://mrdrhobo.itch.io/), and original games and adventures of our own.
 
 
-We're not using AI. Social media is awful. Whatever we have to say is in our books or on this blog.
+We're not using AI. Social media is odious. Whatever we have to say is in our books or on this blog.
