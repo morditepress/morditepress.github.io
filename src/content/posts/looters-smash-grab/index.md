@@ -31,7 +31,7 @@ This 60-page booklet has what you need to create some looters and play the dunge
 * Steps for the judge to bring the dangers of the dungeon to life, with example threats, traps and monsters.
 * Too many illustrations!
 
-***LOOTERS: Smash & Grab*** was made with one-shot sessions in mind, perfect for an action-packed introduction the the game.
+***LOOTERS: Smash & Grab*** was made with one-shot sessions in mind, perfect for an action-packed introduction to the game.
 
 If you're hooked and you want more, *Smash & Grab* has just enough extra crunch to spend your ill-gotten gains and go back to the dungeon for more. Build up a nice stash of coin in anticipation of ***LOOTERS: Life of Crime***, coming soon.
 

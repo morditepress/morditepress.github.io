@@ -13,7 +13,7 @@ targetKeyword: ""
 environment: Production
 status: released
 featured: true
-projectUrl: https://www.drivethrurpg.com/en/product/573045/looters-smash-grab
+projectUrl: https://mordite-press.itch.io/looters-smash-grab
 ---
 
 ![A criminal lineup of looters](./CampaignCover2.jpg)
@@ -59,7 +59,7 @@ Dungeon crawling is punishing work, and as you drag your ill-gotten loot around 
 
 **Built for hard outs and open tables**
 
-**_LOOTERS: Smash & Grab_** was made with one-shot sessions in mind, perfect for an action-packed introduction the the game.
+**_LOOTERS: Smash & Grab_** was made with one-shot sessions in mind, perfect for an action-packed introduction to the game.
 
 As looters, you've only got a limited time in the dungeon before the authorities come and run you off. Your goal is to have looted the valuables before that happens. Looters sessions end with a bang; you either get away with the loot, or you get nabbed and thrown in jail. This is great news for players with tight schedules and real-world obligations, and it sets you up for open table play where you might have a different cast of characters every time.
 ## **What's in the Book?**
@@ -78,4 +78,4 @@ If you're hooked and you want more, _Smash & Grab_ has just enough extra crunch 
 
 Snag your [early-access PDF from DriveThruRPG](https://www.drivethrurpg.com/en/product/573045/looters-smash-grab) now, before the cops get here!
 
-...and join us on the [LOOTERS RPG Discord server](https://www.mordite.press/posts/join-the-looters-discord-server) for a peek into what's coming next. 
+...and join us on the [LOOTERS RPG Discord server](https://www.mordite.press/posts/join-the-looters-discord-server) for a peek into what's coming next.
