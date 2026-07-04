@@ -12,5 +12,6 @@ aliases: about-us
 
 We've made open-license books for Torchbearer, collaborations with [MRDR HOBO](https://mrdrhobo.itch.io/), and original games and adventures of our own.
 
+Find our digital books on [itch.io](https://mordite-press.itch.io/) and [drivethrurpg.com](https://www.drivethrurpg.com/en/publisher/11809/mordite-press).
 
 We're not using AI. Social media is odious. Whatever we have to say is in our books or on this blog.
