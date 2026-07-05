@@ -338,8 +338,14 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:NAVIGATION_SOCIAL]
     social: [
       {
+        title: "itch.io",
+        url: "https://mordite-press.itch.io/",
+        icon: 'default'
+        // icon: "book-open",
+      },
+      {
         title: "DriveThruRPG",
-        url: "https://preview.drivethrurpg.com/en/publisher/11809/mordite-press",
+        url: "https://www.drivethrurpg.com/en/publisher/11809/mordite-press",
         icon: 'default'
         // icon: "book-open",
       },
