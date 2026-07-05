@@ -13,13 +13,16 @@ targetKeyword: ""
 environment: Production
 aliases:
 ---
-![](CampaignCover2.jpg)
+![LOOTERS: A Game of Unlicensed Adventure by Mordite Press](CampaignCover2.jpg)
 
 
-## ***LOOTERS: Smash & Grab*** is now available as a PDF from [itch.io](https://mordite-press.itch.io/looters-smash-grab) and [DriveThruRPG](https://www.drivethrurpg.com/en/product/573045/looters-smash-grab).
+***LOOTERS: Smash & Grab*** is now available as a PDF from [itch.io](https://mordite-press.itch.io/looters-smash-grab) and [DriveThruRPG](https://www.drivethrurpg.com/en/product/573045/looters-smash-grab).
 
 
 ![The cover of LOOTERS: Smash & Grab](LOOTERS_SNG_cover.png)
+
+## What's in the Book?
+
 
 This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the [LOOTERS RPG](https://www.mordite.press/projects/looters-a-game-of-unlicensed-adventure):
 
