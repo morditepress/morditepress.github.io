@@ -9,7 +9,7 @@ status: released
 image: "[[attachments/vagrants-attack-card.png]]"
 imageAlt: Attack card in The Vagrant’s Guide to Surviving the Wild
 hideCoverImage: false
-hideTOC: true
+hideTOC: false
 environment: Production
 featured: true
 driveThruRpgProjectUrl: https://www.drivethrurpg.com/en/product/301549/torchbearer-sagas-the-vagrant-s-guide-to-surviving-the-wild

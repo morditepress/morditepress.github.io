@@ -9,7 +9,7 @@ status: released
 image: "[[https://cdn2.hubspot.net/hubfs/2068068/grind-2-mistvale-nights.jpg]]"
 imageAlt: "Image for The Grind Turn 2: Mistvale Nights"
 hideCoverImage: false
-hideTOC: true
+hideTOC: false
 environment: Production
 featured: true
 driveThruRpgProjectUrl: https://www.drivethrurpg.com/product/335443/Torchbearer-Sagas-The-Grind-Turn-2-Mistvale-Nights

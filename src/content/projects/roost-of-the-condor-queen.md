@@ -1,14 +1,14 @@
 ---
-title: "Roost of the Condor Queen"
-description: "Explore the lost city of Puku and uncover the magics of the Condor Queen."
+title: Roost of the Condor Queen
+description: Explore the lost city of Puku and uncover the magics of the Condor Queen.
 date: 2018-07-23
 categories:
-  - "Torchbearer"
+  - Torchbearer
 status: released
 image: "[[https://cdn2.hubspot.net/hubfs/2068068/roost-of-the-condor-queen-torchbearer.jpg]]"
-imageAlt: "Roost of the Condor Queen Torchbearer"
+imageAlt: Roost of the Condor Queen Torchbearer
 hideCoverImage: false
-hideTOC: true
+hideTOC: false
 environment: Production
 featured: true
 driveThruRpgProjectUrl: http://www.drivethrurpg.com/product/247924/Torchbearer-Sagas-Roost-of-the-Condor-Queen

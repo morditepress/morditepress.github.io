@@ -1,14 +1,14 @@
 ---
-title: "Fearless and Freebooting"
-description: "Nine indispensable character classes for bravely plundering, raiding, and looting. Inspired by traditional Norse mythology. Suitable for any campaign, but designed especially for the Torchbearer Middarmark setting."
+title: Fearless and Freebooting
+description: Nine indispensable character classes for bravely plundering, raiding, and looting. Inspired by traditional Norse mythology. Suitable for any campaign, but designed especially for the Torchbearer Middarmark setting.
 date: 2018-04-04
 categories:
-  - "Torchbearer"
+  - Torchbearer
 status: released
 image: "[[https://cdn2.hubspot.net/hubfs/2068068/Fear-and-Free-cover_300.jpg]]"
-imageAlt: "Fearless and Freebooting cover"
+imageAlt: Fearless and Freebooting cover
 hideCoverImage: false
-hideTOC: true
+hideTOC: false
 environment: Production
 featured: false
 driveThruRpgProjectUrl: http://www.drivethrurpg.com/product/238800/Torchbearer-Sagas-Fearless-and-Freebooting?manufacturers_id=11809

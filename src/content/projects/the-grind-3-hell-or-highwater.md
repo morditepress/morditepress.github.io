@@ -9,7 +9,7 @@ status: released
 image: "[[https://f.hubspotusercontent10.net/hubfs/2068068/grind.jpg]]"
 imageAlt: "Image for The Grind Turn 3: Hell or Highwater"
 hideCoverImage: false
-hideTOC: true
+hideTOC: false
 environment: Production
 featured: true
 driveThruRpgProjectUrl: https://www.drivethrurpg.com/en/product/468408/grind-iii-hell-or-highwater

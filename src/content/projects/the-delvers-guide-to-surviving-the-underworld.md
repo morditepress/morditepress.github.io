@@ -1,15 +1,15 @@
 ---
-title: "The Delver's Guide to Surviving the Underworld"
+title: The Delver's Guide to Surviving the Underworld
 description: "The Delver's Guide to Surviving the Underworld is a FREE expansion to The Vagrant's Guide. "
 date: 2020-09-21
 categories:
-  - "Vagrant's Guide"
-  - "Torchbearer"
+  - Vagrant's Guide
+  - Torchbearer
 status: released
 image: "[[https://f.hubspotusercontent10.net/hubfs/2068068/Delvers%20Cover.png]]"
-imageAlt: "Image for The Delver's Guide to Surviving the Underworld"
+imageAlt: Image for The Delver's Guide to Surviving the Underworld
 hideCoverImage: false
-hideTOC: true
+hideTOC: false
 environment: Production
 featured: false
 projectUrl: https://memento-mori.com/torchbearer-sagas/torchbearer-sagas-the-delvers-guide-to-surviving-the-underworld
