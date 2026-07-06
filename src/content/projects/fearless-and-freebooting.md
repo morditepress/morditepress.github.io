@@ -11,7 +11,9 @@ hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: false
-projectUrl: http://www.drivethrurpg.com/product/238800/Torchbearer-Sagas-Fearless-and-Freebooting?manufacturers_id=11809
+driveThruRpgProjectUrl: http://www.drivethrurpg.com/product/238800/Torchbearer-Sagas-Fearless-and-Freebooting?manufacturers_id=11809
+itchProjectUrl: ""
+rpgTraderProjectUrl: ""
 ---
 Nine indispensable character classes for bravely plundering, raiding, and looting.
 

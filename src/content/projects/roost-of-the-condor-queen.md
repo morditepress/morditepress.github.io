@@ -11,7 +11,9 @@ hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: true
-projectUrl: http://www.drivethrurpg.com/product/247924/Torchbearer-Sagas-Roost-of-the-Condor-Queen
+driveThruRpgProjectUrl: http://www.drivethrurpg.com/product/247924/Torchbearer-Sagas-Roost-of-the-Condor-Queen
+itchProjectUrl: ""
+rpgTraderProjectUrl: ""
 ---
 A century ago, emissaries from Puku would travel into the kingdom of Feudor, offering priceless artifacts to trade and dispensing unique insights into the profound mysteries of the Otherworld. For a hundred years they have languished in myth. Recently a lost traveler turned up with a wild tale of having found the lost city… and a map.
 
