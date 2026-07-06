@@ -13,7 +13,9 @@ targetKeyword: ""
 environment: Production
 status: released
 featured: true
-projectUrl: https://mordite-press.itch.io/looters-smash-grab
+itchProjectUrl: https://mordite-press.itch.io/looters-smash-grab
+driveThruRpgProjectUrl: "https://www.drivethrurpg.com/product/573045/looters-smash-grab"
+rpgTraderProjectUrl: "https://rpg-trader.com/products/6902/looters-smash-grab"
 ---
 
 ![A criminal lineup of looters](./CampaignCover2.jpg)

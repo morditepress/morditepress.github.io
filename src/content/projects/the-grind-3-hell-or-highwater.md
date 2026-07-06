@@ -12,7 +12,9 @@ hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: true
-projectUrl: https://www.drivethrurpg.com/en/product/468408/grind-iii-hell-or-highwater
+driveThruRpgProjectUrl: https://www.drivethrurpg.com/en/product/468408/grind-iii-hell-or-highwater
+itchProjectUrl: ""
+rpgTraderProjectUrl: ""
 ---
 Chaos reigns!
 

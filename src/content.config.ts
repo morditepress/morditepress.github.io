@@ -59,6 +59,11 @@ const pagesCollection = defineCollection({
   }),
 });
 
+const optionalUrlString = z.preprocess((value) => {
+  if (value === '' || value == null) return null;
+  return value;
+}, z.string().url().nullable().optional());
+
 // Define schema for projects
 const projectsCollection = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
@@ -67,7 +72,10 @@ const projectsCollection = defineCollection({
     description: z.string().nullable().optional().default('No description provided'),
     date: z.coerce.date().default(() => new Date()),
     categories: z.array(z.string()).nullable().optional().default([]),
-    projectUrl: z.string().url().nullable().optional(),
+    projectUrl: optionalUrlString,
+    itchProjectUrl: optionalUrlString,
+    driveThruRpgProjectUrl: optionalUrlString,
+    rpgTraderProjectUrl: optionalUrlString,
     status: z.string().nullable().optional(),
     image: z.any().nullable().optional().transform((val) => {
       // Handle various Obsidian syntax formats

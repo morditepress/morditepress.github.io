@@ -12,7 +12,9 @@ hideCoverImage: false
 hideTOC: true
 environment: Production
 featured: false
-projectUrl: https://www.drivethrurpg.com/en/product/283895/torchbearer-sagas-the-grind
+driveThruRpgProjectUrl: https://www.drivethrurpg.com/en/product/283895/torchbearer-sagas-the-grind
+itchProjectUrl: ""
+rpgTraderProjectUrl: ""
 ---
 Torchbearer RPG Zine
 
