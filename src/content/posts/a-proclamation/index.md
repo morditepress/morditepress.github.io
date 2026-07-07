@@ -13,3 +13,5 @@ targetKeyword:
 environment: Local
 ---
 ![By order of His Royal Majesty, the King](Proclamation2.jpg)
+
+![Proclamation 1](LOOTERS%20Proclamation%20Part%201.png)![Proclamation 2](LOOTERS%20Proclamation%20Part%202.png)
