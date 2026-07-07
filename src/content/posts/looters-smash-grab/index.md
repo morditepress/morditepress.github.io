@@ -24,7 +24,7 @@ aliases:
 ## What's in the Book?
 
 
-This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the [LOOTERS RPG](https://www.mordite.press/projects/looters-a-game-of-unlicensed-adventure):
+This 60-page booklet has what you need to create some looters and play the dungeon-crawling stage of the [LOOTERS RPG](/projects/looters-a-game-of-unlicensed-adventure):
 
 * Steps for "booking" a new looter (character creation).
 * The first 4 criminal charges (classes): The Brigand, the Thief, the Heretic, and the Witch.
@@ -41,4 +41,4 @@ If you're hooked and you want more, *Smash & Grab* has just enough extra crunch 
 
 Snag your early-access PDF from [itch.io](https://mordite-press.itch.io/looters-smash-grab) or [DriveThruRPG](https://www.drivethrurpg.com/en/product/573045/looters-smash-grab) now, before the cops get here!
 
-...and join us on the [LOOTERS RPG Discord server](https://www.mordite.press/posts/join-the-looters-discord-server/) for a peek into what's coming next.
+...and join us on the [LOOTERS RPG Discord server](/posts/join-the-looters-discord-server/) for a peek into what's coming next.

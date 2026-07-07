@@ -81,4 +81,4 @@ If you're hooked and you want more, _Smash & Grab_ has just enough extra crunch 
 
 Snag your early-access PDF from [itch.io](https://mordite-press.itch.io/looters-smash-grab) or [DriveThruRPG](https://www.drivethrurpg.com/en/product/573045/looters-smash-grab) now, before the cops get here!
 
-...and join us on the [LOOTERS RPG Discord server](https://www.mordite.press/posts/join-the-looters-discord-server) for a peek into what's coming next.
+...and join us on the [LOOTERS RPG Discord server](/posts/join-the-looters-discord-server) for a peek into what's coming next.
