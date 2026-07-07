@@ -95,7 +95,7 @@ const { Content, headings } = await processPost(project as any);
 
 // Generate table of contents if enabled - global setting, then hideTOC frontmatter (default true for projects)
 const hideTOC = project.data.hideTOC === true;
-const hasProjectLinks = [project.data.itchProjectUrl, project.data.rpgTraderProjectUrl, project.data.driveThruRpgProjectUrl].some(url => !!url);
+const hasProjectLinks = [project.data.itchProjectUrl, project.data.rpgTraderProjectUrl, project.data.driveThruRpgProjectUrl, project.data.projectUrl].some(url => !!url);
 const shouldShowTOC = (siteConfig.tableOfContents.enabled && !hideTOC && headings.length > 0) || hasProjectLinks;
 const toc = shouldShowTOC ? await generateTOC(headings) : [];
 
@@ -262,7 +262,7 @@ const { prev: prevProject, next: nextProject } = getAdjacentPosts(visibleProject
             {shouldShowTOC && (
               <div class="block xl:hidden mt-3">
                 <div class="sticky top-24 pb-6" id="toc">
-                  <TableOfContents headings={toc} navItems={projectTocNavItems} navIcon="shopping-cart"
+                  <TableOfContents hideTOC={project.data.hideTOC} headings={toc} navItems={projectTocNavItems} navIcon="shopping-cart"
                   navTitle="Buy Now"
                    />
                 </div>
@@ -331,7 +331,7 @@ const { prev: prevProject, next: nextProject } = getAdjacentPosts(visibleProject
       {shouldShowTOC && (
         <div class="hidden xl:block absolute top-0 left-full ml-1 w-[280px] h-full">
           <div class="sticky top-24 pb-6" id="toc">
-            <TableOfContents headings={toc} navItems={projectTocNavItems} navIcon="shopping-cart" navTitle="Buy Now" />
+            <TableOfContents hideTOC={project.data.hideTOC} headings={toc} navItems={projectTocNavItems} navIcon="shopping-cart" navTitle="Buy Now" />
           </div>
         </div>
       )}

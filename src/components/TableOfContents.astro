@@ -12,20 +12,24 @@ export interface Props {
   }>;
   navTitle?: string;
   navIcon?: string;
+  hideTOC?: boolean;
 }
 
-const { headings, navItems = [], navTitle = 'Contents', navIcon = 'list' } = Astro.props;
+const { hideTOC = false, headings, navItems = [], navTitle = 'Contents', navIcon = 'list' } = Astro.props;
 
 // Filter and structure headings using configurable depth
 const maxDepth = getTableOfContentsDepth();
 const filteredHeadings = headings.filter(h => h.depth >= 2 && h.depth <= maxDepth);
-// Hide TOC if there's only 1 heading (not useful)
-const shouldShowTOC = filteredHeadings.length > 1 || navItems.length > 0;
+
+const hasTOCEl = !hideTOC && filteredHeadings.length > 1;
+const hasProjectUrlsEl = navItems.length > 0;
+const shouldShowTOC = hasTOCEl || hasProjectUrlsEl;
 ---
 
 {shouldShowTOC && (
   <div class="space-y-3">
-    {navItems.length > 0 && (
+    {hasProjectUrlsEl && (
+      // Project links
       <nav class="toc-nav toc-container p-4 pr-5 bg-white dark:bg-primary-900 rounded-xl border border-primary-200 dark:border-primary-700 shadow-lg backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
         <button
           class="toc-toggle w-full font-semibold text-primary-900 dark:text-primary-50 flex items-center justify-between text-sm hover:text-highlight-600 dark:hover:text-highlight-400 transition-colors"
@@ -60,7 +64,8 @@ const shouldShowTOC = filteredHeadings.length > 1 || navItems.length > 0;
       </nav>
     )}
 
-    {filteredHeadings.length > 1 && (
+    {hasTOCEl && (
+      // Table of contents
       <nav class="hidden xl:block toc-nav toc-container p-4 pr-5 bg-white dark:bg-primary-900 rounded-xl border border-primary-200 dark:border-primary-700 shadow-lg backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95" data-max-depth={maxDepth}>
         <button
           class="toc-toggle w-full font-semibold text-primary-900 dark:text-primary-50 flex items-center justify-between text-sm hover:text-highlight-600 dark:hover:text-highlight-400 transition-colors"
