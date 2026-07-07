@@ -95,7 +95,8 @@ const { Content, headings } = await processPost(project as any);
 
 // Generate table of contents if enabled - global setting, then hideTOC frontmatter (default true for projects)
 const hideTOC = project.data.hideTOC === true;
-const shouldShowTOC = siteConfig.tableOfContents.enabled && !hideTOC && headings.length > 0;
+const hasProjectLinks = [project.data.itchProjectUrl, project.data.rpgTraderProjectUrl, project.data.driveThruRpgProjectUrl].some(url => !!url);
+const shouldShowTOC = (siteConfig.tableOfContents.enabled && !hideTOC && headings.length > 0) || hasProjectLinks;
 const toc = shouldShowTOC ? await generateTOC(headings) : [];
 
 // Get adjacent projects for navigation
