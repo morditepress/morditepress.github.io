@@ -30,7 +30,7 @@ const shouldShowTOC = hasTOCEl || hasProjectUrlsEl;
   <div class="space-y-3">
     {hasProjectUrlsEl && (
       // Project links
-      <nav class="toc-nav toc-container p-4 pr-5 bg-white dark:bg-primary-900 rounded-xl border border-primary-200 dark:border-primary-700 shadow-lg backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95">
+      <nav class="toc-nav toc-container p-4 pr-5 bg-white dark:bg-primary-900 rounded-xl border border-primary-200 dark:border-primary-700 shadow-lg backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95" data-type="projects">
         <button
           class="toc-toggle w-full font-semibold text-primary-900 dark:text-primary-50 flex items-center justify-between text-sm hover:text-highlight-600 dark:hover:text-highlight-400 transition-colors"
           aria-expanded="true"
@@ -66,7 +66,7 @@ const shouldShowTOC = hasTOCEl || hasProjectUrlsEl;
 
     {hasTOCEl && (
       // Table of contents
-      <nav class="hidden xl:block toc-nav toc-container p-4 pr-5 bg-white dark:bg-primary-900 rounded-xl border border-primary-200 dark:border-primary-700 shadow-lg backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95" data-max-depth={maxDepth}>
+      <nav class="hidden xl:block toc-nav toc-container p-4 pr-5 bg-white dark:bg-primary-900 rounded-xl border border-primary-200 dark:border-primary-700 shadow-lg backdrop-blur-sm bg-opacity-95 dark:bg-opacity-95" data-max-depth={maxDepth} data-type="toc">
         <button
           class="toc-toggle w-full font-semibold text-primary-900 dark:text-primary-50 flex items-center justify-between text-sm hover:text-highlight-600 dark:hover:text-highlight-400 transition-colors"
           aria-expanded="true"
@@ -100,6 +100,7 @@ const shouldShowTOC = hasTOCEl || hasProjectUrlsEl;
 )}
 
 <script>
+
   // Constants for TOC height calculation
   const BOTTOM_SPACING = 96; // 6rem = 96px - fixed spacing from bottom of viewport  const MIN_TOC_HEIGHT = 200;
 
@@ -112,7 +113,7 @@ const shouldShowTOC = hasTOCEl || hasProjectUrlsEl;
     content.style.overflowY = 'auto';
 
     // Remove max-height from the list since the content container now handles scrolling
-    const tocList = document.querySelector('.toc-list') as HTMLElement;
+    const tocList = document.getElementById('toc-list');
     if (tocList) {
       tocList.style.maxHeight = 'none';
     }
@@ -139,11 +140,11 @@ const shouldShowTOC = hasTOCEl || hasProjectUrlsEl;
   // Global function to initialize table of contents
   function initializeTableOfContents() {
     const tocLinks = Array.from(document.querySelectorAll('.toc-heading-link'));
-    const tocNavs = Array.from(document.querySelectorAll('.toc-nav'));
+    const tocNavs = Array.from(document.querySelectorAll('.toc-nav[data-type="toc"]'));
 
     let headings: NodeListOf<HTMLElement> | null = null;
     const tocContainer = tocNavs[0] as HTMLElement | undefined;
-     // Get maxDepth from data attribute
+    // Get maxDepth from data attribute
     const maxDepth = tocContainer ? parseInt(tocContainer.dataset.maxDepth || '6', 10) : 6;
 
     // Build heading selectors based on configured depth
@@ -152,7 +153,7 @@ const shouldShowTOC = hasTOCEl || hasProjectUrlsEl;
     for (let level = 2; level <= Math.min(maxDepth, 6); level++) {
       headingLevels.push(`h${level}`);
     }
-    const headingSelector = headingLevels.join(', ');
+    // const headingSelector = headingLevels.join(', ');
 
     // Query headings only from content areas (not from TOC itself or other sidebars)
     // Only query heading levels that are actually displayed in the TOC
@@ -165,7 +166,7 @@ const shouldShowTOC = hasTOCEl || hasProjectUrlsEl;
     ];
 
     for (const container of contentContainers) {
-      const selector = `${container} ${headingSelector}`;
+      const selector = headingLevels.map(headingLevel => `${container} ${headingLevel}`).join(', ');
       const found = document.querySelectorAll<HTMLElement>(selector);
       if (found.length > 0) {
         headings = found;
@@ -210,7 +211,7 @@ const shouldShowTOC = hasTOCEl || hasProjectUrlsEl;
           freshTocToggle.setAttribute('aria-expanded', 'true');
           freshTocChevron.style.transform = 'rotate(0deg)';
           // Recalculate height on expand
-          updateTOCHeight(tocContent);
+          updateTOCHeight(freshTocContent);
         }
       });
     });
