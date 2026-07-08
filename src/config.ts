@@ -238,7 +238,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:FOOTER_CONTENT]
     content: `© ${new Date().getFullYear()} <a href="/about" title="About Mordite Press">Mordite Press</a>`,
     // [CONFIG:FOOTER_SHOW_SOCIAL_ICONS]
-    showSocialIconsInFooter: false,
+    showSocialIconsInFooter: true,
   },
   //[CONFIG:HIDE_SCROLL_BAR]
   hideScrollBar: false,
@@ -340,13 +340,18 @@ export const siteConfig: SiteConfig = {
       {
         title: "itch.io",
         url: "https://mordite-press.itch.io/",
-        icon: 'default'
-        // icon: "book-open",
+        icon: 'itch'
       },
       {
         title: "DriveThruRPG",
         url: "https://www.drivethrurpg.com/en/publisher/11809/mordite-press",
-        icon: 'default'
+        icon: 'drivethru-rpg'
+        // icon: "book-open",
+      },
+      {
+        title: "RPG Trader",
+        url: "https://rpg-trader.com/creator/327/mordite-press",
+        icon: 'rpg-trader'
         // icon: "book-open",
       },
       {
