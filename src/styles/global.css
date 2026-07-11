@@ -1499,3 +1499,17 @@ svg:has(text:contains("mermaid version")) {
     @apply my-6;
   }
 }
+
+/* HubSpot Forms */
+.legal-consent-container {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+.hs-error-msgs {
+  margin: 0.5rem 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.hs-form-required, .hs-error-msgs {
+  @apply text-red-700 dark:text-red-300;
+}
