@@ -10,7 +10,7 @@ imageAlt: ""
 hideCoverImage: false
 hideTOC: false
 environment: Local
-featured: true
+featured: false
 aliases:
 ---
 ## Heading
