@@ -5,7 +5,7 @@ category: "Book I: Smash and Grab"
 order: 0
 version: 0.1.1
 lastModified: 2026-07-16
-image: The_Adventurer_King_sRGB.jpg
+image: ./The_Adventurer_King_sRGB.jpg
 imageAlt: ""
 hideCoverImage: false
 hideTOC: false
