@@ -5,7 +5,7 @@ category: "Book I: Smash and Grab"
 order: 1
 version: 0.1.1
 lastModified: 2026-08-01
-image: ./booking-procedure.png
+image: ../../attachments/booking-procedure.png
 imageAlt:
 hideCoverImage: false
 hideTOC: false
