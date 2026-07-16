@@ -5,14 +5,13 @@ category: "Book I: Smash and Grab"
 order: 3
 version: 0.1.1
 lastModified: 2026-05-19
-image: ""
+image: making-threats.png
 imageAlt: ""
 hideCoverImage: false
 hideTOC: false
 environment: Local
 featured: true
 aliases:
-  - chapter-2 1
 ---
 
 ## Heading
