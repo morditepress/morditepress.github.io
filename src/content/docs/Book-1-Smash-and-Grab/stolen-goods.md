@@ -12,7 +12,6 @@ hideTOC: false
 environment: Local
 featured: true
 aliases:
-  - chapter-2 1 1
 ---
 ## Heading
 
