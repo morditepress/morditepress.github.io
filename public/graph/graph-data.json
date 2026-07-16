@@ -26,7 +26,7 @@
       "type": "post",
       "title": "Join the Looters Discord Server",
       "slug": "join-the-looters-discord-server",
-      "connections": 0
+      "connections": 1
     },
     {
       "id": "list-of-mail",
@@ -40,7 +40,7 @@
       "type": "post",
       "title": "LOOTERS: Smash & Grab",
       "slug": "looters-smash-grab",
-      "connections": 0
+      "connections": 1
     },
     {
       "id": "owen-on-born-to-lose",
@@ -50,10 +50,16 @@
       "connections": 0
     }
   ],
-  "connections": [],
+  "connections": [
+    {
+      "source": "looters-smash-grab",
+      "target": "join-the-looters-discord-server",
+      "type": "link"
+    }
+  ],
   "metadata": {
     "totalPosts": 7,
-    "totalConnections": 0,
+    "totalConnections": 1,
     "maxNodesApplied": false,
     "originalNodeCount": 7
   }

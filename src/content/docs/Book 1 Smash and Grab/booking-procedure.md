@@ -1,19 +1,20 @@
 ---
-title: Chapter 1
-description: A level appropriate for a chapter heading.
-category: A Book-level Category
+title: Booking Procedure
+description: Creating a new looter, step by step.
+category: "Book I: Smash and Grab"
 order: 1
 version: 0.1.1
-lastModified: 2026-05-19
-image: "[[../../attachments/Tactic Fight Final.jpg]]"
+lastModified: 2026-08-01
+image:
 imageAlt:
 hideCoverImage: false
 hideTOC: false
 environment: Local
-featured: true
+featured: false
 aliases:
-date: 2026-05-18
+date: 2026-08-01
 ---
+
 
 ## Heading
 

@@ -1,7 +1,7 @@
 ---
-title: Chapter 2
+title: Law of the Land
 description: A level appropriate for a chapter heading.
-category: Book level 2
+category: "Book II: Life of Crime (Sprees)"
 order: 2
 version: 0.1.1
 lastModified: 2026-05-19
