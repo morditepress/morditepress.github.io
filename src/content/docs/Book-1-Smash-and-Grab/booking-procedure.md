@@ -5,7 +5,7 @@ category: "Book I: Smash and Grab"
 order: 1
 version: 0.1.1
 lastModified: 2026-07-16
-image: ../../attachments/booking-procedure.png
+image:
 imageAlt:
 hideCoverImage: false
 hideTOC: false
@@ -27,44 +27,51 @@ You are henceforth branded:
 A **BRIGAND**, a **HERETIC**, a **THIEF**, or a **WITCH**.
 
 ### The Brigand
-*Tis a crime to bear a sword without first pledging to use it in His Majesty's service.*
+*Tis a crime to bear a sword without first pledging to use it in His Majesty's service.* 
 
-
-| The Bridgand |     |
-| ------------ | --- |
-|              |     |
-
-
-**Methods.** ***Strong:*** muscle or grit. ***Weak:*** brains or charm. 
-**Specialties.** Ambuscade, armor, blades, bludgeons, camaraderie, holdups, pistols, salvage, soldiery, ultimatums.
-**Quirks.** Brutish, menacing, showoff, stoic, twitchy.
-**Exploits.** ***Tough:*** You can use both hands while hurt.
-**Kit.** Boots, greatclub, plated coat, sewing kit.
-**Accomplices.** Disgruntled armorer, local ruffian.
+|                 |                                                                                                    |
+| --------------- | -------------------------------------------------------------------------------------------------- |
+| **Methods**     | ***Strong:*** muscle or grit. ***Weak:*** brains or charm.                                         |
+| **Specialties** | Ambuscade, armor, blades, bludgeons, camaraderie, holdups, pistols, salvage, soldiery, ultimatums. |
+| **Quirks**      | Brutish, menacing, showoff, stoic, twitchy.                                                        |
+| **Exploits**    | ***Tough:*** You can use both hands while hurt.                                                    |
+| **Kit**         | Boots, greatclub, plated coat, sewing kit.                                                         |
+| **Accomplices** | Disgruntled armorer, local ruffian.                                                                |
 ### The Heretic
 *There's nothing the church elders fear more than a genuine prophet.*
-Methods.
-Specialties.
-Quirks.
-Exploits.
-Kit.
-Accomplices.
+
+|                 |                                                                                                         |
+| --------------- | ------------------------------------------------------------------------------------------------------- |
+| **Methods**     | ***Strong:*** charm or resolve. ***Weak:*** muscle or finesse.                                          |
+| **Specialties** | Apothecary, ceremony, chastisement, homily, invocation, omens, oration, scholarship, smiting, subtlety. |
+| **Quirks**      | Austere, indulgent, officious, wary, zealous.                                                           |
+| **Exploits**    | ***Exorcist:*** Scare demons and undead by brandishing a holy item.                                     |
+| **Kit**         | Prayer book, sacred amulet, staff, vestments.                                                           |
+| **Accomplices** | Heathen worshiper, renegade historian.                                                                  |
 ### The Thief
 *Why does the thief delve into dungeons? Because that's where the money is!*
-Methods.
-Specialties.
-Quirks.
-Exploits.
-Kit.
-Accomplices.
+
+|                 |                                                                                                   |
+| --------------- | ------------------------------------------------------------------------------------------------- |
+| **Methods**     | ***Strong:*** charm or finesse. ***Weak:*** grit or resolve.                                      |
+| **Specialties** | Backstabbery, disguise, escape, fencing, forgery, grift, legerdemain, locks, skulking, theatrics. |
+| **Quirks**      | Greedy, meticulous, rakish, self-serving, slippery.                                               |
+| **Exploits**    | ***Prowler:*** Provide aid even if there’s not enough light.                                      |
+| **Kit**         | Grapnel, lockpicks, satchel, slippers.                                                            |
+| **Accomplices** | Notorious burglar, corrupt officer.                                                               |
+
 ### The Witch
 *Great wisdom may be gleaned from the charred pages of burnt books.*
-Methods.
-Specialties.
-Quirks.
-Exploits.
-Kit.
-Accomplices.
+
+|                 |                                                                                                      |
+| --------------- | ---------------------------------------------------------------------------------------------------- |
+| **Methods**     | ***Strong:*** brains or resolve. ***Weak:*** grit or muscle.                                         |
+| **Specialties** | Alchemy, bargains, compelling, curses, dispelling, mathematics, misdirection, theurgy, tomes, wards. |
+| **Quirks**      | Cryptic, haunted, pedantic, talkative, weird.                                                        |
+| **Exploits**    | ***Initiate:*** Unholy scrolls are drained, not destroyed. Quicken them when it’s quiet.             |
+| **Kit**         | Cauldron, buckled shoes, unholy scroll, wizard hat.                                                  |
+| **Accomplices** | Monstrous hermit, chaos cultist.                                                                     |
+
 
 ---
 ## 3. From Which Jurisdiction?
@@ -72,7 +79,59 @@ Choose the precinct you’re from:
 
 **DOCKSHORE**, **QUESTERS**, **TEMPLETON**, **SCAFFOLDING**, **MIDDENMIRE**, or **THE HIGH CITY**.
 
-Read more about the precincts on page 10.
+### Dockshore
+*A hive of commerce amidst the piers and storehouses.*
+
+|                 |                                                    |
+| --------------- | -------------------------------------------------- |
+| **Specialties** | Cartography, haggling, knots, seamanship, toiling. |
+| **Quirks**      | Foreign, miserly, worldly.                         |
+| **Kit**         | Sea chest, fishing net, signal lantern.            |
+
+### Questers
+*An encampment of would-be adventurers.*
+
+|                 |                                                   |
+| --------------- | ------------------------------------------------- |
+| **Specialties** | Debauchery, logistics, outsiders, rules, weather. |
+| **Quirks**      | Dim, grandiloquent, reckless.                     |
+| **Kit**         | Short cape, gambling dice, empty sack.            |
+
+### Templeton
+*Where His Majesty's priests sell their petty miracles.*
+
+|                 |                                                     |
+| --------------- | --------------------------------------------------- |
+| **Specialties** | Architecture, begging, conformity, corruption, law. |
+| **Quirks**      | Diabolical, naïve, stodgy.                          |
+| **Kit**         | Beggar’s bowl, candelabra, sacred amulet.           |
+
+### Scaffolding
+*Dark alleyways beneath the city's superstructure.*
+
+|                 |     |
+| --------------- | --- |
+| **Specialties** |     |
+| **Quirks**      |     |
+| **Kit**         |     |
+
+### Middenmire
+*A floating slum of trash islands.*
+
+|                 |     |
+| --------------- | --- |
+| **Specialties** |     |
+| **Quirks**      |     |
+| **Kit**         |     |
+
+### The High City
+*Seat of the city's power and influence.*
+
+|                 |     |
+| --------------- | --- |
+| **Specialties** |     |
+| **Quirks**      |     |
+| **Kit**         |     |
 
 ---
 ## 4. Establish a Motive.
