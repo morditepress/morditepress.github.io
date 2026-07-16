@@ -5,7 +5,7 @@ category: "Book I: Smash and Grab"
 order: 0
 version: 0.1.1
 lastModified: 2026-07-16
-image: ../../attachments/once-upon.png
+image: ../../attachments/once-upon.webp
 imageAlt: ""
 hideCoverImage: false
 hideTOC: false

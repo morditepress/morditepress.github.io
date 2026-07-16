@@ -5,7 +5,7 @@ category: "Book I: Smash and Grab"
 order: 1
 version: 0.1.1
 lastModified: 2026-07-16
-image:
+image: ../../attachments/booking-procedure.webp
 imageAlt:
 hideCoverImage: false
 hideTOC: false
@@ -27,7 +27,7 @@ You are henceforth branded:
 A **BRIGAND**, a **HERETIC**, a **THIEF**, or a **WITCH**.
 
 ### The Brigand
-*Tis a crime to bear a sword without first pledging to use it in His Majesty's service.* 
+*Tis a crime to bear a sword without first pledging to use it in His Majesty's service.*
 
 |                 |                                                                                                    |
 | --------------- | -------------------------------------------------------------------------------------------------- |

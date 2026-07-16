@@ -5,7 +5,7 @@ category: "Book I: Smash and Grab"
 order: 3
 version: 0.1.1
 lastModified: 2026-05-19
-image: ../../attachments/making-threats.png
+image: ../../attachments/making-threats.webp
 imageAlt: ""
 hideCoverImage: false
 hideTOC: false

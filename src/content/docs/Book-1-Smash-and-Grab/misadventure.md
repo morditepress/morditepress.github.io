@@ -5,7 +5,7 @@ category: "Book I: Smash and Grab"
 order: 2
 version: 0.1.1
 lastModified: 2026-08-01
-image: ../../attachments/misadventure.png
+image: ../../attachments/misadventure.webp
 imageAlt: ""
 hideCoverImage: false
 hideTOC: false
