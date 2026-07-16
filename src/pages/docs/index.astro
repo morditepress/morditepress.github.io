@@ -146,7 +146,7 @@ seoData.noIndex = (docsPageContent?.data as any)?.noIndex || false;
                 )}
 
                 <div id={contentId} class="category-content overflow-hidden transition-all duration-300 ease-in-out">
-                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                     {docsByCategory[category].map((doc, index) => (
                       <DocumentationCard
                         documentation={doc}
