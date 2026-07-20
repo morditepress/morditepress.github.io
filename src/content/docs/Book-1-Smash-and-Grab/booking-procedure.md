@@ -109,29 +109,29 @@ Choose the precinct you’re from:
 ### Scaffolding
 *Dark alleyways beneath the city's superstructure.*
 
-|                 |     |
-| --------------- | --- |
-| **Specialties** |     |
-| **Quirks**      |     |
-| **Kit**         |     |
+|                 |                                                      |
+| --------------- | ---------------------------------------------------- |
+| **Specialties** | Blackmail, incarceration, lootersign, rigging, wind. |
+| **Quirks**      | Fearless, inscrutable, paranoid.                     |
+| **Kit**         | Gryphon egg, harness, woolen cloak.                  |
 
 ### Middenmire
 *A floating slum of trash islands.*
 
-|                 |     |
-| --------------- | --- |
-| **Specialties** |     |
-| **Quirks**      |     |
-| **Kit**         |     |
+|                 |                                                  |
+| --------------- | ------------------------------------------------ |
+| **Specialties** | Bushcraft, poison, scrounging, swimming, vermin. |
+| **Quirks**      | Hungry, resigned, unhinged.                      |
+| **Kit**         | 10-foot pole, dented helmet, waders.             |
 
 ### The High City
 *Seat of the city's power and influence.*
 
-|                 |     |
-| --------------- | --- |
-| **Specialties** |     |
-| **Quirks**      |     |
-| **Kit**         |     |
+|                 |                                                       |
+| --------------- | ----------------------------------------------------- |
+| **Specialties** | Accounting, bureaucracy, dueling, flattery, heraldry. |
+| **Quirks**      | Ambitious, insecure, fancy.                           |
+| **Kit**         | Dress jacket, pointed shoes, powdered wig.            |
 
 ---
 ## 4. Establish a Motive.
