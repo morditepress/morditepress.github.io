@@ -193,7 +193,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:SITE_DESCRIPTION]
   description: "Tabletop role-playing games and misadventures.",
   // [CONFIG:SITE_AUTHOR]
-  author: "Liz Shaw",
+  author: "Mordite Press",
   // [CONFIG:SITE_LANGUAGE]
   language: "en",
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
