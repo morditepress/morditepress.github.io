@@ -6,6 +6,7 @@ tags:
   - Looters
   - Torchbearer
   - Planescape
+  - "Born to Lose podcast"
 image: ./Born_To_Lose-logo.png
 imageAlt: The Born to Lose Podcast logo
 imageOG: false
