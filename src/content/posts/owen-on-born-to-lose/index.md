@@ -20,4 +20,4 @@ The *Born to Lose* podcast sat down to interview game designer and mordite ringl
 
 We talk about *Looters*, *Torchbearer*, 2nd Edition *Planescape*, and a bit about the peculiar notion of heroic adventurers.
 
-[Go have a listen!](https://open.spotify.com/episode/1lfdlu48XcHEjl78ksnZpx?si=GTZ9_CnURmmZkKCApSeq2A&utm_source=copy-link)
+[Go have a listen!](https://open.spotify.com/episode/1lfdlu48XcHEjl78ksnZpx?si=GTZ9_CnURmmZkKCApSeq2A)
