@@ -16,7 +16,6 @@ targetKeyword: ""
 environment: Production
 aliases:
 ---
-
 The *Born to Lose* podcast sat down to interview game designer and mordite ringleader Owen O'Connell.
 
 We talk about *Looters*, *Torchbearer*, 2nd Edition *Planescape*, and a bit about the peculiar notion of heroic adventurers.
