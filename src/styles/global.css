@@ -1513,3 +1513,20 @@ svg:has(text:contains("mermaid version")) {
 .hs-form-required, .hs-error-msgs {
   @apply text-red-700 dark:text-red-300;
 }
+
+/* Brevo Form */
+#sib-container, .sib-form .entry__field {
+  background: transparent;
+  border: none;
+}
+
+/*
+Source - https://stackoverflow.com/a/44543771
+Posted by Yann39, modified by community. See post 'Timeline' for change history
+Retrieved 2026-11-06, License - CC BY-SA 4.0
+*/
+
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
+
